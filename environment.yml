@@ -1,0 +1,11 @@
+name: lit-review
+channels:
+  - conda-forge
+dependencies:
+  - pybliometrics
+  - ipykernel
+  - yaml
+  - pandas
+  - pip:
+    - python-dotenv
+    - wos
