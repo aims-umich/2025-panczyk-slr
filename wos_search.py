@@ -66,6 +66,9 @@ def generate(api_key, combinations):
             continue
     result = pd.concat(frames, ignore_index=True, sort=False)
     result["names.authors"] = result["names.authors"].apply(cleanup_authors)
+    result["keywords.authorKeywords"] = result["keywords.authorKeywords"].apply(
+        cleanup_keywords
+    )
     useful_columns = list(column_map.keys())
     print(result.columns)
     print(useful_columns)
@@ -79,6 +82,11 @@ def generate(api_key, combinations):
 def cleanup_authors(authors):
     formatted_authors = "; ".join([author["displayName"] for author in authors])
     return formatted_authors
+
+
+def cleanup_keywords(keywords):
+    formatted_keywords = "; ".join([k for k in keywords])
+    return formatted_keywords
 
 
 if __name__ == "__main__":
