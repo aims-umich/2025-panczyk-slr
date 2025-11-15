@@ -12,13 +12,22 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
         rows = list(reader)
 
     bib_data = BibliographyData()
+    cite_keys = []
 
     for idx, row in enumerate(rows, 1):
         # Generate citation key
         first_author = row.get("author_names", "").split(";")[0].strip()
         last_name = first_author.split(",")[0].strip()
-        year = row.get("coverDate", "")[:4]
-        cite_key = f"{last_name}{year}_{idx}"
+        if not row.get("year"):
+            year = row.get("coverDate", "")[:4]
+        else:
+            year = row.get("year").strip()
+        # string formatting here to eliminate any whitespace
+        cite_key_candidate = f"{last_name}{year}".replace(" ", "")
+        if cite_key_candidate in cite_keys:
+            cite_key = f"{last_name}{year}_{idx}"
+        else:
+            cite_key = cite_key_candidate
 
         # Parse authors
         authors = []
@@ -50,7 +59,7 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
         if row.get("description"):
             fields["abstract"] = row["description"].strip()
         if row.get("authkeywords"):
-            fields["keywords"] = row["authkeywords"].strip().replace("|", ",")
+            fields["keywords"] = row["authkeywords"].strip().replace("|", ",").lower()
         if row.get("pubmed_id"):
             fields["pmid"] = row["pubmed_id"].strip()
         if row.get("publisher"):
@@ -68,6 +77,5 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
 
 # Usage
 if __name__ == "__main__":
-    csv_file = "lit_review.csv"  # Change to your CSV filename
-
-    csv_to_bibtex(csv_file, "lit_review.bib")
+    for csv, outfile in zip(snakemake.input.search_results, snakemake.output.bib_files):
+        csv_to_bibtex(csv, outfile)

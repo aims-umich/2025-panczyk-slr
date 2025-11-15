@@ -11,31 +11,31 @@ def get_search_combos():
     population_terms = [
         "nuclear",
         "aerospace",
-        # "health*",
-        # "medic*",
-        # "clinical",
-        # "autonomous driving",
-        # "transportation",
-        # "construction",
-        # "cars",
-        # "engineering",
-        # "energy",
-        # "sensitive industry",
+        "health*",
+        "medic*",
+        "clinical",
+        '"autonomous driving"',
+        "transportation",
+        "construction",
+        "cars",
+        "engineering",
+        "energy",
+        '"sensitive industry"',
     ]
     interv_terms_ai = [
-        "artifical intelligence",
-        "machine learning",
-        # "neural networks",
-        # "language models",
+        '"artificial intelligence"',
+        '"machine learning"',
+        '"neural networks"',
+        '"language models"',
     ]
     interv_terms_decision = ["decision*"]
     outcome_terms = [
         "incidents",
         "accidents",
-        # "near misses",
-        # "injuries",
-        # "failures",
-        # "adverse event",
+        '"near misses"',
+        "injuries",
+        "failures",
+        '"adverse event"',
     ]
     combinations = list(
         itertools.product(
@@ -45,7 +45,7 @@ def get_search_combos():
     return combinations
 
 
-def generate(api_key, combinations):
+def generate(api_key, combinations, output_file):
     headers = {"X-ApiKey": api_key}
     url = "https://api.clarivate.com/apis/wos-starter/v1/documents"
     frames = []
@@ -58,8 +58,13 @@ def generate(api_key, combinations):
         }
 
         response = requests.get(url, headers=headers, params=params)
-        data = response.json()["hits"]
-        print(type(data))
+        print(params["q"])
+        try:
+            data = response.json()["hits"]
+        except KeyError:
+            print(response.json())
+            continue
+
         if len(data) > 1:
             df = pd.json_normalize(data)
             frames.append(df)
@@ -69,14 +74,12 @@ def generate(api_key, combinations):
     result["keywords.authorKeywords"] = result["keywords.authorKeywords"].apply(
         cleanup_keywords
     )
+    result["sourceTypes"] = result["sourceTypes"].apply(cleanup_sourcetype)
+
     useful_columns = list(column_map.keys())
-    print(result.columns)
-    print(useful_columns)
     result = result[useful_columns]
-    result.to_csv("search_results/wos_searches.csv")
-
-
-# "[{'displayName': 'Kegyes, Tamas', 'wosStandard': 'Kegyes, T', 'researcherId': 'DWO-9473-2022'}, {'displayName': 'Sule, Zoltan', 'wosStandard': 'Süle, Z', 'researcherId': 'AAF-9797-2021'}, {'displayName': 'Abonyi, Janos', 'wosStandard': 'Abonyi, J', 'researcherId': 'O-2832-2013'}]"
+    result.rename(columns=column_map, inplace=True)
+    result.to_csv(output_file)
 
 
 def cleanup_authors(authors):
@@ -85,7 +88,13 @@ def cleanup_authors(authors):
 
 
 def cleanup_keywords(keywords):
-    formatted_keywords = "; ".join([k for k in keywords])
+    # the bar thing is dumb but do it to match scopus
+    formatted_keywords = "| ".join([k for k in keywords])
+    return formatted_keywords
+
+
+def cleanup_sourcetype(source):
+    formatted_keywords = ",".join([s for s in source])
     return formatted_keywords
 
 
@@ -94,15 +103,17 @@ if __name__ == "__main__":
         "uid": "uid",
         "title": "title",
         "identifiers.doi": "doi",
-        "sourceTypes": "type",
+        "sourceTypes": "subtypeDescription",
         "source.publishYear": "year",
         "source.volume": "volume",
         "source.issue": "issue",
-        "names.authors": "authors",
+        "names.authors": "author_names",
         "identifiers.issn": "issn",
-        "keywords.authorKeywords": "keywords",
+        "keywords.authorKeywords": "authkeywords",
     }
     load_dotenv()
     api_key = os.getenv("WOS_API_KEY")
     combinations = get_search_combos()
-    generate(api_key=api_key, combinations=combinations)
+    generate(
+        api_key=api_key, combinations=combinations, output_file=snakemake.output.results
+    )

@@ -14,32 +14,31 @@ if __name__ == "__main__":
         "health*",
         "medic*",
         "clinical",
-        "autonomous driving",
+        '"autonomous driving"',
         "transportation",
         "construction",
         "cars",
         "engineering",
         "energy",
-        "sensitive industry",
+        '"sensitive industry"',
     ]
     interv_terms_ai = [
-        "artifical intelligence",
-        "machine learning",
-        "neural networks",
-        "language models",
+        '"artificial intelligence"',
+        '"machine learning"',
+        '"neural networks"',
+        '"language models"',
     ]
     interv_terms_decision = ["decision*"]
     outcome_terms = [
         "incidents",
         "accidents",
-        "near misses",
+        '"near misses"',
         "injuries",
         "failures",
-        "adverse event",
+        '"adverse event"',
     ]
     gov_terms = ["govern*", "regula*", "legal"]
     trust_terms = ["explain*", "interpret*", "trust*", "uncertainty"]
-    minimum_year = 2015
     combinations = list(
         itertools.product(
             population_terms, interv_terms_ai, interv_terms_decision, outcome_terms
@@ -68,6 +67,6 @@ if __name__ == "__main__":
     total_papers = len(df)
     print(f"TOTAL PAPERS: {total_papers}")
     print(f"RESULTS: {df.head()}")
-    df.to_csv("lit_review.csv")
-    with open("searches.txt", "w") as file:
+    df.to_csv(snakemake.output.results)
+    with open(snakemake.output.metrics, "w") as file:
         file.writelines(searches)
