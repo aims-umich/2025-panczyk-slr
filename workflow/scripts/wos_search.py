@@ -49,10 +49,11 @@ def generate(api_key, combinations, output_file):
     headers = {"X-ApiKey": api_key}
     url = "https://api.clarivate.com/apis/wos-starter/v1/documents"
     frames = []
+    conf_query = "SO=(NEURIPS* OR ICLR* OR ICML* OR AAAI* OR IJCAI*)"
     for pop, interv_ai, interv_dm, outcome in tqdm(combinations):
         params = {
             "db": "WOS",
-            "q": f"TS=({pop}) AND TS=({interv_ai} NEAR/5 {interv_dm}) AND TS=({outcome}) AND PY=2015-2026 AND DT=(Article)",
+            "q": f"TS=({pop}) AND TS=({interv_ai} NEAR/5 {interv_dm}) AND TS=({outcome}) AND PY=2015-2026 AND (DT=Article OR (DT=Proceedings Paper AND ({conf_query})))",
             "limit": 10,
             "page": 1,
         }

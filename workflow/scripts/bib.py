@@ -1,5 +1,6 @@
 import csv
 from pybtex.database import BibliographyData, Entry, Person
+import numpy as np
 
 # THIS SCRIPT WAS CREATED LARGELY BY CLAUDE AND CHECKED BY NATALY
 
@@ -10,11 +11,13 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
     with open(csv_file, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
+        print(f"CSV Reader found {len(rows)} rows. Type: {type(rows)}")
 
     bib_data = BibliographyData()
     cite_keys = []
+    counter = 0
 
-    for idx, row in enumerate(rows, 1):
+    for idx, row in enumerate(rows, 0):
         # Generate citation key
         first_author = row.get("author_names", "").split(";")[0].strip()
         last_name = first_author.split(",")[0].strip()
@@ -26,8 +29,10 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
         cite_key_candidate = f"{last_name}{year}".replace(" ", "")
         if cite_key_candidate in cite_keys:
             cite_key = f"{last_name}{year}_{idx}"
+            cite_keys.append(cite_key)
         else:
             cite_key = cite_key_candidate
+            cite_keys.append(cite_key)
 
         # Parse authors
         authors = []
@@ -68,14 +73,19 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
         # Create entry (use 'article' for journal articles)
         entry = Entry("article", fields=fields, persons={"author": authors})
         bib_data.entries[cite_key] = entry
+        counter += 1
 
     # Write to file
     bib_data.to_file(output_file, bib_format="bibtex")
     print(f"BibTeX file created: {output_file}")
     print(f"Total entries: {len(bib_data.entries)}")
+    print(counter)
 
 
 # Usage
 if __name__ == "__main__":
-    for csv, outfile in zip(snakemake.input.search_results, snakemake.output.bib_files):
-        csv_to_bibtex(csv, outfile)
+    # for csv_f, outfile in zip(
+    #     snakemake.input.search_results, snakemake.output.bib_files
+    # ):
+    #     csv_to_bibtex(csv_f, outfile)
+    csv_to_bibtex("../../results/all.csv", "../../results/all.bib")
