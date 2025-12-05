@@ -83,7 +83,7 @@ if __name__ == "__main__":
     load_dotenv()
     api_key = os.getenv("WOS_API_KEY")
     with open(snakemake.input.combos, "rb") as f:
-        combinations = pickle.load(f)[0:3]
+        combinations = pickle.load(f)
     generate(
         api_key=api_key,
         combinations=combinations,
