@@ -5,71 +5,39 @@ import itertools
 from tqdm import tqdm
 import pandas as pd
 import json
+import pickle
 
 
-def get_search_combos():
-    population_terms = [
-        "nuclear",
-        "aerospace",
-        "health*",
-        "medic*",
-        "clinical",
-        '"autonomous driving"',
-        "transportation",
-        "construction",
-        "cars",
-        "engineering",
-        "energy",
-        '"sensitive industry"',
-    ]
-    interv_terms_ai = [
-        '"artificial intelligence"',
-        '"machine learning"',
-        '"neural networks"',
-        '"language models"',
-    ]
-    interv_terms_decision = ["decision*"]
-    outcome_terms = [
-        "incidents",
-        "accidents",
-        '"near misses"',
-        "injuries",
-        "failures",
-        '"adverse event"',
-    ]
-    combinations = list(
-        itertools.product(
-            population_terms, interv_terms_ai, interv_terms_decision, outcome_terms
-        )
-    )
-    return combinations
-
-
-def generate(api_key, combinations, output_file):
+def generate(api_key, combinations, output_file, metrics_file):
     headers = {"X-ApiKey": api_key}
     url = "https://api.clarivate.com/apis/wos-starter/v1/documents"
     frames = []
     conf_query = "SO=(NEURIPS* OR ICLR* OR ICML* OR AAAI* OR IJCAI*)"
     for pop, interv_ai, interv_dm, outcome in tqdm(combinations):
-        params = {
-            "db": "WOS",
-            "q": f"TS=({pop}) AND TS=({interv_ai} NEAR/5 {interv_dm}) AND TS=({outcome}) AND PY=2015-2026 AND (DT=Article OR (DT=Proceedings Paper AND ({conf_query})))",
-            "limit": 10,
-            "page": 1,
-        }
+        page = 1
+        n_matches = 51
+        while page * 50 <= n_matches:
+            params = {
+                "db": "WOS",
+                "q": f"TS=({pop}) AND TS=({interv_ai} NEAR/5 {interv_dm}) AND TS=({outcome}) AND PY=2015-2026 AND (DT=Article OR (DT=Proceedings Paper AND ({conf_query})))",
+                "limit": 50,
+                "page": page,
+            }
+            response = requests.get(url, headers=headers, params=params)
+            response_json = response.json()
+            n_matches = response_json["metadata"]["total"]
+            page += 1
+            try:
+                data = response_json["hits"]
+            except KeyError:
+                print(response.json())
+                continue
+            if len(data) > 0:
+                df = pd.json_normalize(data)
+                frames.append(df)
+        with open(metrics_file, "a") as f:
+            f.write(f"{pop}, {interv_ai}, {outcome}: {n_matches} \n")
 
-        response = requests.get(url, headers=headers, params=params)
-        print(params["q"])
-        try:
-            data = response.json()["hits"]
-        except KeyError:
-            print(response.json())
-            continue
-
-        if len(data) > 1:
-            df = pd.json_normalize(data)
-            frames.append(df)
-            continue
     result = pd.concat(frames, ignore_index=True, sort=False)
     result["names.authors"] = result["names.authors"].apply(cleanup_authors)
     result["keywords.authorKeywords"] = result["keywords.authorKeywords"].apply(
@@ -114,7 +82,11 @@ if __name__ == "__main__":
     }
     load_dotenv()
     api_key = os.getenv("WOS_API_KEY")
-    combinations = get_search_combos()
+    with open(snakemake.input.combos, "rb") as f:
+        combinations = pickle.load(f)[0:3]
     generate(
-        api_key=api_key, combinations=combinations, output_file=snakemake.output.results
+        api_key=api_key,
+        combinations=combinations,
+        output_file=snakemake.output.results,
+        metrics_file=snakemake.output.metrics,
     )

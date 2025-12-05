@@ -6,6 +6,9 @@ dependencies:
   - ipykernel
   - yaml
   - pandas
+  - bibtexparser
+  - pybtex
   - pip:
     - python-dotenv
     - wos
+    - snakemake

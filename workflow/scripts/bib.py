@@ -28,7 +28,7 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
         # string formatting here to eliminate any whitespace
         cite_key_candidate = f"{last_name}{year}".replace(" ", "")
         if cite_key_candidate in cite_keys:
-            cite_key = f"{last_name}{year}_{idx}"
+            cite_key = f"{last_name.replace(" ", "")}{year}_{idx}"
             cite_keys.append(cite_key)
         else:
             cite_key = cite_key_candidate
@@ -84,8 +84,6 @@ def csv_to_bibtex(csv_file, output_file="output.bib"):
 
 # Usage
 if __name__ == "__main__":
-    # for csv_f, outfile in zip(
-    #     snakemake.input.search_results, snakemake.output.bib_files
-    # ):
-    #     csv_to_bibtex(csv_f, outfile)
-    csv_to_bibtex("../../results/all.csv", "../../results/all.bib")
+    csv_file = snakemake.input.search_results
+    bib_file = snakemake.output.bib_file
+    csv_to_bibtex(csv_file, bib_file)

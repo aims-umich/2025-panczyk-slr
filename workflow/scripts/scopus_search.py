@@ -2,48 +2,15 @@ import pandas as pd
 import itertools
 from tqdm import tqdm
 import pybliometrics
+import pickle
 
 pybliometrics.init()
 from pybliometrics.scopus import ScopusSearch
 
 
 if __name__ == "__main__":
-    population_terms = [
-        "nuclear",
-        "aerospace",
-        "health*",
-        "medic*",
-        "clinical",
-        '"autonomous driving"',
-        "transportation",
-        "construction",
-        "cars",
-        "engineering",
-        "energy",
-        '"sensitive industry"',
-    ]
-    interv_terms_ai = [
-        '"artificial intelligence"',
-        '"machine learning"',
-        '"neural networks"',
-        '"language models"',
-    ]
-    interv_terms_decision = ["decision*"]
-    outcome_terms = [
-        "incidents",
-        "accidents",
-        '"near misses"',
-        "injuries",
-        "failures",
-        '"adverse event"',
-    ]
-    gov_terms = ["govern*", "regula*", "legal"]
-    trust_terms = ["explain*", "interpret*", "trust*", "uncertainty"]
-    combinations = list(
-        itertools.product(
-            population_terms, interv_terms_ai, interv_terms_decision, outcome_terms
-        )
-    )
+    with open(snakemake.input.combos, "rb") as f:
+        combinations = pickle.load(f)
     results = []
     searches = []
     conf_query = "CONFNAME('NEURIPS*' OR 'ICLR*' OR 'ICML*' OR 'AAAI*' OR 'IJCAI*')"
