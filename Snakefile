@@ -2,6 +2,8 @@ rule targets:
     input:
         scopus_results = 'results/scopus_searches.csv',
         wos_results = 'results/wos_searches.csv', 
+        prisma = 'results/prisma.txt',
+        bib_file = 'results/all_searches.bib'
 
 rule generate_search_combinations:
     input:

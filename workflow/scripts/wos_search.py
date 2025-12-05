@@ -25,12 +25,14 @@ def generate(api_key, combinations, output_file, metrics_file):
             }
             response = requests.get(url, headers=headers, params=params)
             response_json = response.json()
-            n_matches = response_json["metadata"]["total"]
             page += 1
             try:
+                n_matches = response_json["metadata"]["total"]
                 data = response_json["hits"]
             except KeyError:
+                print("KEY ERROR")
                 print(response.json())
+                n_matches = 0
                 continue
             if len(data) > 0:
                 df = pd.json_normalize(data)
