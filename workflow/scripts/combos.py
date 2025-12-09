@@ -15,6 +15,8 @@ def get_search_combos():
         "radiation",
         "emergency",
         '"first responders"',
+        '"law enforcement"',
+        "police",
         "fire",
         "hospital",
         "energy",
@@ -45,8 +47,6 @@ def get_search_combos():
         "fatalities",
         "misdiagnos*",
         "harm",
-        "litigation",
-        "lawsuit*",
         '"operating experience"',
     ]
     regulation_terms = [

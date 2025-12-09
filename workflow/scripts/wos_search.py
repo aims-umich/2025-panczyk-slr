@@ -38,7 +38,7 @@ def generate(api_key, combinations, output_file, metrics_file):
                 df = pd.json_normalize(data)
                 frames.append(df)
         with open(metrics_file, "a") as f:
-            f.write(f"{pop}, {interv_ai}, {outcome}: {n_matches} \n")
+            f.write(f"{pop}, {interv_ai}, {outcome}, {n_matches} \n")
 
     result = pd.concat(frames, ignore_index=True, sort=False)
     result["names.authors"] = result["names.authors"].apply(cleanup_authors)

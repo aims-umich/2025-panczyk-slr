@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
         # df = pd.DataFrame(s.results)
         n = s.get_results_size()
-        searches.append((f"{pop}, {intervention_ai}, {outcome}: {n}\n"))
+        searches.append((f"{pop}, {intervention_ai}, {outcome}, {n}\n"))
         if n == 0:
             continue
         else:
