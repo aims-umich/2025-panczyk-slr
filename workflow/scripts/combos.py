@@ -4,50 +4,67 @@ import pickle
 
 def get_search_combos():
     population_terms = [
+        # nuclear specific
         "nuclear",
-        "aerospace",
-        "health*",
-        "medic*",
-        "clinical",
-        '"autonomous driving"',
-        '"autonomous vehicle"',
-        "automotive",
         "radiation",
-        "emergency",
-        '"first responders"',
-        '"law enforcement"',
-        "police",
-        "fire",
-        "hospital",
-        "energy",
-        "pharmaceutical",
+        # transportation
+        "aerospace",
         "aviation",
-        '"power grid"',
-        '"electric grid"',
+        "aircraft",
+        "airport",
+        '"autonomous driving"',
+        '"autonomous vehicle*"',
+        "self-driving",
+        "automotive*",
+        # energy systems
+        "energy",
+        '"power grid*"',
+        '"electric grid*"',
+        "chemical",
+        "petroleum",
+        # medical terms related to engineered equipment/devices ONLY
+        '"medical device*"',
+        '"medical equipment"',
+        '"diagnostic device*"',
+        '"imaging device*"',
+        '"surgical robot*"',
+        '"implantable device*"',
+        "drug*",
+        '"patient safety"',
+        "pharmaceutical*",
+        "radiotherapy",
+        '"clinical trial*"',
     ]
     interv_terms_ai = [
         '"artificial intelligence"',
+        "AI",
         '"machine learning"',
-        '"neural networks"',
-        '"language models"',
+        "ML",
+        '"neural network*"',
+        '"language model*"',
         "computer vision",
         "automated",
         '"deep learning"',
     ]
     interv_terms_decision = ["decision*"]
     outcome_terms = [
-        "incidents",
+        "incident*",
         '"close call*"',
-        "accidents",
+        "accident*",
         '"near miss*"',
-        "injuries",
-        "failure",
-        '"adverse event"',
+        "injur*",
+        "failure*",
+        '"adverse event*"',
         "malfunction",
-        "fatalities",
+        "fatalit*",
         "misdiagnos*",
         "harm",
-        '"operating experience"',
+        '"operating experience*"',
+        '"OSHA citation*"',
+        '"FDA recall*"',
+        '"NHTSA investigation*"',
+        "violation*",
+        '"enforcement action*"',
     ]
     regulation_terms = [
         "regulat*",
@@ -67,5 +84,6 @@ def get_search_combos():
 if __name__ == "__main__":
     combo_list = get_search_combos()
     print(f"Total search combinations: {len(combo_list)}")
+    print(f"Combo list 1: {combo_list[1]}")
     with open(snakemake.output.combos, "wb") as f:
         pickle.dump(combo_list, f)

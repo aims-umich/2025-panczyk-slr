@@ -67,9 +67,9 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
     df = df[df["count"] > 0].copy().sort_values(by=["count"], ascending=False)
     # only consider searches with outcomes greater than 10
     if large:
-        plot_df = df[df["count"] > 10].copy()
+        plot_df = df[df["count"] > 4].copy()
     else:
-        plot_df = df[df["count"] <= 10].copy()
+        plot_df = df[df["count"] <= 4].copy()
 
     possible_outcomes = plot_df["outcome"].unique()
     print(possible_outcomes)
@@ -94,7 +94,7 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
             pad=False,
             ec="gray",
         )
-        plt.title(f"Search Results by Term Combinations with > 10 Papers", fontsize=16)
+        plt.title(f"Search Results by Term Combinations with > 4 Papers", fontsize=16)
         plt.tight_layout()
         plt.savefig(save_as, dpi=300, bbox_inches="tight")
     else:
@@ -106,9 +106,7 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
             text_kwargs={"fontsize": 6, "weight": "bold"},
             pad=False,
         )
-        plt.title(
-            f"Search Results by Term Combinations with (0,10] Papers", fontsize=16
-        )
+        plt.title(f"Search Results by Term Combinations with (0,4] Papers", fontsize=16)
         plt.tight_layout()
         plt.savefig(save_as, dpi=300, bbox_inches="tight")
 

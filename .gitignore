@@ -220,4 +220,5 @@ __marimo__/
 /.snakemake
 *.pkl
 /results
-/results-129
+/results-w-health
+*.log

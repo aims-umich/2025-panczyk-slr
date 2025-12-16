@@ -17,7 +17,10 @@ if __name__ == "__main__":
     for pop, intervention_ai, intervention_dm, outcome in tqdm(combinations):
         query1 = f"TITLE-ABS-KEY ( {pop} ) AND TITLE-ABS-KEY ( {intervention_ai} W/5 {intervention_dm}) AND TITLE-ABS-KEY ( {outcome} ) AND PUBYEAR AFT 2014 AND (DOCTYPE(ar) OR (DOCTYPE(cp) AND {conf_query}))"
 
-        s = ScopusSearch(query1, download=True)
+        try:
+            s = ScopusSearch(query1, download=True)
+        except:
+            print(f"Failed on: {query1}")
 
         # df = pd.DataFrame(s.results)
         n = s.get_results_size()

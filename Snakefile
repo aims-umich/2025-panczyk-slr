@@ -1,14 +1,15 @@
 ENGINES = ['scopus', 'wos']
+# ENGINES = ['scopus']
 
 rule targets:
     input:
-        # scopus_results = 'results/scopus_searches.csv',
-        # wos_results = 'results/wos_searches.csv', 
-        # prisma = 'results/prisma.txt',
+        scopus_results = 'results/scopus_searches.csv',
+        wos_results = 'results/wos_searches.csv', 
+        prisma = 'results/prisma.txt',
         bib_file = 'results/all_searches.bib',
-        # small_tree = expand('results/small_tree_{engine}.png', engine=ENGINES),
-        # large_tree = expand('results/large_tree_{engine}.png', engine=ENGINES),
-        # bar_plot = expand('results/bar_{engine}.png', engine=ENGINES),
+        small_tree = expand('results/small_tree_{engine}.png', engine=ENGINES),
+        large_tree = expand('results/large_tree_{engine}.png', engine=ENGINES),
+        bar_plot = expand('results/bar_{engine}.png', engine=ENGINES),
 
 rule generate_search_combinations:
     input:
@@ -39,6 +40,7 @@ rule search_wos:
 rule visualize_searches:
     input:
         metrics =  ['results/scopus_metrics.txt', 'results/wos_metrics.txt'],
+        # metrics =  ['results/scopus_metrics.txt'],
     output:
         small_tree = expand('results/small_tree_{engine}.png', engine=ENGINES),
         large_tree = expand('results/large_tree_{engine}.png', engine=ENGINES),
