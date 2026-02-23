@@ -1,0 +1,325 @@
+%% 
+%% Copyright 2007-2025 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.3 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for Elsevier's document class `elsarticle'
+%% with harvard style bibliographic references
+
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times,authoryear]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsmath package provides various useful equation environments.
+\usepackage{amsmath}
+\usepackage{booktabs}  % optional, for better-looking tables
+\usepackage{threeparttable}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{tabularx} % For adjustable width columns
+\usepackage{enumitem} % For customizing lists within the table
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+\usepackage{hyperref}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\journal{Nuclear Physics B}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \affiliation for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%            addressline={}, 
+%%            city={},
+%%            postcode={}, 
+%%            state={},
+%%            country={}}
+%% \fntext[label3]{}
+
+\title{Safety First-- The Impact of AI on High-Stakes Decision-Making and How We Regulate It} %% Article title
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \affiliation[label1]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%%
+%% \affiliation[label2]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+
+\author{Nataly R. Panczyk} %% Author name
+\author{Majdi I. Radaideh}
+
+%% Author affiliation
+\affiliation{organization={Department of Nuclear Engineering and Radiological Sciences, University of Michigan Ann Arbor},%Department and Organization
+            addressline={2355 Bonisteel Blvd.}, 
+            city={Ann Arbor},
+            postcode={48105}, 
+            state={Michigan},
+            country={USA}}
+
+%% Abstract
+\begin{abstract}
+%% Text of abstract
+Abstract text.
+\end{abstract}
+
+%%Graphical abstract
+% \begin{graphicalabstract}
+%\includegraphics{grabs}
+% \end{graphicalabstract}
+
+%%Research highlights
+% \begin{highlights}
+% \item Research highlight 1
+% \item Research highlight 2
+% \end{highlights}
+
+%% Keywords
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% Add \usepackage{lineno} before \begin{document} and uncomment 
+%% following line to enable line numbers
+%% \linenumbers
+
+\section{Introduction}
+
+\section{Methods}
+This analysis follows the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) methodology and therefore collects documents in a systematic and automated way. To do so, we start by defining the research questions this review seeks to answer. These include, the titular: \textit{What is the impact of AI on high-stakes decision making?} as well as: \textit{How are safety outcomes perturbed by AI-based decision-making in sensitive industries?} and \textit{What are the safety risks of using AI to make decisions in sensitive industries?} While there are obvious benefits and harms to using AI-based technologies, that comparison alone is far too high-level to inspire targeted change within the AI technologies themselves. The nature of the questions guiding this review probe at what unique features and outcomes set AI-based decision-making mechanisms apart from traditional methods. Understanding these phenomena in detail would allow useful insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
+
+\subsection{Query Term Compilation}
+After determining our research questions, we define a set of key terms using the Population, Intervention, Comparison, Outcome (PICO) methodology, and use the Cartesian product of these terms (one from each category) to determine relevant search queries. We use APIs for each of two databases, Scopus and Web of Science, to make these queries via a Python workflow, storing all resultant papers. Then, we remove duplicates based on digital object identifier (DOI), and merge the results of both database searches into a combined bibliography. Figure \ref{fig:workflow} shows visual representation of this workflow. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figs/dag.png}
+    \caption{Directed acyclic graph showing automatic search workflow.}
+    \label{fig:workflow}
+\end{figure}
+
+Critical to actually making these queries is defining the lists of keywords that comprise them. We start by defining our population terms.  
+
+
+We can organize the population terms we decided to include in this search in five major groups: nuclear and radiation, aviation, autonomous driving, energy and industrial processes, and medical technology and pharmaceuticals. These groups were selected for their highly sensitive nature, their propensity to use AI, and their regulation. This includes oversight by the U.S. Nuclear Regulatory Commission (NRC), the Federal Aviation Administration (FAA), the National Highway Traffic Safety Administration (NHTSA), the Occupational Safety and Health Administration (OHSA), and the Food and Drug Administration (FDA). Obviously, there are a vast number of industries that might be considered ``sensitive'' and are federally regulated in the United States, however, due to time and space limitations, we prioritize those listed above in our analysis. Specifically, our goal was to avoid cases that consider risks not related to human health and safety (financial risks); we will discuss this further when we consider our exclusion criteria. The population search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
+
+After determining our population terms, we then must consider our intervention terms. We determined this group by compiling a list of AI-related terms that would likely appear in any AI-based decision-making model. This includes words and phrases like ``machine learning,'' ``neural networks,'' and ``language models.'' While this set surely does not contain every possible AI-related term, its goal is to target the major ones. We presume that almost any paper using AI will use the term ``AI'' itself, so the goal of additional terms is mostly out of precaution. In our full query, which we describe later in this section, we use the search operator \verb|W/5| and \verb|NEAR/5| for Scopus and Web of Science, respectively, to pair each intervention term in Table \ref{tab:search_terms} with the wildcard term ``decision*''. In lieu of a mere \verb|AND| operator, these operators require the word ``decision'' and its derivatives to be within five words of the AI-intervention term. The objective of this pairing is to return articles that use AI to either make or inform some kind of decision. The criticality and sensitivity of that decision will be evaluated during later screening. The intervention search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
+
+Finally, we consider our outcome terms. Our research question focuses on the impact of AI-based decision-making on safety outcomes in sensitive industries. Thus, our outcome terms focus on safety, specifically, on risks to human health. We include general terms like ``incident,'' ``accident,'' and ``near miss,''  as well as more industry-specific terms, like ``misdiagnos*'' and ``operating experience,'' which cover medicine and power systems, respectively. To make this list extra comprehensive, and to ensure we capture any failures that led to official infractions, we included several regulation-specific terms too. This includes phrases like ``FDA recall*'' and ``OSHA citation.'' A complete list of outcome terms used in our querying are shown in Table \ref{tab:search_terms}. 
+
+\begin{table}[ht]
+\centering
+\caption{Search terms used to produce Cartesian-product-based queries}
+\label{tab:search_terms}
+\begin{tabular}{p{0.30\textwidth} p{0.30\textwidth} p{0.30\textwidth}}
+\hline
+\textbf{Population Terms} & \textbf{Intervention Terms} & \textbf{Outcome Terms} \\
+\hline
+nuclear & ``artificial intelligence'' & incident* \\
+radiation & AI & ``close call*'' \\
+aerospace & ``machine learning'' & accident* \\
+aviation & ML & ``near miss*'' \\
+aircraft & ``neural network*'' & injur* \\
+airport & ``language model*'' & failure* \\
+``autonomous driving'' & computer vision & ``adverse event*'' \\
+``autonomous vehicle*'' & automated & malfunction \\
+self-driving & ``deep learning'' & fatalit* \\
+automotive* & & misdiagnos* \\
+energy & & harm \\
+``power grid*'' & & ``operating experience*'' \\
+``electric grid*'' & & ``OSHA citation*'' \\
+chemical & & ``FDA recall*'' \\
+petroleum & & ``NHTSA investigation*'' \\
+``medical device*'' & & violation* \\
+``medical equipment'' & & ``enforcement action*'' \\
+``diagnostic device*'' & & \\
+``imaging device*'' & & \\
+``surgical robot*'' & & \\
+``implantable device*'' & & \\
+drug* & & \\
+``patient safety'' & & \\
+pharmaceutical* & & \\
+radiotherapy & & \\
+``clinical trial*'' & & \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Asterisks (*) indicate truncation wildcards.
+\end{tablenotes}
+\end{table}
+
+\subsection{Search Process}
+The goal of our search process was to search two databases, Scopus and Web of Science, for all articles containing our four primary search terms in their title, abstract, or keywords. We imposed two additional requirements, that the papers be published after and not including 2014 and that the papers either be journal articles or conference papers from the top five AI conferences as listed by Google Scholar Metrics \cite{google_scholar_metrics}. This conference paper subset includes \textit{Neural Information Processing Systems}(NEURIPS), the \textit{International Conference on Learning Representations} (ICLR), the \textit{International Conference on Machine Learning} (ICML), the \textit{AAAI Conference of Artificial Intelligence} (AAAI), and the \textit{International Joint Conference on Artificial Intelligence} (IJCAI). We created this subset using the combination of both a paper type of \texttt{conference proceedings} and that conference proceeding containing one of the five acronyms listed above. In the case that this search catches an additional conference, that paper will be excluded during the abstract screening phase. 
+
+We combined our search terms into the following query search:
+\begin{quote}
+\texttt{TITLE-ABS-KEY ( \{population term\} ) AND TITLE-ABS-KEY ( \{intervention AI term\} within five words of \{decision*\}) AND TITLE-ABS-KEY ( \{outcome term\} ) AND PUBLICATION YEAR AFTER 2014 AND (DOCUMENT TYPE(article) OR (DOCUMENT TYPE(conference proceeding) AND \{conference subset\}))}
+\end{quote}
+
+Note: the query format above matches Scopus syntax most closely, but is intended for demonstrative purposes only. We show our exact query structure in the \textcolor{red}{code repository}. The final set of articles considered for this analysis was pulled from both Scopus and Web of Science on December 15, 2025.
+
+
+As shown in Figure \ref{fig:workflow}, after searching the full set of queries in both Scopus and Web of Science, we merging the search results into a single database and dropping duplicates based on DOI, we generated a singular bibliographic file in the \verb|.bib| structure. We then loaded the bibliographic information into Zotero. Zotero flagged two articles as retracted, Mohanta et al. and Ponraj et al. We removed these records in the pre-screening phase along with all duplicate records. This yielded a total of 631 records for screening.
+
+\subsection{Screening Process}
+% Discuss inclusion and exclusion criteria
+% Show flowchart of where papers got cut? or does this go in results?
+Following the PRISMA methodology, we perform the screening process in two phases--1) title and abstract screening, and 2) full-text review. 
+
+\begin{table}[htbp]
+\centering
+\caption{Inclusion and exclusion criteria formatted with multirow alignment.}
+\label{tab:multirow_criteria}
+\renewcommand{\arraystretch}{1.3} % Adds breathing room between rows
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+\textbf{Category} & \textbf{Inclusion Criteria} & \textbf{Exclusion Criteria} \\ \midrule
+
+\multirow{4}{*}{\textbf{Study}} &  Peer-reviewed journal articles &  Non-systematic literature reviews  \\
+&  Select conference papers (NEURIPS, ICLR, ICML, AAAI, IJCAI) &  Retracted articles \\ & & Ethics-focused analyses \\
+ \midrule
+
+\multirow{4}{*}{\textbf{Population}} &  Sensitive tech (nuclear, transport, aerospace, energy) &  Finance \\
+&  Medical studies (equipment, devices, or drugs) &  Healthcare systems (not tech-specific) \\
+& &  HR applications \\
+& &  Cybersecurity \\ \midrule
+
+\multirow{3}{*}{\textbf{Intervention}} &  AI/ML-informed decision-making &  If/else logic only \\
+&  Human-in or out-of-the-loop &  Non-computer algorithmic DM \\
+& &  Linear regression models \\ \midrule
+
+\multirow{2}{*}{\textbf{Comparator}} &  Deterministic codes/methods & \multirow{2}{*}{ ML-ML comparisons} \\
+&  Anything that is not ML & \\ \midrule
+
+\multirow{3}{*}{\textbf{Outcome}} &  Incidents, accidents, and failures &  Non-threat to human health risks \\
+&  Threat to human health/safety &  Financial risks \\
+&  Regulatory compliance violations &  Cyber risks (non-human health) \\ \midrule
+
+\multirow{2}{*}{\textbf{Other}} & \multirow{2}{*}{N/A} &  Published before 2015 \\
+& &  Not written in English \\ \bottomrule
+
+\end{tabularx}
+\end{table}
+
+
+
+\subsection{Data Extraction}
+% List data pulled from final subset of articles
+
+\section{Results}
+\subsection{Querying Results}
+
+\begin{figure}
+\centering
+\begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{figs/bar_scopus.png}
+    \caption{Scopus}
+    \label{fig:bar_scopus}
+\end{subfigure}
+\hfill
+\begin{subfigure}{\textwidth}
+    \includegraphics[width=\textwidth]{figs/bar_wos.png}
+    \caption{Web of Science}
+    \label{fig:bar_wos}
+\end{subfigure}
+       
+\caption{Sum of articles returned by each database when a given search term was included in all queries.}
+\label{fig:bar}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{subfigure}{0.8\textwidth}
+    \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_scopus.png}
+    \caption{Scopus}
+    \label{fig:tree_scopus}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.8\textwidth}
+    \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_wos.png}
+    \caption{Web of Science}
+    \label{fig:tree_wos}
+\end{subfigure}
+       
+\caption{Tree diagrams showing the sum of articles returned by each database for all query combinations that yielded $> 4$ results. Size of the box corresponds to the number of articles (also annotated) and color corresponds to outcome term.}
+\label{fig:tree}
+\end{figure}
+
+\bibliographystyle{elsarticle-num} 
+\bibliography{bibliography}
+\end{document}
+
+\endinput
+%%
+%% End of file `elsarticle-template-harv.tex'.
+
+
