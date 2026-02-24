@@ -51,6 +51,22 @@
 %% \usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{makecell}
+
+\usepackage{enumitem} % Allows for tighter bullet lists
+
+% Custom column type to center the first column while keeping it fixed width
+\newcolumntype{C}{>{\centering\arraybackslash}p{2.5cm}}
+
+% Custom command to make itemized lists look good inside tables
+\newlist{tablelist}{itemize}{1}
+\setlist[tablelist]{
+    label={},
+    nosep,                 % Removes vertical space between items
+    leftmargin=*,          % Aligns bullets to the left
+    before=\vspace{0pt},   % Important: aligns the top of the list with the row
+    after=\vspace{-\baselineskip} % Prevents extra space at the bottom
+}
 
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
@@ -177,7 +193,8 @@ Finally, we consider our outcome terms. Our research question focuses on the imp
 \centering
 \caption{Search terms used to produce Cartesian-product-based queries}
 \label{tab:search_terms}
-\begin{tabular}{p{0.30\textwidth} p{0.30\textwidth} p{0.30\textwidth}}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{p{0.3\textwidth} p{0.29\textwidth} p{0.32\textwidth}}
 \hline
 \textbf{Population Terms} & \textbf{Intervention Terms} & \textbf{Outcome Terms} \\
 \hline
@@ -226,7 +243,7 @@ We combined our search terms into the following query search:
 Note: the query format above matches Scopus syntax most closely, but is intended for demonstrative purposes only. We show our exact query structure in the \textcolor{red}{code repository}. The final set of articles considered for this analysis was pulled from both Scopus and Web of Science on December 15, 2025.
 
 
-As shown in Figure \ref{fig:workflow}, after searching the full set of queries in both Scopus and Web of Science, merging the search results into a single database and dropping duplicates based on DOI, we generated a singular bibliographic file in the \verb|.bib| structure. We then loaded the bibliographic information into Zotero. Zotero flagged two articles as retracted, Mohanta et al. and Ponraj et al. We removed these records in the pre-screening phase along with one manually identified duplicate record. This yielded a total of 630 records for screening. The 
+As shown in Figure \ref{fig:workflow}, after searching the full set of queries in both Scopus and Web of Science, merging the search results into a single database and dropping duplicates based on DOI, we generated a singular bibliographic file in the \verb|.bib| structure. We then loaded the bibliographic information into Zotero. Zotero flagged two articles as retracted, Mohanta et al. and Ponraj et al. We removed these records in the pre-screening phase along with one manually identified duplicate record. This yielded a total of 630 records for screening. Figure \ref{fig:prisma_flow} shows the number of articles retained at each phase of the filtration process.
 
 \begin{figure}[ht!]
   \centering
@@ -238,43 +255,83 @@ As shown in Figure \ref{fig:workflow}, after searching the full set of queries i
 \subsection{Screening Process}
 % Discuss inclusion and exclusion criteria
 % Show flowchart of where papers got cut? or does this go in results?
-Following the PRISMA methodology, we perform the screening process in two phases--1) title and abstract screening, and 2) full-text review. 
+Following the PRISMA methodology, we perform the screening process in two phases-- title and abstract screening, and full-text review. 
 
-\begin{table}[htbp]
-\centering
-\caption{Inclusion and exclusion criteria formatted with multirow alignment.}
-\label{tab:multirow_criteria}
-\renewcommand{\arraystretch}{1.3} % Adds breathing room between rows
-\begin{tabularx}{\textwidth}{lXX}
-\toprule
-\textbf{Category} & \textbf{Inclusion Criteria} & \textbf{Exclusion Criteria} \\ \midrule
 
-\multirow{4}{*}{\textbf{Study}} &  Peer-reviewed journal articles &  Non-systematic literature reviews  \\
-&  Select conference papers (NEURIPS, ICLR, ICML, AAAI, IJCAI) &  Retracted articles \\ & & Ethics-focused analyses \\
- \midrule
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.5} % Adds a bit of breathing room
+\begin{tabularx}{\textwidth}{CXX}
+\hline
+\textbf{} & \centering \textbf{Inclusion} & \centering\arraybackslash \textbf{Exclusion} \\ \hline
 
-\multirow{4}{*}{\textbf{Population}} &  Sensitive tech (nuclear, transport, aerospace, energy) &  Finance \\
-&  Medical studies (equipment, devices, or drugs) &  Healthcare systems (not tech-specific) \\
-& &  HR applications \\
-& &  Cybersecurity \\ \midrule
+% Row 2
+\textbf{Population} & 
+\begin{tablelist}
+    \item Sensitive technology (e.g., nuclear, aviation)
+    \item Medical studies, emphasizing equipment, devices, and drugs
+    \item 
+\end{tablelist} & 
+\begin{tablelist}
+    \item Finance
+    \item Human resources (even if health related)
+    \item Cybersecurity
+\end{tablelist} \\ \hline
 
-\multirow{3}{*}{\textbf{Intervention}} &  AI/ML-informed decision-making &  If/else logic only \\
-&  Human-in or out-of-the-loop &  Non-computer algorithmic DM \\
-& &  Linear regression models \\ \midrule
+% Row 3
+\textbf{Intervention} & 
+\begin{tablelist}
+    \item AI-informed decision-making (with any degree of autonomy)
+    \item 
+\end{tablelist} & 
+\begin{tablelist}
+    \item Simple flow chart or IF/ELSE logic
+    \item Linear regression models
+\end{tablelist} \\ \hline
 
-\multirow{2}{*}{\textbf{Comparator}} &  Deterministic codes/methods & \multirow{2}{*}{ ML-ML comparisons} \\
-&  Anything that is not ML & \\ \midrule
+% Row 4
+\textbf{Comparison} & 
+\begin{tablelist}
+    \item Human evaluation
+    \item Deterministic method
+\end{tablelist} & 
+\begin{tablelist}
+    \item ML-ML comparison (with exceptions)
+    \item 
+\end{tablelist} \\ \hline
 
-\multirow{3}{*}{\textbf{Outcome}} &  Incidents, accidents, and failures &  Non-threat to human health risks \\
-&  Threat to human health/safety &  Financial risks \\
-&  Regulatory compliance violations &  Cyber risks (non-human health) \\ \midrule
+% Row 5
+\textbf{Outcome} & 
+\begin{tablelist}
+    \item Incidents, accidents, and failures
+    \item Threat to human health
+    \item Regulatory compliance violations
+\end{tablelist} & 
+\begin{tablelist}
+    \item Non-threat to human health risks
+    \item Financial risks or economic losses
+    \item Cyber or other security risks
+    \item 
+\end{tablelist} \\ \hline
 
-\multirow{2}{*}{\textbf{Other}} & \multirow{2}{*}{N/A} &  Published before 2015 \\
-& &  Not written in English \\ \bottomrule
+% Row 6
+\textbf{Other} & 
+\begin{tablelist}
+    \item Peer-reviewed journal articles
+    \item Select conference papers
+    \item 
+\end{tablelist} & 
+\begin{tablelist}
+    \item Non-systematic review papers
+    \item Retracted articles
+    \item Ethics without application
+    \item Not written in English
+    \item Published before 2015
+    \item 
+\end{tablelist} \\ \hline
 
 \end{tabularx}
+\caption{Inclusion and exclusion criteria used for abstract screening phase.}
 \end{table}
-
 
 
 \subsection{Data Extraction}
