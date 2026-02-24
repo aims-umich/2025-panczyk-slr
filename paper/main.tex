@@ -1,4 +1,3 @@
-%% 
 %% Copyright 2007-2025 Elsevier Ltd
 %% 
 %% This file is part of the 'Elsarticle Bundle'.
@@ -51,6 +50,7 @@
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
@@ -88,7 +88,7 @@
 %%            country={}}
 %% \fntext[label3]{}
 
-\title{Safety First-- The Impact of AI on High-Stakes Decision-Making and How We Regulate It} %% Article title
+\title{Safety First --- A Systematic Literature Review on the Impact of AI on High-Stakes Decision-Making} %% Article title
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
@@ -137,24 +137,22 @@ Abstract text.
 %% Keywords
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-
-%% PACS codes here, in the form: \PACS code \sep code
-
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
+AI-Informed Decision-Making \sep Sensitive Industries \sep Systematic Literature Review
 
 \end{keyword}
 
 \end{frontmatter}
 
-%% Add \usepackage{lineno} before \begin{document} and uncomment 
-%% following line to enable line numbers
-%% \linenumbers
-
 \section{Introduction}
 
+The goal of this review is to explore safety-critical applications that have attempted or considered introducing artificial intelligence (AI) to their domains for decision-making purposes. We specifically exclude the use of AI for strict informative purposes to limit our scope to scenarios in which \textit{human lives may be at risk}. While applications for the modern surge of AI-based technologies abound, we sought to identify the subset requiring the strictest scrutiny via its potential to cause the most harm. Our approach to identifying this subset was, as the title suggests, systematic. We cast a wide net in our search, then filter with a melange of criteria, which we outline in Section \ref{sec:methods}. After distilling our initial pool of 1,135 papers into a small bucket of 72 reports, we have identified critical features of both AI technology and implementation practices that span domain boundaries. As such,
+while this paper was written by engineers, we anticipate its findings to interest regulators, practictioners, and participants of a variety of industries, alike. 
+
+
 \section{Methods}
-This analysis follows the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) methodology and therefore collects documents in a systematic and automated way. To do so, we start by defining the research questions this review seeks to answer. These include, the titular: \textit{What is the impact of AI on high-stakes decision making?} as well as: \textit{How are safety outcomes perturbed by AI-based decision-making in sensitive industries?} and \textit{What are the safety risks of using AI to make decisions in sensitive industries?} While there are obvious benefits and harms to using AI-based technologies, that comparison alone is far too high-level to inspire targeted change within the AI technologies themselves. The nature of the questions guiding this review probe at what unique features and outcomes set AI-based decision-making mechanisms apart from traditional methods. Understanding these phenomena in detail would allow useful insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
+\label{sec:methods}
+
+This analysis follows the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) methodology and therefore collects documents in a systematic and automated way. To do so, we start by defining the research questions this review seeks to answer. These include, the titular: \textit{What is the impact of AI on high-stakes decision-making?} as well as: \textit{How are safety outcomes perturbed by AI-based decision-making in sensitive industries?} and \textit{What are the safety risks of using AI to make decisions in sensitive industries?} While there are obvious benefits and harms to using AI-based technologies, that comparison alone is far too high-level to inspire targeted change within the AI technologies themselves. The nature of the questions guiding this review probe at what unique features and outcomes set AI-based decision-making mechanisms apart from traditional methods. Understanding these phenomena in detail would allow useful insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
 
 \subsection{Query Term Compilation}
 After determining our research questions, we define a set of key terms using the Population, Intervention, Comparison, Outcome (PICO) methodology, and use the Cartesian product of these terms (one from each category) to determine relevant search queries. We use APIs for each of two databases, Scopus and Web of Science, to make these queries via a Python workflow, storing all resultant papers. Then, we remove duplicates based on digital object identifier (DOI), and merge the results of both database searches into a combined bibliography. Figure \ref{fig:workflow} shows visual representation of this workflow. 
@@ -169,7 +167,7 @@ After determining our research questions, we define a set of key terms using the
 Critical to actually making these queries is defining the lists of keywords that comprise them. We start by defining our population terms.  
 
 
-We can organize the population terms we decided to include in this search in five major groups: nuclear and radiation, aviation, autonomous driving, energy and industrial processes, and medical technology and pharmaceuticals. These groups were selected for their highly sensitive nature, their propensity to use AI, and their regulation. This includes oversight by the U.S. Nuclear Regulatory Commission (NRC), the Federal Aviation Administration (FAA), the National Highway Traffic Safety Administration (NHTSA), the Occupational Safety and Health Administration (OHSA), and the Food and Drug Administration (FDA). Obviously, there are a vast number of industries that might be considered ``sensitive'' and are federally regulated in the United States, however, due to time and space limitations, we prioritize those listed above in our analysis. Specifically, our goal was to avoid cases that consider risks not related to human health and safety (financial risks); we will discuss this further when we consider our exclusion criteria. The population search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
+We can organize the population terms we decided to include in this search in five major groups: nuclear and radiation, aviation, autonomous driving, energy and industrial processes, and medical technology and pharmaceuticals. These groups were selected for their highly sensitive nature, their propensity to use AI, and their regulatory authorities. This includes oversight by the U.S. Nuclear Regulatory Commission (NRC), the Federal Aviation Administration (FAA), the National Highway Traffic Safety Administration (NHTSA), the Occupational Health and Safety Administration (OSHA), and the Food and Drug Administration (FDA). Obviously, there are a vast number of industries that might be considered ``sensitive'' and are federally regulated in the United States, however, due to time and space limitations, we prioritize those listed above in our analysis. Specifically, our goal was to avoid cases that consider risks \textit{not} related to human health and safety (financial risks); we will discuss this further when we consider our exclusion criteria. The population search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
 
 After determining our population terms, we then must consider our intervention terms. We determined this group by compiling a list of AI-related terms that would likely appear in any AI-based decision-making model. This includes words and phrases like ``machine learning,'' ``neural networks,'' and ``language models.'' While this set surely does not contain every possible AI-related term, its goal is to target the major ones. We presume that almost any paper using AI will use the term ``AI'' itself, so the goal of additional terms is mostly out of precaution. In our full query, which we describe later in this section, we use the search operator \verb|W/5| and \verb|NEAR/5| for Scopus and Web of Science, respectively, to pair each intervention term in Table \ref{tab:search_terms} with the wildcard term ``decision*''. In lieu of a mere \verb|AND| operator, these operators require the word ``decision'' and its derivatives to be within five words of the AI-intervention term. The objective of this pairing is to return articles that use AI to either make or inform some kind of decision. The criticality and sensitivity of that decision will be evaluated during later screening. The intervention search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
 
@@ -228,7 +226,14 @@ We combined our search terms into the following query search:
 Note: the query format above matches Scopus syntax most closely, but is intended for demonstrative purposes only. We show our exact query structure in the \textcolor{red}{code repository}. The final set of articles considered for this analysis was pulled from both Scopus and Web of Science on December 15, 2025.
 
 
-As shown in Figure \ref{fig:workflow}, after searching the full set of queries in both Scopus and Web of Science, we merging the search results into a single database and dropping duplicates based on DOI, we generated a singular bibliographic file in the \verb|.bib| structure. We then loaded the bibliographic information into Zotero. Zotero flagged two articles as retracted, Mohanta et al. and Ponraj et al. We removed these records in the pre-screening phase along with all duplicate records. This yielded a total of 631 records for screening.
+As shown in Figure \ref{fig:workflow}, after searching the full set of queries in both Scopus and Web of Science, merging the search results into a single database and dropping duplicates based on DOI, we generated a singular bibliographic file in the \verb|.bib| structure. We then loaded the bibliographic information into Zotero. Zotero flagged two articles as retracted, Mohanta et al. and Ponraj et al. We removed these records in the pre-screening phase along with one manually identified duplicate record. This yielded a total of 630 records for screening. The 
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=\textwidth]{figs/prisma_flow.pdf} 
+  \caption{PRISMA flow diagram.}
+  \label{fig:prisma_flow}
+\end{figure}
 
 \subsection{Screening Process}
 % Discuss inclusion and exclusion criteria
