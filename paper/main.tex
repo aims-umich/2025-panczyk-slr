@@ -194,42 +194,7 @@ Finally, we consider our outcome terms. Our research question focuses on the imp
 \caption{Search terms used to produce Cartesian-product-based queries}
 \label{tab:search_terms}
 \renewcommand{\arraystretch}{1.25}
-\begin{tabular}{p{0.3\textwidth} p{0.29\textwidth} p{0.32\textwidth}}
-\hline
-\textbf{Population Terms} & \textbf{Intervention Terms} & \textbf{Outcome Terms} \\
-\hline
-nuclear & ``artificial intelligence'' & incident* \\
-radiation & AI & ``close call*'' \\
-aerospace & ``machine learning'' & accident* \\
-aviation & ML & ``near miss*'' \\
-aircraft & ``neural network*'' & injur* \\
-airport & ``language model*'' & failure* \\
-``autonomous driving'' & computer vision & ``adverse event*'' \\
-``autonomous vehicle*'' & automated & malfunction \\
-self-driving & ``deep learning'' & fatalit* \\
-automotive* & & misdiagnos* \\
-energy & & harm \\
-``power grid*'' & & ``operating experience*'' \\
-``electric grid*'' & & ``OSHA citation*'' \\
-chemical & & ``FDA recall*'' \\
-petroleum & & ``NHTSA investigation*'' \\
-``medical device*'' & & violation* \\
-``medical equipment'' & & ``enforcement action*'' \\
-``diagnostic device*'' & & \\
-``imaging device*'' & & \\
-``surgical robot*'' & & \\
-``implantable device*'' & & \\
-drug* & & \\
-``patient safety'' & & \\
-pharmaceutical* & & \\
-radiotherapy & & \\
-``clinical trial*'' & & \\
-\hline
-\end{tabular}
-\begin{tablenotes}
-\small
-\item Note: Asterisks (*) indicate truncation wildcards.
-\end{tablenotes}
+\input{tables/search_terms.tex}
 \end{table}
 
 \subsection{Search Process}
@@ -255,84 +220,22 @@ As shown in Figure \ref{fig:workflow}, after searching the full set of queries i
 \subsection{Screening Process}
 % Discuss inclusion and exclusion criteria
 % Show flowchart of where papers got cut? or does this go in results?
-Following the PRISMA methodology, we perform the screening process in two phases-- title and abstract screening, and full-text review. 
+Following the PRISMA methodology, we perform the screening process in two phases-- title and abstract screening, and full-text review. During the abstract screening, we followed the inclusion/exclusion criteria shown in Table \ref{tab:inclusion_exclusion}, keeping questionable articles conservatively based on what we read in the titles and abstracts \textit{only}. The purpose of this phase is to quickly remove all articles that absolutely do not meet our criteria, while keeping any that may. During the abstract screening, this mainly involved removing articles with an emphasis on outcomes that were not threats to human health or safety. We excluded many articles during this phase because they fell under the category of ``predictive maintenance.'' While predicitive maintenance undoubtedly has value in a variet of industries, the goal of these types of studies almost always focuses on reducing costs associated with what would otherwise be regularly scheduled maintenance. Even in a seemingly safety-critical scenario-- using AI to predict equipment failures in the intensive care unit (ICU), predictive maintenance only stands to improve the status quo of this system so long as it does not encourage \textit{less} frequent maintenance. In these types of systems, there exists a conservative measure to ensure failures do not occur at a higher rate, which is to follow the maintenance schedule with the shortest intervals between checks, whether that be from an AI system or a traditional maintenance schedule. Because the safety-oriented solution in maintenance scenarios has a clear way to avoid harms caused by AI, and is fundamentally motivated as a cost-saving technique, we excluded predictive maintenance papers in our study unless they presented a clear safety-critical aspect that could not be mitigated by status quo processes. Likewise, we excluded all papers that sought to strictly reduce their system costs with AI or enhance their system security in a way that did not impact human health or safety. Our most basic heuristic: \textit{Does this system have the potential to directly harm human lives?} was our main filtration system, however the additional details provided in Table \ref{tab:inclusion_exclusion} help provide more complete picture. 
+
+We also observed some exclusion criteria as to what constituted ``AI.'' Because we sought to consider regulatory approaches to AI in this analysis, we drew the line at pure linear regression based models and IF/ELSE-type logic models, since these algorithms are already widely accepted and regulated. Finally, we excluded any reviews that were non-systematic (this ended up including all review papers), any articles that were retracted, any ethics-based papers without a clear application to the AI technology or use of AI technology in their target domain, and any papers not written in English. To assist with our screening process, we used Covidence, a website designed for systematic reviews. We did not track reasons for exclusion during the abstract screening phase. As shown in Figure \ref{fig:prisma_flow}, during the abstract screening, we excluded 479 articles, yielding 151 articles for the full-text review process.
 
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.5} % Adds a bit of breathing room
-\begin{tabularx}{\textwidth}{CXX}
-\hline
-\textbf{} & \centering \textbf{Inclusion} & \centering\arraybackslash \textbf{Exclusion} \\ \hline
-
-% Row 2
-\textbf{Population} & 
-\begin{tablelist}
-    \item Sensitive technology (e.g., nuclear, aviation)
-    \item Medical studies, emphasizing equipment, devices, and drugs
-    \item 
-\end{tablelist} & 
-\begin{tablelist}
-    \item Finance
-    \item Human resources (even if health related)
-    \item Cybersecurity
-\end{tablelist} \\ \hline
-
-% Row 3
-\textbf{Intervention} & 
-\begin{tablelist}
-    \item AI-informed decision-making (with any degree of autonomy)
-    \item 
-\end{tablelist} & 
-\begin{tablelist}
-    \item Simple flow chart or IF/ELSE logic
-    \item Linear regression models
-\end{tablelist} \\ \hline
-
-% Row 4
-\textbf{Comparison} & 
-\begin{tablelist}
-    \item Human evaluation
-    \item Deterministic method
-\end{tablelist} & 
-\begin{tablelist}
-    \item ML-ML comparison (with exceptions)
-    \item 
-\end{tablelist} \\ \hline
-
-% Row 5
-\textbf{Outcome} & 
-\begin{tablelist}
-    \item Incidents, accidents, and failures
-    \item Threat to human health
-    \item Regulatory compliance violations
-\end{tablelist} & 
-\begin{tablelist}
-    \item Non-threat to human health risks
-    \item Financial risks or economic losses
-    \item Cyber or other security risks
-    \item 
-\end{tablelist} \\ \hline
-
-% Row 6
-\textbf{Other} & 
-\begin{tablelist}
-    \item Peer-reviewed journal articles
-    \item Select conference papers
-    \item 
-\end{tablelist} & 
-\begin{tablelist}
-    \item Non-systematic review papers
-    \item Retracted articles
-    \item Ethics without application
-    \item Not written in English
-    \item Published before 2015
-    \item 
-\end{tablelist} \\ \hline
-
-\end{tabularx}
+\input{tables/in_exclusion.tex}
 \caption{Inclusion and exclusion criteria used for abstract screening phase.}
+\label{tab:inclusion_exclusion}
 \end{table}
 
+\subsection{Full Text Screening}
+After the title and abstract screening, we proceeded to the full text screening stage. This phase, as its name suggests, involves reading the full text of each paper and applying the same inclusion/exclusion criteria shown in Table \ref{tab:inclusion_exclusion}. The articles that made it past the abstract phase showed promise for meeting all of our inclusion criteria, but this must be confirmed after fully analyzing each text. During the full-text screening phase, we track the exclusion reason for each article. The number of articles and their specific exclusion criteria are shown in Figure \ref{fig:prisma_flow}. 
+
+We did include some additional exclusion reasons during this phase to increase our specificity. One example was the note: ``Too field-specific.'' This was only a handful of papers, but consisted of studies that failed to discuss the AI technology in sufficient detail or conversely, failed to discuss the AI application in specific detail. Similarly, we did not include methods-only papers. One paper we reviewed showed clear abuse of generative AI in its creation with an apparent lack of editing or attribution, so it was excluded. Note, that we were able to access the abstracts of some articles in English, but not the full text, so two studies were excluded this way as well. Overall, we attributed the majority of exclusions to a lack of decision-making framework in the actual application of the AI. While we allowed for a variety of decision-making types (autonomous, augmented human-decision-making, human-in-the-loop, and even static benchmark setting), if the AI outputs were not applied for \textit{any} type of decision-making, we excluded it. The goal of this was, again, to highlight the most safety critical scenarios that involve AI. If no AI-based decision-making takes place, it becomes challenging to attribute any of the outcome towards the AI.
 
 \subsection{Data Extraction}
 % List data pulled from final subset of articles
