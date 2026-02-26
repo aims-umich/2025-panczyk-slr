@@ -233,3 +233,4 @@ __marimo__/
 *.fdb_latexmk
 *.bst
 *.spl
+*.DS_Store

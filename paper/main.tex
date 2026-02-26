@@ -247,7 +247,7 @@ We did include some additional exclusion reasons during this phase to increase o
 % List data pulled from final subset of articles
 The final phase of our review methodology is the data extraction from the final subset of 72 articles. For this phase, we re-read each article in the final subset while taking notes of important findings and tabulating data for a variety of fields. These included: industry type, industry subcategory, AI type, comparison type, inclusion of explainability and type, consideration of regulation and regulatory authority, decision-making type, data type, whether the system was deployed, output feature considered, safety outcome, and country of origin. We determined these categories largely based on intuition from previous phases.
 
-During the data extraction phase, we also conducted a light quality assessment, in line with PRISMA guidelines. Due to the inhomogeneous nature of the types of papers included in this analysis, a single, premade quality assessment template would allow sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article. Because this review considers a large portion of medical papers, we did evaluate each study for its consideration of bias, which is a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment for all other papers, which we believe is a reasonable assessment considering that all papers concern human health and safety and the way the AI views the differences between humans can therefore impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for limited dataset size. Most articles scored above XYZ range...
+During the data extraction phase, we also conducted a light quality assessment, in line with PRISMA guidelines. Due to the inhomogeneous nature of the types of papers included in this analysis, a single, premade quality assessment template would allow sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article. Because this review considers a large portion of medical papers, we did evaluate each study for its consideration of bias, which is a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment for all other papers, which we believe is a reasonable assessment considering that all papers concern human health and safety and the way the AI views the differences between humans can therefore impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for limited dataset size. Most articles scored above \textcolor{red}{STATISTICALLY SIGNIFICANT VALUE HERE}, so there were no major causes for concern regarding quality of the articles retrieved. 
 
 \section{Results}
 \subsection{Querying Results}
@@ -290,6 +290,20 @@ Likewise, Figures \ref{fig:bar} shows the sum of articles returned by each Scopu
 
 \subsection{Data Extraction Results}
 The database used to tabulate our results can be accessed \href{https://www.notion.so/2ff683956c2580a9b1cdcf750b987f70?v=0b1df89639f442c29749d75c23802f13&source=copy_link}{here.} \textcolor{red}{Additionally, we provide a database in Supplemental Materials.}
+
+After extracting the information mentioned in \ref{sec:methods}, we created a variety of figures to portray key trends from the set of articles reviewed. This includes country of author institution, main AI type considered in the article, decision-making type, whether regulation or explainability was considered, and types of explainability methods considered. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{figs/ai_type.png}
+    \caption{Number of articles in final subset that considered each type of AI method. Non-specific means the article did not provide details about the model type.}
+    \label{fig:ai_type}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{figs/countries.png}
+    \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' denotes too many countries to list.}
+    \label{fig:country}
+\end{figure}
 
 \section{Discussion}
 
