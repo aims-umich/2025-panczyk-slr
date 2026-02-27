@@ -293,17 +293,48 @@ The database used to tabulate our results can be accessed \href{https://www.noti
 
 After extracting the information mentioned in \ref{sec:methods}, we created a variety of figures to portray key trends from the set of articles reviewed. This includes country of author institution, main AI type considered in the article, decision-making type, whether regulation or explainability was considered, and types of explainability methods considered. 
 
-\begin{figure}
+% AI Method
+Figure \ref{fig:ai_type} shows the number of articles that employed each type of AI in the final subset of articles. Note that many articles employed more than one type of AI, so Figure \ref{fig:ai_type} shows more counts than total articles. Similarly, some articles focused on ethical or regulatory frameworks and therefore considered AI more generally. We denote the AI type in these articles as ``Non-Specific.''
+
+\begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figs/ai_type.png}
     \caption{Number of articles in final subset that considered each type of AI method. Non-specific means the article did not provide details about the model type.}
     \label{fig:ai_type}
 \end{figure}
+
+% Decision Making Method
+Figure \ref{fig:dm_type} shows the decision-making type evaluated by the articles in the final subset. ``Not system integrated'' refers to articles that use AI to set some kind of threshold or benchmark value for decision-making, but do not actually integrate a dynamic version of the AI itself into the system under consideration. Additionally, we distinguish ``augmented human decision-making'' and ``human in the loop'' as systems that both require human action to make decisions, but human in the loop leans more heavily on the AI system whereas augmented simply uses the AI results as an additional piece of information to make a decision with. Autonomous systems do not necessarily require human oversight to take action, though they may have it for intervention purposes. This type of system is most typical with autonomous vehicles. 
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{figs/dm_type.png}
+    \caption{Decision-making types observed in final article subset.}
+    \label{fig:dm_type}
+\end{figure}
+
+% Explanation Method
+Approximately 49\% of the articles in our final subset considered explanation methods in some capacity. Of those that did, Figure \ref{fig:explain_type} shows which explanation method they employed. In some instances, authors mentioned the importance of explainability, therefore considering it, but did not conduct any explainability analysis themselves. These articles were denoted a ``Non-Specific'' explainability type in Figure \ref{fig:explain_type}.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{figs/explain_type.png}
+    \caption{Explanation types observed in final article subset. ``Non-Specific'' indicates that explainability was considered but no method was applied.}
+    \label{fig:explain_type}
+\end{figure}
+
+% Country of Origin
+Figures \ref{fig:country} and \ref{fig:country_map} show the number of articles who have at least one contributing author from the countries shown. Of the final subset of articles, approximately 44\% considered regulatory oversight. This distribution of countries is therefore intended to show how the regulatory oversight bodies might be distributed and to highlight the complexity of defining AI regulatory frameworks that span international boundaries. 
 
 \begin{figure}
     \includegraphics[width=\textwidth]{figs/countries.png}
     \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' denotes too many countries to list.}
     \label{fig:country}
 \end{figure}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{figs/countries_map.png}
+    \caption{\textcolor{red}{ALTERNATIVE FIGURE!} Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' article is excluded from this figure, see attached database for details.}
+    \label{fig:country_map}
+\end{figure}
+
 
 \section{Discussion}
 
