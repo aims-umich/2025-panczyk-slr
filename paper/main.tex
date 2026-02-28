@@ -167,8 +167,7 @@ AI-Informed Decision-Making \sep Sensitive Industries \sep Systematic Literature
 
 \section{Introduction}
 
-The goal of this review is to explore safety-critical applications that have attempted or considered introducing artificial intelligence (AI) to their domains for decision-making purposes. We specifically exclude the use of AI for strict informative purposes to limit our scope to scenarios in which \textit{human lives may be at risk}. While applications for the modern surge of AI-based technologies abound, we sought to identify the subset requiring the strictest scrutiny via its potential to cause the most harm. Our approach to identifying this subset was, as the title suggests, systematic. We cast a wide net in our search, then filter with a melange of criteria, which we outline in Section \ref{sec:methods}. After distilling our initial pool of 1,135 papers into a small bucket of 72 reports, we have identified critical features of both AI technology and implementation practices that span domain boundaries. As such,
-while this paper was written by engineers, we anticipate its findings to interest regulators, practitioners, and participants of a variety of industries, alike. 
+The goal of this review is to explore safety-critical applications that have attempted or considered introducing artificial intelligence (AI) to their domains for decision-making purposes. We specifically exclude the use of AI for exploratory purposes to limit our scope to scenarios in which \textit{human lives may be at risk}. While applications for the modern surge of AI-based technologies abound, we sought to identify the subset requiring the strictest scrutiny via its potential to cause the most harm. Our approach to identifying this subset was, as the title suggests, systematic. We cast a wide net in our search, then filter with a series of criteria, which we outline in Section \ref{sec:methods}. After distilling our initial pool of 1,135 papers into a final subset of 72 reports, we have identified critical features of both AI technology and implementation practices that span domain boundaries. Throughout this review, we explore patterns across these industries that demonstrate common failure modes, barriers to successful implementation, and limiting factors to status quo improvement with these technologies. The papers in this review range from software design and technical evaluations to legal reviews and qualitative studies with users and experts from the various domains. As such, while this paper was written by engineers, we anticipate its findings to interest regulators, practitioners, and participants of a variety of industries, alike. 
 
 
 \section{Methods}
@@ -189,7 +188,7 @@ After determining our research questions, we define a set of key terms using the
 Critical to actually making these queries is defining the lists of keywords that comprise them. We start by defining our population terms.  
 
 
-We can organize the population terms we decided to include in this search in five major groups: nuclear and radiation, aviation, autonomous driving, energy and industrial processes, and medical technology and pharmaceuticals. These groups were selected for their highly sensitive nature, their propensity to use AI, and their regulatory authorities. This includes oversight by the U.S. Nuclear Regulatory Commission (NRC), the Federal Aviation Administration (FAA), the National Highway Traffic Safety Administration (NHTSA), the Occupational Health and Safety Administration (OSHA), and the Food and Drug Administration (FDA). Obviously, there are a vast number of industries that might be considered ``sensitive'' and are federally regulated in the United States, however, due to time and space limitations, we prioritize those listed above in our analysis. Specifically, our goal was to avoid cases that consider risks \textit{not} related to human health and safety (financial risks); we will discuss this further when we consider our exclusion criteria. The population search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
+We can organize the population terms we decided to include in this search in five major groups: nuclear and radiation, aviation, autonomous driving, energy and industrial processes, and medical technology and pharmaceuticals. These groups were selected for their highly sensitive nature, their propensity to use AI, and their regulatory authorities. This includes oversight by the U.S. Nuclear Regulatory Commission (NRC), the Federal Aviation Administration (FAA), the National Highway Traffic Safety Administration (NHTSA), the Occupational Health and Safety Administration (OSHA), and the Food and Drug Administration (FDA). Obviously, there are a vast number of industries that might be considered ``sensitive'' and are federally regulated in the United States, however, due to time and space limitations, we prioritize those listed above in our analysis. While we included three query terms that did explicitly include some of these regulatory bodies (see Table \ref{tab:search_terms}), we found our more general terms sufficient to cover international bodies. Specifically, our goal was to avoid cases that consider risks \textit{not} related to human health and safety (financial risks); we will discuss this further when we consider our exclusion criteria. The population search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
 
 After determining our population terms, we then must consider our intervention terms. We determined this group by compiling a list of AI-related terms that would likely appear in any AI-based decision-making model. This includes words and phrases like ``machine learning,'' ``neural networks,'' and ``language models.'' While this set surely does not contain every possible AI-related term, its goal is to target the major ones. We presume that almost any paper using AI will use the term ``AI'' itself, so the goal of additional terms is mostly out of precaution. In our full query, which we describe later in this section, we use the search operator \verb|W/5| and \verb|NEAR/5| for Scopus and Web of Science, respectively, to pair each intervention term in Table \ref{tab:search_terms} with the wildcard term ``decision*''. In lieu of a mere \verb|AND| operator, these operators require the word ``decision'' and its derivatives to be within five words of the AI-intervention term. The objective of this pairing is to return articles that use AI to either make or inform some kind of decision. The criticality and sensitivity of that decision will be evaluated during later screening. The intervention search terms we include in our querying are shown in Table \ref{tab:search_terms}. 
 
@@ -247,12 +246,20 @@ We did include some additional exclusion reasons during this phase to increase o
 % List data pulled from final subset of articles
 The final phase of our review methodology is the data extraction from the final subset of 72 articles. For this phase, we re-read each article in the final subset while taking notes of important findings and tabulating data for a variety of fields. These included: industry type, industry subcategory, AI type, comparison type, inclusion of explainability and type, consideration of regulation and regulatory authority, decision-making type, data type, whether the system was deployed, output feature considered, safety outcome, and country of origin. We determined these categories largely based on intuition from previous phases.
 
-During the data extraction phase, we also conducted a light quality assessment, in line with PRISMA guidelines. Due to the inhomogeneous nature of the types of papers included in this analysis, a single, premade quality assessment template would allow sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article. Because this review considers a large portion of medical papers, we did evaluate each study for its consideration of bias, which is a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment for all other papers, which we believe is a reasonable assessment considering that all papers concern human health and safety and the way the AI views the differences between humans can therefore impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for limited dataset size. Most articles scored above \textcolor{red}{STATISTICALLY SIGNIFICANT VALUE HERE}, so there were no major causes for concern regarding quality of the articles retrieved. 
+During the data extraction phase, we also conducted a light quality assessment, in line with PRISMA guidelines. Due to the inhomogeneous nature of the types of papers included in this analysis, a single, premade quality assessment template would allow sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article. Because this review considers a large portion of medical papers, we did evaluate each study for its consideration of bias, which is a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment for all other papers, which we believe is a reasonable assessment considering that all papers concern human health and safety and the way the AI views the differences between humans can therefore impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for limited dataset size. Most articles scored above 80 out of 100, so there were no major causes for concern regarding quality of the articles retrieved.
 
-\section{Results}
+\begin{figure}[ht!]
+    \includegraphics[width=\textwidth]{figs/qa_scores.png}
+    \caption{Quality assessment score distribution for articles in the final subset.}
+    \label{fig:qa_scores}
+\end{figure}
+
+
+\section{Quantitative Results}
 \subsection{Querying Results}
 Figures \ref{fig:bar_scopus} and \ref{fig:bar_wos} show quantitative querying results (the number of results per query combination) from Scopus and Web of Science as tree diagrams. 
-\begin{figure}
+
+\begin{figure}[ht!]
 \centering
 \begin{subfigure}{\textwidth}
     \includegraphics[width=\textwidth]{figs/bar_scopus.png}
@@ -270,7 +277,7 @@ Likewise, Figures \ref{fig:bar} shows the sum of articles returned by each Scopu
 \label{fig:bar}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht!]
 \centering
 \begin{subfigure}{0.8\textwidth}
     \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_scopus.png}
@@ -305,7 +312,7 @@ Figure \ref{fig:ai_type} shows the number of articles that employed each type of
 % Decision Making Method
 Figure \ref{fig:dm_type} shows the decision-making type evaluated by the articles in the final subset. ``Not system integrated'' refers to articles that use AI to set some kind of threshold or benchmark value for decision-making, but do not actually integrate a dynamic version of the AI itself into the system under consideration. Additionally, we distinguish ``augmented human decision-making'' and ``human in the loop'' as systems that both require human action to make decisions, but human in the loop leans more heavily on the AI system whereas augmented simply uses the AI results as an additional piece of information to make a decision with. Autonomous systems do not necessarily require human oversight to take action, though they may have it for intervention purposes. This type of system is most typical with autonomous vehicles. 
 
-\begin{figure}
+\begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figs/dm_type.png}
     \caption{Decision-making types observed in final article subset.}
     \label{fig:dm_type}
@@ -314,7 +321,7 @@ Figure \ref{fig:dm_type} shows the decision-making type evaluated by the article
 % Explanation Method
 Approximately 49\% of the articles in our final subset considered explanation methods in some capacity. Of those that did, Figure \ref{fig:explain_type} shows which explanation method they employed. In some instances, authors mentioned the importance of explainability, therefore considering it, but did not conduct any explainability analysis themselves. These articles were denoted a ``Non-Specific'' explainability type in Figure \ref{fig:explain_type}.
 
-\begin{figure}
+\begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figs/explain_type.png}
     \caption{Explanation types observed in final article subset. ``Non-Specific'' indicates that explainability was considered but no method was applied.}
     \label{fig:explain_type}
@@ -323,21 +330,56 @@ Approximately 49\% of the articles in our final subset considered explanation me
 % Country of Origin
 Figures \ref{fig:country} and \ref{fig:country_map} show the number of articles who have at least one contributing author from the countries shown. Of the final subset of articles, approximately 44\% considered regulatory oversight. This distribution of countries is therefore intended to show how the regulatory oversight bodies might be distributed and to highlight the complexity of defining AI regulatory frameworks that span international boundaries. 
 
-\begin{figure}
+\begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figs/countries.png}
     \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' denotes too many countries to list.}
     \label{fig:country}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figs/countries_map.png}
-    \caption{\textcolor{red}{ALTERNATIVE FIGURE!} Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' article is excluded from this figure, see attached database for details.}
+    \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' article is excluded from this figure, see attached database for details.}
     \label{fig:country_map}
 \end{figure}
 
+Finally, Table \ref{tab:industry_distribution} shows the distribution of articles by industry for the final subset.
 
-\section{Discussion}
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{lr}
+        \toprule
+        Industry & Percent of Final Subset of Articles \\
+        \midrule
+        Medical & 59.72\% \\
+        Autonomous Vehicles & 18.06\%\\
+        Nuclear & 9.72\% \\
+        Aviation & 8.33\% \\
+        Ethics & 2.78\% \\
+        Manufacturing & 1.39\% \\
+        \bottomrule
+    \end{tabular}
+    \caption{Final article subset distribution by industry. \textcolor{red}{Should I keep or remove the percent signs here?}}
+    \label{tab:industry_distribution}
+\end{table}
 
+\section{Qualitative Results and Discussion}
+The quantitative data provided in Section \ref{sec:quantitative_results} only  tell a fraction of the story. During the data extraction process, we took analysis notes and highlighted key findings from each study in the final subset. To best introduce these findings, we will first discuss each of the major industries identified in our study, highlighting key takeaways from the individual industries and some papers that brought especially unique points to our attention. Then, we will examine the similarities and differences between the various industries to determine what AI features and findings were universally beneficial, and which industries have specific challenges and demands.
+
+\subsection{Medical}
+Medical papers comprised nearly 60\% of our final subset of articles (see Table \ref{tab:industry_distribution}). As the largest industry in article numbers from both the query results and the final subset analysis, the medical industry has a lot to offer in terms of experience using AI systems and highly sensitive usage demands. 
+
+
+\subsection{Autonomous Vehicles}
+Autonomous vehicles comprised just over 18\% of our final subset of articles, our second-largest category. 
+
+\subsection{Nuclear}
+Nuclear systems comprised nearly 10\% of our final subset of articles. 
+
+\subsection{Aviation}
+Aviation comprised 8.33\% of our final subset of articles (see Table \ref{tab:industry_distribution}). Of the aviation papers, three were specifically aimed at predicting accidents and incidents, two during flight, and one during scheduling. The three remaining studies looked at automated airport security detection \cite{huegliEffectsFalseAlarms2025}, a Bayesian validation method for black-box systems that is currently employed by the FAA \cite{mossBayesianSafetyValidation2024}, and a roadmap for AI in flight advisory systems \cite{ramosNeedConceptualDesign2023}. 
+
+\subsection{Other Industries}
+Combined, the remaining categories of ... 
 
 \bibliographystyle{elsarticle-num} 
 \bibliography{bibliography}
