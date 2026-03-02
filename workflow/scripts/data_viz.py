@@ -38,7 +38,7 @@ def plot_countries(df, version='map'):
         merged = pd.merge(geo_df, country_counts)
         vmin = merged['Count'].min()
         vmax = merged['Count'].max()
-        cmap = 'plasma'
+        cmap = 'Purples'
         fig, ax = plt.subplots(figsize=(14,8))
         ax.axis('off')
         ax.set_title('Article Density by Country', fontdict={'fontsize': '20', 'fontweight': '3'})
@@ -146,7 +146,7 @@ def get_stats(df):
     print(f'XAI Considered: {xai_considered}, Total: {xai_considered + xai_not_considered}, Ratio: {xai_considered/(xai_considered + xai_not_considered)}')
     print(f'Reg Considered: {reg_considered}, Total: {reg_considered + reg_not_considered}, Ratio: {reg_considered/(reg_considered + reg_not_considered)}')
 
-    print(f'Medical: {medical/72}, Manufacturing: {manufac/72}, Ethics: {ethics/72}, Aviation: {aviation/72}, AVs: {avs/72}, Nuclear: {nuclear/72}')
+    print(f'Medical: {medical}, {medical/72}, Manufacturing: {manufac/72}, Ethics: {ethics/72}, Aviation: {aviation/72}, AVs: {avs/72}, Nuclear: {nuclear/72}')
     return
 
 
