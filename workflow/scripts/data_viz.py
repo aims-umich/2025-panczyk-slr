@@ -134,6 +134,14 @@ def get_stats(df):
     reg_considered = reg_counts.get('Yes', 0)
     reg_not_considered = reg_counts.get('No', 0)
 
+    print(df['Deployed?'].unique())
+    dep_counts = df['Deployed?'].value_counts()
+    dep = dep_counts.get('Yes', 0)
+    nodep = dep_counts.get('No', 0)
+    depna = dep_counts.get('Non Applicable', 0)
+
+    print(f'Deployed: {dep}, Not Deployed: {nodep}, NA: {depna}')
+
     print(df['Industry'].unique())
     total_papers = df['Industry'].value_counts()
     medical = total_papers.get('Medical', 0)
