@@ -25,6 +25,9 @@
     urlcolor=cyan,
     }
 \usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{placeins}
+\newcommand{\mathdefault}[1][]{}
 \usepackage{makecell}
 \usepackage{soul}
 
@@ -57,13 +60,15 @@
 \begin{figure}[ht!]
 \centering
 \begin{subfigure}{\textwidth}
-    \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_scopus.png}
+    \resizebox{\textwidth}{!}{\input{figs/large_tree_scopus.pgf}}
+    % \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_scopus.png}
     \caption{Scopus}
     \label{fig:tree_scopus}
 \end{subfigure}
 \hfill
 \begin{subfigure}{\textwidth}
-    \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_wos.png}
+    \resizebox{\textwidth}{!}{\input{figs/large_tree_wos.pgf}}
+    % \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_wos.png}
     \caption{Web of Science}
     \label{fig:tree_wos}
 \end{subfigure}
@@ -72,10 +77,5 @@
 \label{fig:tree}
 \end{figure}
 
-\begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/countries.png}
-    \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' denotes too many countries to list.}
-    \label{fig:country}
-\end{figure}
 
 \end{document}

@@ -3,6 +3,22 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import geopandas as gpd
 
+import matplotlib as mpl
+
+mpl.use("pgf")
+plt.rcParams['pgf.texsystem'] = 'pdflatex'
+plt.rcParams['text.usetex'] = True
+plt.rcParams['pgf.rcfonts'] = False
+plt.rcParams['figure.edgecolor'] = 'k'
+plt.rcParams['figure.facecolor'] = 'w'
+plt.rcParams['savefig.dpi'] = 600
+plt.rcParams['savefig.bbox'] = 'tight'
+plt.rcParams['font.family'] = "serif"
+plt.rcParams['axes.labelsize'] = 18
+plt.rcParams['xtick.labelsize'] = 16
+plt.rcParams['ytick.labelsize'] = 16
+
+
 # def plot_countries(df):
 #     fig, ax = plt.subplots(figsize=(12,8))
 #     country_series = (
@@ -15,7 +31,7 @@ import geopandas as gpd
 #     sns.countplot(y=country_series, order=country_series.value_counts().index, color="lavender", ax=ax)
 #     ax.set_xlabel('Number of Articles with at Least One Contribution from Country Listed')
 #     plt.tight_layout()
-#     plt.savefig('../../paper/figs/countries.png', dpi=300)
+#     plt.savefig('../../paper/figs/countries.pgf')
 #     return 
 
 def plot_countries(df, version='map'):
@@ -63,7 +79,7 @@ def plot_countries(df, version='map'):
         sns.countplot(y=country_series, order=country_series.value_counts().index, color="lavender", ax=ax)
         ax.set_xlabel('Number of Articles with at Least One Contribution from Country Listed')
         plt.tight_layout()
-        plt.savefig('../../paper/figs/countries.png', dpi=300)
+        plt.savefig('../../paper/figs/countries.pgf')
     return 
 
 def plot_ai_type(df):
@@ -79,7 +95,7 @@ def plot_ai_type(df):
     sns.countplot(y=ai_series, order=ai_series.value_counts().index, color="lightsteelblue", ax=ax)
     ax.set_xlabel('Number of Articles Employing AI Type')
     plt.tight_layout()
-    plt.savefig('../../paper/figs/ai_type.png', dpi=300)
+    plt.savefig('../../paper/figs/ai_type.pgf')
     return
 
 def plot_explainability(df):
@@ -95,7 +111,7 @@ def plot_explainability(df):
     sns.countplot(y=ai_series, order=ai_series.value_counts().index, color="lightgreen", ax=ax)
     ax.set_xlabel('Explainability Type and Frequency, If Considered')
     plt.tight_layout()
-    plt.savefig('../../paper/figs/explain_type.png', dpi=300)
+    plt.savefig('../../paper/figs/explain_type.pgf')
     return
 
 def plot_DM_type(df):
@@ -111,7 +127,7 @@ def plot_DM_type(df):
     sns.countplot(y=ai_series, order=ai_series.value_counts().index, color="lightcoral", ax=ax)
     ax.set_xlabel('Decision-Making Type Frequency')
     plt.tight_layout()
-    plt.savefig('../../paper/figs/dm_type.png', dpi=300)
+    plt.savefig('../../paper/figs/dm_type.pgf')
     return
 
 def plot_QA(df):
@@ -120,7 +136,7 @@ def plot_QA(df):
     ax.set_xlabel('Quality Score')
     ax.set_ylabel('Article Count')
     plt.tight_layout()
-    plt.savefig('../../paper/figs/qa_scores.png', dpi=300)
+    plt.savefig('../../paper/figs/qa_scores.pgf')
     return
 
 def get_stats(df):
@@ -163,9 +179,9 @@ if __name__=="__main__":
                  usecols=['AI Type - Intervention', 'Comparison', 'Country', 'Data Type', 'Date','Decision Making - (Intervention)', 'Deployed?', 'Feature Study?', 'Industry', 'Output Feature','Place', 'Published Year', 'QA Score', 'Regulatory Oversight Body (if any)', 'Safety Outcome', 'Study','Subcategory', 'Was explainability/interpretability considered?', 'XAI Type', 'Was regulation considered?']
                 )
 
-    # plot_countries(df)
+    plot_countries(df)
     # plot_ai_type(df)
     # plot_explainability(df)
     # plot_DM_type(df)
     # plot_QA(df)
-    get_stats(df)
+    # get_stats(df)

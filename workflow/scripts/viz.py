@@ -2,8 +2,23 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import squarify
+import matplotlib as mpl
 
-sns.set_theme(style="whitegrid")
+mpl.use("pgf")
+plt.rcParams['pgf.texsystem'] = 'pdflatex'
+plt.rcParams['text.usetex'] = True
+plt.rcParams['pgf.rcfonts'] = False
+plt.rcParams['figure.edgecolor'] = 'k'
+plt.rcParams['figure.facecolor'] = 'w'
+plt.rcParams['savefig.dpi'] = 600
+plt.rcParams['savefig.bbox'] = 'tight'
+plt.rcParams['font.family'] = "serif"
+plt.rcParams['axes.labelsize'] = 18
+plt.rcParams['axes.titlesize'] = 18
+plt.rcParams['xtick.labelsize'] = 16
+plt.rcParams['ytick.labelsize'] = 16
+
+# sns.set_theme(style="whitegrid")
 
 
 def vizualize(txtfile, save_as="barplot.png"):
@@ -53,7 +68,7 @@ def vizualize(txtfile, save_as="barplot.png"):
     ax.set_ylabel("Search Term")
     ax.set_xlabel("Count")
     fig.tight_layout()
-    fig.savefig(save_as, dpi=300)
+    plt.savefig(save_as)
     return
 
 
@@ -90,13 +105,13 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
             label=labels,
             alpha=0.8,
             color=colors,
-            text_kwargs={"fontsize": 8, "weight": "bold"},
+            text_kwargs={"fontsize": 12, "weight": "bold"},
             pad=False,
             ec="gray",
         )
-        plt.title(f"Search Results by Term Combinations with > 4 Papers", fontsize=16)
+        plt.title(f"Search Results by Term Combinations with Greater Than Four Papers", fontsize=16)
         plt.tight_layout()
-        plt.savefig(save_as, dpi=300, bbox_inches="tight")
+        plt.savefig(save_as, bbox_inches="tight")
     else:
         squarify.plot(
             sizes=plot_df["count"],
@@ -108,16 +123,30 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
         )
         plt.title(f"Search Results by Term Combinations with (0,4] Papers", fontsize=16)
         plt.tight_layout()
-        plt.savefig(save_as, dpi=300, bbox_inches="tight")
+        plt.savefig(save_as, bbox_inches="tight")
 
 
 if __name__ == "__main__":
     # loop over input and output files for first scopus, then web of science
+    # for metrics_file, small_tree, large_tree, bar_plot in zip(
+    #     snakemake.input.metrics,
+    #     snakemake.output.small_tree,
+    #     snakemake.output.large_tree,
+    #     snakemake.output.bar_plot,
+    # ):
+    #     vizualize(metrics_file, save_as=bar_plot)
+    #     treeplot(metrics_file, large=True, save_as=large_tree)
+    #     treeplot(metrics_file, large=False, save_as=small_tree)
+    metrics_files = ['../../results/scopus_metrics.txt', '../../results/wos_metrics.txt']
+    small_trees = ['../../paper/figs/small_tree_scopus.pgf', '../../paper/figs/small_tree_wos.pgf']
+    large_trees = ['../../paper/figs/large_tree_scopus.pgf', '../../paper/figs/large_tree_wos.pgf']
+    bar_plots = ['../../paper/figs/bar_scopus.pgf', '../../paper/figs/bar_wos.pgf']
+
     for metrics_file, small_tree, large_tree, bar_plot in zip(
-        snakemake.input.metrics,
-        snakemake.output.small_tree,
-        snakemake.output.large_tree,
-        snakemake.output.bar_plot,
+        metrics_files,
+        small_trees,
+        large_trees,
+        bar_plots,
     ):
         vizualize(metrics_file, save_as=bar_plot)
         treeplot(metrics_file, large=True, save_as=large_tree)

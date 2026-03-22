@@ -58,7 +58,9 @@
     filecolor=magenta,      
     urlcolor=cyan,
     }
-\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{placeins}
+\newcommand{\mathdefault}[1][]{}
 \usepackage{makecell}
 \usepackage{soul}
 
@@ -115,7 +117,7 @@
 %%            country={}}
 %% \fntext[label3]{}
 
-\title{Letting computers call the shots --- exploring the impact of AI in high-stakes decision-making} %% Article title
+\title{When computers call the shots --- exploring the impact of AI in high-stakes decision-making} %% Article title
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
@@ -144,11 +146,11 @@
             state={Michigan},
             country={USA}}
 \affiliation[CS]{organization={Department of Computer Science and Engineering, University of Michigan},
-                        addressline={2260 Hayward Street},
-                        city={Ann Arbor},
-                        postcode={48109},
-                        state={Michigan},
-                        country={USA}}
+            addressline={2260 Hayward Street},
+            city={Ann Arbor},
+            postcode={48109},
+            state={Michigan},
+            country={USA}}
 
 
 %% Abstract
@@ -187,50 +189,28 @@ AI-Informed Decision-Making \sep Sensitive Industries \sep Systematic Literature
 \end{frontmatter}
 
 \section{Introduction}
-% Why are we havinig this conversation now?
-
-% What do we already know and what do we need to know?
-
-% What are the limitations of past research?
-% Some nearest neighbor papers to compare gaps with in the introduction:
-% Unpacking Human-AI Interaction in Safety-Critical Industries: A Systematic Literature Review: https://ieeexplore.ieee.org/abstract/document/10620168
-% Makes broad calls for explainability across applications without considering nuances of use case
-% Only talks about regulation in calls for standardizing terminology— doesn't make any recommendations or considers the impacts of current regulation
-% Focuses on human interaction, doesn't do industry-specific analysis, and doesn't make development recommendations
-% Doesn't consider what “trust” is, instead points to “user personality”
-% Doesn't discuss validation methods
-
-
-% Artificial intelligence in safety-critical systems: a systematic review: https://www.emerald.com/imds/article/122/2/442/183810
-% Doesn't consider level of decision-making autonomy
-% Does encourage validation and explanations, but doesn't differentiate between when each is needed/useful. Actually implies that they might be one in the same…
-% Doesn't consider specific industries
-% Overly broad scope: 30 years of data + no publication criteria (search was done on google scholar and included pre-prints)
-% Heavily focused on use of the term “safety-critical” without unpacking what that might constitute in search terms, so “safety-critical” applications were surely missed just because they didn't use that exact wording. 
-% No discussion of laws/regulations
-
-% To address these gaps, we complete this review...
+There is no more critical time to evaluate the safety-risks artificial intelligence (AI) poses to our most sensitive industries than when governments are actively devising strategies for how regulate AI \cite{whitehouse}. To properly mitigate these risks, we need to understand how these systems are applied, who they are used by, and what kind of autonomy they have. Then, by evaluating the gaps between developers, users, and regulators, we can piece together a more complete picture of the high-stakes AI environment, and appropriately recommend safeguards. Other authors have attempted to characterize this landscape in the past, but have missed key features. For example, Wang and Chung \cite{wangArtificialIntelligenceSafetycritical2021} perform a systematic literature review on AI in safety-critical industries, but fail to target specific industries, do not distinguish between validation and explanation, and neglect the impact of regulation. Additionally, Bach et al. \cite{bachUnpackingHumanAIInteraction2024} perform a systematic literature review on human-AI interaction in safety-critical industries, but again, make broad calls for explainability without considering the application, fail to discuss validation methods, do not target specific industries, and miss the mark on establishing trust frameworks.
 
 \subsection{Novelty}
+To fill this gap, we conduct a systematic literature review on AI-based decision-making in sensitive industries. As seen in \cite{wangArtificialIntelligenceSafetycritical2021} and \cite{bachUnpackingHumanAIInteraction2024}, the ``black-box'' nature of AI tends to take the brunt of the blame for model mistakes and induced accidents. While calls for transparency are all in good faith, we argue that a broad ``explainability-based'' solution may not suit all applications. This review establishes the differences between those applications through a generalizable framework by considering a wide variety of industries. 
 
-
-While the safety outcomes we consider all include some threat to human health or safety, the diversity of these industries means that use of AI may risk the health of one to many individuals with low to high probability. This variety supports our conclusions as generalizable. Aside from the size of the affected population and the likelihood of an incident, the applications include variety in \textit{who} interacts directly with the AI system in question and the time they have to decide (or intervene). Our study brings novelty to the field by distilling key qualities of sensitive industries, understanding how AI affects outcomes based on those qualities, and identifying how those interactions impact safety, trust, and liability. Further, we make recommendations for regulators, users, and developers based on these findings.  
+While the safety outcomes we consider all include some threat to human health or safety, the diversity of these industries means that use of AI may risk the health of one to many individuals with low to high probability. This variety supports our conclusions as generalizable. Aside from the size of the affected population and the likelihood of an incident, the applications include variety in \textit{who} interacts directly with the AI system in question and the time they have to decide (or intervene). Our study brings novelty to the field by extracting key qualities of sensitive industries, understanding how AI affects outcomes based on those qualities, and identifying how those interactions impact safety, trust, and liability. Further, we make recommendations for regulators, users, and developers based on these findings.  
 
 \section{Method}
+\label{sec:method}
 This review prioritizes reproducibility and therefore collects documents in a systematic and automated way. To do so, we start by defining the research questions this review seeks to answer. These include:
 \begin{enumerate}
 \item \textit{What is the impact of AI on high-stakes decision-making?}
 \item \textit{What are the safety risks of using AI to make decisions in sensitive industries?}
 \item \textit{What happens when accidents occur as a result of an AI-based decision?}
 \end{enumerate} 
-These questions distinguish the unique features and outcomes that set AI-based decision-making mechanisms apart from traditional methods. Likewise, answers would allow useful insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
+These questions distinguish the unique features and outcomes that set AI-based decision-making mechanisms apart from traditional methods. Likewise, answers would provide insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
 
 \subsection{Query Term Compilation}
 After determining our research questions, we define a set of key terms using the Population, Intervention, Comparison, Outcome (PICO) methodology \cite{schardtUtilizationPICOFramework2007}, and use the Cartesian product of these terms (one from each category) to determine relevant search queries. We use APIs for each of two databases, Scopus and Web of Science, to make these queries via a Python workflow, storing all resultant papers. Then, we remove duplicates based on digital object identifier (DOI), and merge the results of both database searches into a combined bibliography. Figure \ref{fig:workflow} shows visual representation of this workflow. 
 
 \begin{figure}
     \centering
-    % \resizebox{0.5\columnwidth}{!}{\input{figs/dag.tex}}
     \resizebox{0.8\textwidth}{!}{\input{figs/dag.tex}}
     % \input{figs/dag.tex}
     \caption{Directed acyclic graph showing automatic search workflow.}
@@ -310,14 +290,16 @@ Overall, we attributed the majority of exclusions to a lack of decision-making f
 
 \subsection{Data Extraction}
 % List data pulled from final subset of articles
-Finally, we extracted the data from the final subset of 72 articles. For this phase, we re-read each article in the final subset while taking notes of important findings and tabulating data for a variety of fields. These included: industry type, industry subcategory, AI type, comparison type, inclusion of explainability and type, consideration of regulation and regulatory authority, decision-making type, data type, whether the system was deployed, output feature considered, safety outcome, and country of origin. Note: while the term ``model explainability'' has a variety of definitions, here we assume the most broad-- anything that constitutes unpacking the logic of an AI model (interpretability, feature importance, etc.) counts. We do not consider, however, the sheer mention of a ``black-box'' as consideration of explainability.
+Finally, we extracted the data from the final subset of 72 articles, which included tabulating data for a variety of fields: industry type, industry subcategory, AI type, comparison type, inclusion of explainability and type, consideration of regulation and regulatory authority, decision-making type, data type, whether the system was deployed, output feature considered, safety outcome, and country of origin. Note: while the term ``model explainability'' has a variety of definitions, here we assume the most broad-- anything that constitutes unpacking the logic of an AI model (interpretability, feature importance, etc.) counts. We do not consider, however, the sheer mention of a ``black-box'' as consideration of explainability.
 
 \subsection{Quality Assessment}
 \label{sec:QA}
 During the data extraction, we also conducted an abbreviated quality assessment. Due to the inhomogeneous nature of the types of papers included in this analysis, a single, premade quality assessment template would not allow sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article based on a pre-existing framework, APPRAISE-AI \cite{kwongAPPRAISEAIToolQuantitative2023}. Because this review considers a large portion of medical papers, we evaluated each study for its consideration of bias, which is a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment for all other papers. Considering all the papers concern human health, the way the AI views the differences between humans can substantially impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for limited dataset size. Most articles scored above 80 out of 100, so there were no major causes for concern regarding quality of the articles retrieved. Figure \ref{fig:qa_scores} shows the distribution of articles in the final subset. 
 
 \begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/qa_scores.png}
+    \centering
+    \resizebox{0.8\textwidth}{!}{\input{figs/qa_scores.pgf}}
+    % \includegraphics[width=\textwidth]{figs/qa_scores.png}
     \caption{Quality assessment score distribution for articles in the final subset.}
     \label{fig:qa_scores}
 \end{figure}
@@ -329,13 +311,15 @@ Figures \ref{fig:bar_scopus} and \ref{fig:bar_wos} show quantitative querying re
 \begin{figure}[ht!]
 \centering
 \begin{subfigure}{\textwidth}
-    \includegraphics[width=\textwidth]{figs/bar_scopus.png}
+    \resizebox{\textwidth}{!}{\input{figs/bar_scopus.pgf}}
+    % \includegraphics[width=\textwidth]{figs/bar_scopus.png}
     \caption{Scopus}
     \label{fig:bar_scopus}
 \end{subfigure}
 \hfill
 \begin{subfigure}{\textwidth}
-    \includegraphics[width=\textwidth]{figs/bar_wos.png}
+    \resizebox{\textwidth}{!}{\input{figs/bar_wos.pgf}}
+    % \includegraphics[width=\textwidth]{figs/bar_wos.png}
     \caption{Web of Science}
     \label{fig:bar_wos}
 \end{subfigure}
@@ -343,46 +327,60 @@ Figures \ref{fig:bar_scopus} and \ref{fig:bar_wos} show quantitative querying re
 \label{fig:bar}
 \end{figure}
 
+\FloatBarrier
+
 \subsection{Data Extraction Results}
 The database used to tabulate our results can be accessed \href{https://www.notion.so/2ff683956c2580a9b1cdcf750b987f70?v=0b1df89639f442c29749d75c23802f13&source=copy_link}{here.} \textcolor{red}{Additionally, we provide a database in Supplemental Materials.}
 
-After extracting the information mentioned in \ref{sec:methods}, we created figures to portray key trends from the set of articles reviewed. This includes country of author institution, main AI type considered in the article, decision-making type, whether regulation or explainability was considered, and types of explainability methods considered. 
+After extracting the information mentioned in \ref{sec:method}, we created figures to portray key trends from the set of articles reviewed. This includes country of author institution, main AI type considered in the article, decision-making type, whether regulation or explainability was considered, and types of explainability methods considered. 
 
 % AI Method
 Figure \ref{fig:ai_type} shows the number of articles that employed each type of AI in the final subset of articles. Note that many articles employed more than one type of AI, so Figure \ref{fig:ai_type} shows more counts than total articles. Similarly, some articles focused on ethical or regulatory frameworks and therefore considered AI more generally. We denote the AI type in these articles as ``Non-Specific.''
 
 \begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/ai_type.png}
+    \centering
+    \resizebox{\textwidth}{!}{\input{figs/ai_type.pgf}}
+    % \includegraphics[width=\textwidth]{figs/ai_type.png}
     \caption{Number of articles in final subset that considered each type of AI method. Non-specific means the article did not provide details about the model type.}
     \label{fig:ai_type}
 \end{figure}
+\FloatBarrier
 
 % Decision Making Method
 Figure \ref{fig:dm_type} shows the decision-making type evaluated by the articles in the final subset. ``Not system integrated'' refers to articles that use AI to set some kind of threshold or benchmark value for decision-making, but do not actually integrate a dynamic version of the AI itself into the system under consideration. Additionally, we distinguish ``augmented human decision-making'' and ``human-in-the-loop'' as systems that both require human action to make decisions, but human-in-the-loop leans more heavily on the AI system whereas augmented simply uses the AI results as an additional piece of information to make a decision with. Autonomous systems do not necessarily require human oversight to take action, though they may have it for intervention purposes (e.g., autonomous vehicles). 
 
 \begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/dm_type.png}
+    \centering
+    \resizebox{\textwidth}{!}{\input{figs/dm_type.pgf}}
+    % \includegraphics[width=\textwidth]{figs/dm_type.png}
     \caption{Decision-making types observed in final article subset.}
     \label{fig:dm_type}
 \end{figure}
+\FloatBarrier
 
 % Explanation Method
 Approximately 49\% of the articles in our final subset considered explanation methods in some capacity. Of those that did, Figure \ref{fig:explain_type} shows which explanation method they employed. In some instances, authors mentioned the importance of explainability, therefore considering it, but did not conduct any explainability analysis themselves. These articles were denoted a ``Non-Specific'' explainability type in Figure \ref{fig:explain_type}.
 
 \begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/explain_type.png}
-    \caption{Explanation types observed in final article subset. ``Non-Specific'' indicates that explainability was considered but no method was applied.}
+    \centering
+    \resizebox{\textwidth}{!}{\input{figs/explain_type.pgf}}
+    % \includegraphics[width=\textwidth]{figs/explain_type.png}
+    \caption{Explanation types observed in final article subset. ``Non-Specific'' indicates that explainability was considered, but no method was applied.}
     \label{fig:explain_type}
 \end{figure}
+\FloatBarrier
 
 % Country of Origin
-Figure\ref{fig:country_map} show the number of articles who have at least one contributing author from the countries shown. Of the final subset of articles, approximately 44\% considered regulatory oversight. This distribution of countries is therefore intended to show how the regulatory oversight bodies might be distributed and to highlight the complexity of defining AI regulatory frameworks that span international boundaries. 
+Figure \ref{fig:country_map} show the number of articles who have at least one contributing author from the countries shown. Of the final subset of articles, approximately 44\% considered regulatory oversight. This distribution of countries is therefore intended to show how the regulatory oversight bodies might be distributed and to highlight the complexity of defining AI regulatory frameworks that span international boundaries. 
 
 \begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figs/countries_map.png}
+    \centering
+    \includegraphics[width=\textwidth]{figs/countries_map.pdf}
+    % \includegraphics[width=\textwidth]{figs/countries_map.png}
     \caption{Number of articles in final subset who have at least one author from the listed country. ``International Collaboration'' article is excluded from this figure, see attached database for details.}
     \label{fig:country_map}
 \end{figure}
+\FloatBarrier
 
 Finally, Table \ref{tab:industry_distribution} shows the distribution of articles by industry for the final subset.
 
@@ -403,9 +401,10 @@ Finally, Table \ref{tab:industry_distribution} shows the distribution of article
     \caption{Final article subset distribution by industry.}
     \label{tab:industry_distribution}
 \end{table}
+\FloatBarrier
 
 \section{Qualitative Results and Discussion}
-The quantitative data provided in Section \ref{sec:quantitative_results} only  tell a fraction of the story. During the data extraction process, we took analysis notes and highlighted key findings from each study in the final subset. To best introduce these findings, we will first discuss each of the major industries identified in our study, highlighting key takeaways from the individual industries and some papers that brought especially unique points to our attention. Then, we will examine the similarities and differences between the various industries to determine what AI features and findings were universally beneficial, and which industries have specific challenges and demands.
+We will now discuss each of the major industries identified in our study, highlighting key takeaways from the individual industries and some papers that brought especially unique points to our attention. Then, we will examine the similarities and differences between the various industries to determine what AI features and findings were universally beneficial, and which industries have specific challenges and demands.
 
 \subsection{Medical}
 \label{sec:medical}
@@ -451,21 +450,23 @@ These two cases also extend into AI use in treatment and in diagnosis, where the
 
 In reality, the cases of trust and trustworthiness outlined above may not be so clear-cut. Trust may fall reasonably back on model developers, users, procurers, etc. Following O'Neil's logic, if a system possesses no agency, it cannot be trusted. The liability question then becomes: \textit{Who is responsible for the consequence of this system?} This is the debate of many legal experts and should be considered by all participants in an AI system, especially as laws and regulations surrounding these technologies change. As a potential solution, Lagiola et al. \cite{lagioiaStrangeCaseDr2020} and Labkoff et al. \cite{labkoffResponsibleFutureRecommendations2024} suggest that unique regulations should correspond to classes of AI automation levels to define the shared level of responsibility and liability between the AI system and the individuals involved in its use. 
 
-The current licensing system in the U.S. is more vague than that and leaves many of the aforementioned questions up to the courts. Instances where AI-assisted decision systems are used by a skilled professional are less regulated and instead rely on their expert judgment (and malpractice  insurance). Treatment based medical AI systems, on the other hand, mainly qualify as medical devices, and can be regulated as such in the U.S. 
+The current licensing system in the U.S. is more vague than that and leaves many of the aforementioned questions up to the courts. Instances where AI-assisted decision systems are used by a skilled professional are less regulated and instead rely on their expert judgment (and malpractice  insurance). Treatment-based medical AI systems, on the other hand, mainly qualify as medical devices, and can be regulated as such in the U.S. 
 
-Briefly, the FDA offers three main pathways for licensing depending on the level of rigor of their review. This includes Pre-market approval (PMA), \textit{De Novo}, and 510(k), in increasing order of level of rigor. \textit{De Novo}, the newest, offers a hybrid pathway that offers neither all the litigation protections of the most stringent nor all the speed of the fastest. Though outcomes of this pathway remain legally uncertain, AI/ML-enabled device manufacturers use the \textit{De Novo} pathway about three times more often \cite{gerkeNewCaseLaw2025}, suggesting these companies prefer to opt for uncertainty in future liability defense in exchange for expedited approval. This may concern the public as they rely on the FDA's trustworthiness assessment for these (and non-AI) devices. A more thorough approach may include rigorous validation techniques and/or a unique licensing pathway for a unique set of technologies, especially for treatment devices that necessarily elicit trust.
+Briefly, the FDA offers three main pathways for licensing depending on the level of rigor of their review. This includes Pre-Market Approval (PMA), \textit{De Novo}, and 510(k), in increasing order of level of rigor. \textit{De Novo}, the newest, is a hybrid pathway that offers neither all the litigation protections of PMA nor the speed of 510(k). Though outcomes of this pathway remain legally uncertain, AI/ML-enabled device manufacturers use the \textit{De Novo} pathway about three times more often \cite{gerkeNewCaseLaw2025}, suggesting these companies prefer to opt for uncertainty in future liability defense in exchange for expedited approval. This may concern the public as they rely on the FDA's trustworthiness assessment for these (and non-AI) devices. A more thorough approach may include rigorous validation techniques and/or a unique licensing pathway for a unique set of technologies, especially for treatment devices that necessarily elicit trust.
 
 % BIAS
-Other legal complications of medical AI may be less obvious. McCradden et al. \cite{mccraddenPatientSafetyQuality2020}, Kiseleva et al. \cite{kiselevaAreYouAIS2021}, DeMicco et al. \cite{demiccoRoboticsAIHealthcare2024}, Habli et al. \cite{habliArtificialIntelligenceHealth2020} and many others emphasize the ethical concerns of bias in AI systems. However, biased AI systems may play into the aforementioned regulatory conditions as well. Gerke et al. \cite{gerkeNewCaseLaw2025} describe that when licensing a medical device, it is licensed as-is. However, ``continuous learning'' or even discretely retraining an AI system may worsen efficacy for certain patient groups \cite{gerkeNewCaseLaw2025}. Shah et al. \cite{shahRegulatoryLegalConsiderations2025} extend this concern to broader changes post-market release. Failure to warn users of these changes could leave manufacturers liable, even if their original model was protected. Changing efficacy across patients groups, however, may be difficult to assess without formal validation techniques. Thus, aside from being ethically valuable to consistently validate and evaluate your model for bias, we also find legal motive to embed this into system design.
+Other legal complications of medical AI may be less obvious. McCradden et al. \cite{mccraddenPatientSafetyQuality2020}, Kiseleva et al. \cite{kiselevaAreYouAIS2021}, DeMicco et al. \cite{demiccoRoboticsAIHealthcare2024}, Habli et al. \cite{habliArtificialIntelligenceHealth2020} and many others emphasize the ethical concerns of bias in AI systems. However, biased AI systems may play into the aforementioned regulatory conditions as well. Gerke et al. \cite{gerkeNewCaseLaw2025} describe that when licensing a medical device, it is licensed as-is. However, ``continuous learning'' or even discretely retraining an AI system may worsen efficacy for certain patient groups \cite{gerkeNewCaseLaw2025}. Shah et al. \cite{shahRegulatoryLegalConsiderations2025} extend this concern to broader changes post-market release. Failure to warn users of these changes could leave manufacturers liable, even if their original model was protected. Changing efficacy across patients groups, however, may be difficult to assess without formal validation techniques. Thus, aside from being ethically valuable to consistently validate and evaluate models for bias, we also find legal motive to embed this into system design.
 
 When validation methods are not perfectly accurate, explainability methods offer a second layer of protection to the patient, doctor, and AI manufacturer. As explained by DiMicco et al. \cite{demiccoRoboticsAIHealthcare2024}, ``AI systems should be developed to enable humans to understand their actions and the underlying logic in order to increase transparency and minimise the risk of bias or error.'' Some jurisdictions have already begun to require aspects of explainability, such as in the European Union's General Data Protection Regulation (GDPR) Articles 13 and 14, which require ``meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing'' when decision-making is automated \cite{lagioiaStrangeCaseDr2020}. Not all jurisdictions offer such a proactive regulatory approach.
 
 Importantly, safety critical domains in the U.S. should not rely on regulations to protect them from potential faults of AI-based decision support systems, because the authority of regulatory agencies in these areas is still legally uncertain. As highlighted by \cite{gerkeNewCaseLaw2025}, the 2024 Supreme Court case \textit{Loper Bright Enterprises v. Raimondo} and the overturning of the \textit{Chevron} doctrine affects how regulatory agencies can claim authority over these decision support tools. Prior to \textit{Loper Bright}, courts were expected to defer ambiguous jurisdictional authority to the interpretation of the regulator; now these ambiguities must be interpreted independently by the courts. This may extend to other industries in which experts might use AI to make ``diagnoses,'' such as in nuclear power or other industrial operations. In order for an agency to regulate such diagnostic tools, they must make a clear and unambiguous justification from relevant statutes. Practically, this shifts responsibility toward professionals using AI-based decision support, and encourages independent validation and interpretability efforts instead of relying on federal oversight.
 
 % Over Trusting
-Having established how regulation relates trust and trustworthiness, we can now consider how developers and users each evaluate these AI systems-- and the consequences of their misalignment. We can accomplish this first by understanding O'Neil's three constituents of trust, as described by Jones et al.\cite{jonesArtificialIntelligenceClinical2023}: trust in truth claims, trust in commitment, and trust in competence. The first is an empirical evaluation, \textit{is this entity likely to give me a factually correct answer?}, whereas the second two are normative, \textit{is this entity likely to follow through on their promises?}, and \textit{is this entity likely to execute the promised action successfully?}. Developers typically focus on the empirical arm of these, as evidenced by the quantitative way we evaluate AI systems: \textit{given 1,000 scenarios, how often will my system predict the correct answer?} Yet, we seldom consider the other two thirds of how people perceive trust when we set out to develop a ``trustworthy system.'' This misalignment can set users up to overtrust a system that has obvious limitations to the developer. 
+Having established how regulation relates trust and trustworthiness, we can now consider how developers and users each evaluate these AI systems-- and the consequences of their misalignment. We can accomplish this first by understanding O'Neil's three constituents of trust, as described by Jones et al.\cite{jonesArtificialIntelligenceClinical2023}: trust in truth claims, trust in commitment, and trust in competence. The first is an empirical evaluation, \textit{is this entity likely to give me a factually correct answer?}, whereas the second two are normative, \textit{is this entity likely to follow through on their promises?}, and \textit{is this entity likely to execute the promised action successfully?}. 
 
-The tendency for individuals to place undue trust in these systems by focusing on the normative elements is evident. After considering the perspective of clinicians incorporating AI into their practice and the empirical trust issues they experience, Jones et al. \cite{jonesArtificialIntelligenceClinical2023}also consider how patients feel about their doctors using AI. They summarize several studies that asked hypothetical patients how they would view various outcomes when their doctors did or did not use AI systems. Overwhelmingly, they found that patients at worst had no difference of opinion when AI is used, and at best, view their doctors' decisions more favorably, even if the outcome is still unfavorable, showing that AI may serve as a ``protective shield'' for clinicians \cite{jonesArtificialIntelligenceClinical2023}. 
+Developers typically focus on the empirical arm of these, as evidenced by the quantitative way we evaluate AI systems: \textit{given 1,000 scenarios, how often will my system predict the correct answer?} Yet, we seldom consider the other two thirds of how people perceive trust when we set out to develop a ``trustworthy system.'' This misalignment can set users up to overtrust a system that has obvious limitations to the developer. 
+
+The tendency for individuals to place undue trust in these systems by focusing on the normative elements is evident. After considering the perspective of clinicians incorporating AI into their practice and the empirical trust issues they experience, Jones et al. \cite{jonesArtificialIntelligenceClinical2023} also consider how patients feel about their doctors using AI. They summarize several studies that asked hypothetical patients how they would view various outcomes when their doctors did or did not use AI systems. Overwhelmingly, they found that patients at worst had no difference of opinion when AI is used, and at best, view their doctors' decisions more favorably, even if the outcome is still unfavorable, showing that AI may serve as a ``protective shield'' for clinicians \cite{jonesArtificialIntelligenceClinical2023}. 
 
 There are, of course, some caveats to this: the studies were hypothetical and generally assumed that the AI in question had a known superior diagnostic accuracy than the doctor. Jones et al. conclude that patient favorability towards using AI stems from higher normative trust in two ways: one, that AI is both reliable (machines tend to be more predictable than humans) and two, that AI is competent (on the basis of mass amounts of training data) \cite{jonesArtificialIntelligenceClinical2023}. Both the readiness of patients to (blindly) trust AI and the clinician's concerns about its empirical accuracy further support the case for co-piloted AI-clinician systems and raise red flags for autonomous AI healthcare providers. 
 
@@ -484,20 +485,20 @@ Finally, the interview-based perspective papers offered insight from both sides 
 \subsection{Autonomous Vehicles}
 Autonomous vehicles comprised just over 18\% of our final subset of articles, our second-largest category. These papers ranged from focusing directly on ethics \cite{eggertAutonomisedHarming2025}, \cite{guensbergAutomatedVehiclesDilution2022}, \cite{geisslingerEthicalTrajectoryPlanning2023}, \cite{bertheauEventrelatedPotentialsReveal2025}, to validation \cite{yangPredictionFailureRiskaware2023}, \cite{jiAcceleratedTestingEvaluation2025}, explanations \cite{fengNLEDMNaturallanguageExplanations2023}, \cite{kanekoPredictingTrustDynamics2025}, legal implications \cite{maLegalDecisionmakingHighway2023}, \cite{tianHowShouldAutonomous2025}, and pure accident avoidance \cite{goodallComparisonAutomatedVehicle2021}, \cite{luPhysicsinformedAttentionModel2025}, \cite{yuanActiveTakeoverFailure2026}. Broadly looking at the subcategories alone highlights some unique distinctions from the other industries in this review. First, the overwhelming number of ethics-focused papers. Unlike in medical contexts, autonomous vehicles often face two-body ethical dilemmas-- who should be spared in an unavoidable collision scenario? Further, direct calls for validation and regulation are prolific. 
 
-Autonomous vehicles, as their name implies, do not enjoy the protections of ``human-in-the-loop'' systems, which is what most medical AI operates under. Nor do the users of these AI-driven system reap the benefit of a certified expert reviewing each and every decision. Instead of the AI offering a suggestion and an experienced professional using their expertise to decide whether to take it, autonomous vehicles make decisions nearly continuously and rely on human intervention \textit{only} if something goes awry. This removes a barrier of protection against unreliable systems, making liability issues more complicated, especially when defining what ``human intervention'' looks like. How can you expect someone to intervene on a system that was designed to relieve their attention span? Tian et al. \cite{tianHowShouldAutonomous2025} approach this argument by promoting proactive insurance involvement and liability rules that encourage manufacturers to invest in safety. Tian et al. \cite{tianHowShouldAutonomous2025} explain this in the context of the Hand Formula-- if the burden (of safety innovation) is less costly than the probability (of an accident) times the loss (of that accident), it is negligent for the manufacturer \textit{not} to take that safety precaution.
+Autonomous vehicles, as their name implies, do not enjoy the protections of ``human-in-the-loop'' systems, which is what most medical AI operates under. Nor do the users of these AI-driven systems reap the benefit of a certified expert reviewing each and every decision. Instead of the AI offering a suggestion and an experienced professional using their expertise to decide whether to take it, autonomous vehicles make decisions nearly continuously and rely on human intervention \textit{only} if something goes awry. This removes a barrier of protection against unreliable systems, making liability issues more complicated, especially when defining ``human intervention.'' How could someone intervene a system designed to relieve their attention span? Tian et al. \cite{tianHowShouldAutonomous2025} approach this argument by promoting proactive insurance involvement and liability rules that encourage manufacturers to invest in safety. Tian et al. \cite{tianHowShouldAutonomous2025} explain this in the context of the Hand Formula-- if the burden (of safety innovation) is less costly than the probability (of an accident) times the loss (of that accident), it is negligent for the manufacturer \textit{not} to take that safety precaution.
 
-To make the safety designation even more challenging, although many of the AI systems evaluated in this paper are ``narrow AI,'' meaning they are trained for a specific task (the opposite of general AI), autonomous vehicles face a wide variety of scenarios, and can struggle to learn edge cases that have severe consequences (as seen in \cite{yangPredictionFailureRiskaware2023}). This combined with a lack of general oversight points to a major need for validation methods that can serve as the basis of verifying the safety of these systems to the public. This is perhaps why we see the most validation studies in this subcategory-- two \cite{yangPredictionFailureRiskaware2023}, \cite{jiAcceleratedTestingEvaluation2025}, versus one for aviation \cite{mossBayesianSafetyValidation2024}, and none for any other category. 
+To make the safety designation even more challenging, although many of the AI systems evaluated in this paper are ``narrow AI,'' meaning they are trained for a specific task (the opposite of general AI), autonomous vehicles face a wide variety of scenarios, and can struggle to learn edge cases that have severe consequences (as seen in \cite{yangPredictionFailureRiskaware2023}). This, combined with a lack of general oversight, points to a major need for validation methods that can serve as the basis of verifying the safety of these systems to the public. This is perhaps why we see the most validation studies in this subcategory-- two \cite{yangPredictionFailureRiskaware2023}, \cite{jiAcceleratedTestingEvaluation2025}, versus one for aviation \cite{mossBayesianSafetyValidation2024}, and none for any other category. 
 
 Generally, we denote validation and explanation as distinct but similarly useful practices for AI-supported decision-making. In the context of autonomous vehicles, however, the latter is less effective. While explanations can be helpful in understanding the rationale of an autonomous vehicle's decision-making, they are less useful than CDSS explanations because the window of time between an autonomous vehicle's data acquisition, modeling calculation, and decision is much shorter. In other words, one would probably hope that a doctor takes more time to decide a patient's treatment plan than they take to change lanes on their way to work. The same time restriction on those decision-making scenarios applies for autonomous vehicles, so model explanations are not particularly useful for human intervention. 
 
 Counterintuitively then, two papers in this category focus \textit{primarily} on developing model explanations \cite{fengNLEDMNaturallanguageExplanations2023}, \cite{kanekoPredictingTrustDynamics2025}. In these reports, explanations play other roles than rationalizing real-time decision-making, like evaluating model performance before deployment \cite{fengNLEDMNaturallanguageExplanations2023} or understanding trust dynamics with human operators \cite{kanekoPredictingTrustDynamics2025}. We do caution that like Ong et al. \cite{ongLargeLanguageModel2025}, Feng et al. \cite{fengNLEDMNaturallanguageExplanations2023} generate somewhat ``pseudo-explanations'' by jointly predicting decision-making actions and natural language explanations using natural language processing. These are not true explanations that glean insights on the inner-workings of a model, so they cannot be given the same authority as feature importance from a random forest, for example. The attempts made towards autonomous vehicle explanations indicate a diversion from studies with greater decision-making windows and experts at the helm of the final decision calls, but we generally find explanation methods less useful in the context of autonomous vehicles than in other domains. 
 
 \subsection{Nuclear}
-Nuclear systems comprised nearly 10\% of our final subset of articles. This subset varied possibly the most in terms of nuclear application, with most studies we considered toeing the line with predictive maintenance, a classification we excluded from this analysis. All papers related to the operation of nuclear power plants in this section, which was six of the seven papers, used traditional machine learning methods (i.e., decision trees, random forests, feedforward neural networks) plus more complex models, like Bayesian belief networks and long-short term memory networks. The only paper unrelated to nuclear power plants was focused on nuclear crisis management and used generative AI in its analysis \cite{holmesRoleArtificialIntelligence2024}. Holmes et al. \cite{holmesRoleArtificialIntelligence2024} generally stood out as an outlier in this category, not only because the application area broadly differed, but because it focused on using generative AI to avoid the pitfalls of human emotion in high-stakes political decision-making scenarios. In most of the studies we consider in this work, AI is used to support decision-making from a logical, data-based perspective, but in this case, the AI is used to assist in a somewhat emotional capacity. While this paper met all of our inclusion criteria, it serves a small audience and is basically unregulated. Still, it emphasizes a need for humans to remain in the loop for expert-level decision-making. 
+Nuclear systems comprised nearly 10\% of our final subset of articles. This subset varied in terms of nuclear application, with most studies we considered toeing the line with predictive maintenance, a classification we excluded from this analysis. All papers related to the operation of nuclear power plants in this section, six of the seven papers, used traditional machine learning methods (i.e., decision trees, random forests, feedforward neural networks) plus more complex models, like Bayesian belief networks and long-short term memory networks. The only paper unrelated to nuclear power plants focused on nuclear crisis management and used generative AI in its analysis \cite{holmesRoleArtificialIntelligence2024}. Holmes et al. \cite{holmesRoleArtificialIntelligence2024} stood out as an outlier in this category, not only because the application area broadly differed, but because it focused on using generative AI to avoid the pitfalls of human emotion in high-stakes political decision-making scenarios. In most of the studies we consider in this work, AI is used to support decision-making from a logical, data-based perspective, but in this case, the AI is used to assist in a somewhat emotional capacity. While this paper met all of our inclusion criteria, it serves a small audience and is basically unregulated. Still, it emphasizes a need for humans to remain in the loop for expert-level decision-making. 
 
-The nuclear-powered-focused papers in this section considered using AI for nuclear pressure vessel design \cite{yaoMechanicalBehaviorsInternal2024}, severe accident scenario propagation \cite{hossnyDistinctivePhysicalInsights2023}, cooling water intake reliability \cite{zhaoHumanmachineCooperationSafety2024}, fault detection of sensors \cite{hongFaultIdentificationSignal2026}, accident diagnosis \cite{chaeGraphNeuralNetwork2022}, and human error detection \cite{reddyUncertaintyawareExplainableHuman2024}. Of these, three considered explainability methods, one inherent to the AI model used (decision trees) \cite{hossnyDistinctivePhysicalInsights2023}, one using a post-hoc method known as SHAP \cite{reddyUncertaintyawareExplainableHuman2024}, and one just as a general concept that \textit{should} be incorporated \cite{zhaoHumanmachineCooperationSafety2024}. Not a single method in this category was deployed, and only one considered regulation \cite{hongFaultIdentificationSignal2026}. Because nuclear power is a highly-regulated, highly-skilled industry, we find the limited attempts at developing explanations and considering regulatory compliance indicative of the state of the field. The systems considered in this category were all subject to human oversight; no papers suggested a fully autonomous system. This means that all AI outputs will need a human go-ahead before making decisions. Without adequate rationale, we can expect nuclear power plant operators and engineers to be just as unwilling to blindly trust black-box recommendations as the medical professionals in Section \ref{sec:medical}. Future work on developing explanatory methods, validation techniques, and regulatory compliance strategies will therefore be critical in the nuclear power space. 
+The nuclear-power-focused papers in this section considered using AI for reactor pressure vessel design \cite{yaoMechanicalBehaviorsInternal2024}, severe accident scenario propagation \cite{hossnyDistinctivePhysicalInsights2023}, cooling water intake reliability \cite{zhaoHumanmachineCooperationSafety2024}, fault detection of sensors \cite{hongFaultIdentificationSignal2026}, accident diagnosis \cite{chaeGraphNeuralNetwork2022}, and human error detection \cite{reddyUncertaintyawareExplainableHuman2024}. Of these, three considered explainability methods, one inherent to the AI model used (decision trees) \cite{hossnyDistinctivePhysicalInsights2023}, one using a post-hoc method known as SHAP \cite{reddyUncertaintyawareExplainableHuman2024}, and one just as a general concept that \textit{should} be incorporated \cite{zhaoHumanmachineCooperationSafety2024}. None of the methods in this category were deployed, and only one considered regulation \cite{hongFaultIdentificationSignal2026}. Since nuclear power is a highly-regulated, highly-skilled industry, we find the limited attempts at developing explanations and considering regulatory compliance indicative of the state of the field. The systems considered in this category were all subject to human oversight; no papers suggested a fully autonomous system. This means that all AI outputs will need a human go-ahead before making decisions. Without adequate rationale, we can expect nuclear power plant operators and engineers to be just as unwilling to blindly trust black-box recommendations as the medical professionals in Section \ref{sec:medical}. Future work on developing explanatory methods, validation techniques, and regulatory compliance strategies will therefore be critical in the nuclear power space. 
 
-Further, unlike other industries in this review, nuclear power faces the unique challenge of extremely limited data availability. This is evidenced by the fact that three of the six nuclear power papers use synthetic data, while the other three rely on mechanical sensors or static measurements. The use of synthetic data adds another layer of epistemic uncertainty to the model results that is more easily avoided in more data-prolific applications. The use of synthetic datasets will likely require additional validation to meet regulatory standards for safety-critical decision-making in nuclear systems. This barrier is characteristic of the field--- almost all the papers in this section mention limitations from lack of data. As such, we also observe most of these studies are ``preliminary'' or ``proof-of-concept'' where other industries have already deployed and sometimes validated their models. 
+Further, unlike other industries in this review, nuclear power faces the unique challenge of extremely limited data availability. This is evidenced by the fact that three of the six nuclear power papers use synthetic data, while the other three rely on mechanical sensors or static measurements. The use of synthetic data adds another layer of epistemic uncertainty to the model results that is avoidable in more data-prolific applications. The use of synthetic datasets will likely require additional validation to meet regulatory standards for safety-critical decision-making in nuclear systems. This barrier is characteristic of the field--- almost all the papers in this section mention limitations from lack of data. As such, we also observe most of these studies are ``preliminary'' or ``proof-of-concept'' where other industries have already deployed and sometimes validated their models. 
 
 Finally, the studies in this subsection are geographically concentrated to the U.S., South Korea, China, and Sweden, likely as an effect of the more limited global distribution of nuclear power compared to other technologies, like medicine and aviation. The size and distribution of this industry, combined with its limited data and high risk nature makes AI research more difficult to transition to a deployed technology. Future work in this area might focus on the regulatory challenges of implementing AI, as well as a way to address data limitation issues.
 
@@ -515,7 +516,7 @@ Notwithstanding their opacity, many non-interpretable models (such as those list
 It is not surprising, however, that the most rigorous validation study we found is from aviation, as the aviation industry is widely known for its safety-first culture. In fact, during our analysis, we found other industries explicitly reference aviation's success in implementing such a strong safety culture and their goal to replicate it \cite{fuchsLindberghsCockpitPredictive2025}. Fuchs et al. \cite{fuchsLindberghsCockpitPredictive2025} emphasize the importance of validation studies like \cite{mossBayesianSafetyValidation2024} when they call for a graded approach to regulating medical-AI as part of a larger roadmap to mimic aviation's historic tactic to best safety practices. 
 
 \subsection{Other Industries}
-Three papers failed to fit in the above categories. This includes two legal/ethics papers \cite{cerfIfYouWorry2023}, \cite{maskurReimaginingCriminalLiability2025}, and one paper on manufacturing defects \cite{baruahOptimisedMachineLearning2023}. While the latter is a more traditional machine learning paper, it emphasizes explainability when predicting void formations during welding, a phenomenon that can lead to unreliable structures \cite{baruahOptimisedMachineLearning2023}. Of the former, Maskur et al. \cite{maskurReimaginingCriminalLiability2025} mainly discusses global variations in current AI regulations, stating that the E.U. has taken the most direct, proactive approach, while the U.S. waits for precedents to arise through the courts. We see this differences in the medical space, as described in Section \ref{sec:regulatory}, and we suggest that future work consider how to remediate these differences when technologies cross national borders.
+The three remaining papers in our review included two legal/ethics papers \cite{cerfIfYouWorry2023}, \cite{maskurReimaginingCriminalLiability2025}, and one paper on manufacturing defects \cite{baruahOptimisedMachineLearning2023}. While the latter is a more traditional machine learning paper, it emphasizes explainability when predicting void formations during welding, a phenomenon that can lead to unreliable structures \cite{baruahOptimisedMachineLearning2023}. Of the former, Maskur et al. \cite{maskurReimaginingCriminalLiability2025} mainly discusses global variations in current AI regulations, stating that the E.U. has taken the most direct, proactive approach, while the U.S. waits for precedents to arise through the courts. We see these differences in the medical space, as described in Section \ref{sec:regulatory}, and we suggest that future work consider how to remediate these differences when technologies cross national borders.
 
 After all the trust concerns described in this review, it seems natural to question if AI is even worth implementing to our most sensitive domains. Is the status quo good enough? Safer, even? Cerf et al. \cite{cerfIfYouWorry2023} present a response to this very concern and cautions readers that while fears surrounding AI are well-founded, humans have historically proven problematic as well. While Cerf's claims likely aim to address existential concerns of generative AI, we can still heed their warning that we not let risks surrounding AI ``...distract from human beings' current proficiency at carrying out the threats attributed to technology'' \cite{cerfIfYouWorry2023}. As such, we can take away from this is that rather than run from a powerful technology, we ought to design, implement, and regulate it with a safety-first approach. By completing this review, we have identified general rules to accomplish this goal, which we describe the following section. 
 
@@ -523,7 +524,7 @@ After all the trust concerns described in this review, it seems natural to quest
 \label{sec:conclusion}
 From this review, we find two key principles that remain universally true across industries. The first is related to explainability. We find that explainability techniques only matter if the user has both the \textit{time} to consider the rationalization and the \textit{expertise} to review it. In other words, if the interfacing user is not a domain expert, developers and regulators should not assume that the user has the necessary background knowledge or understanding to adequately assess the quality of the AI's decision given an explanation. Likewise, even a domain expert cannot possibly evaluate an explanation instantaneously. In scenarios with limited user expertise and/or limited evaluation time, it is necessary to have robust regulation underpinned by model validation techniques to protect users. Validation is always a good idea but is strictly necessary when AI tools interface with inexperienced or time-pressed individuals. Model explanations are both unhelpful and insufficient in these contexts. Some examples of this may include wearable medical devices, like glucose or heart rate monitors that encourage decision-making without physician review, or broadly, autonomous vehicles.
 
-The second key takeaway is the opposite. In scenarios where the user has both sufficient time and expertise to review a model explanation, the explanation is incredibly useful and practically necessary for acceptance. Validation in these scenarios is, of course, reassuring. However, when the decision is ultimately made by a highly skilled professional, they bear the responsibility and should also be liable for the decision they made. Overly prescriptive regulation for decision-support systems used by highly skilled professionals encourages complacency. Such complacency would be detrimental to quality of care in domains where we rely on professional oversight to reap the benefits of co-piloted AI-human systems. The studies in this report broadly indicate that AI-assisted decision-making yields superior results when paired with a critical expert. Absolving these experts of their authority would certainly worsen outcomes. In that vein, we should also protect the opinions of professionals when they disagree with AI-recommendations. If patients can reliably win lawsuits against doctors for diverging from CDSS recommendations, then we have effectively nullified their professional opinions and thereby relinquished oversight of CDSS systems. Regulators, lawmakers, developers, and users should all be aware of this risk.
+Second, in scenarios where the user has both sufficient time and expertise to review a model explanation, the explanation is incredibly useful and practically necessary for acceptance. Validation in these scenarios is, of course, reassuring. However, when the decision is ultimately made by a highly skilled professional, they bear the responsibility and should also be liable for the decision they made. Overly prescriptive regulation for decision-support systems used by highly skilled professionals encourages complacency. Such complacency would be detrimental to quality of care in domains where we rely on professional oversight to reap the benefits of co-piloted AI-human systems. The studies in this report broadly indicate that AI-assisted decision-making yields superior results when paired with a critical expert. Absolving these experts of their authority would certainly worsen outcomes. In that vein, we should also protect the opinions of professionals when they disagree with AI-recommendations. If patients can reliably win lawsuits against doctors for diverging from CDSS recommendations, then we have effectively nullified their professional opinions and thereby relinquished oversight of CDSS systems. Regulators, lawmakers, developers, and users should all be aware of this risk.
 
 \subsection{Study Limitations}
 \label{sec:studylimits}
@@ -531,22 +532,22 @@ Nearly all studies in this report found that AI technologies ``improved outcomes
 
 The authors of this review do not have expertise in all the fields evaluated. For this reason, there may be nuances in the subdomains that we missed. However, we believe the importance of cross-industry learning supersedes this potential limitation.
 
-This review strictly sourced material from published academic articles on Web of Science and Scopus. As such, our review of relevant regulations for the variety of industries covered is necessarily incomplete. This in and of itself may underscore the disconnect between software developers, industry practitioners, and regulators. We urge each party to make efforts to close this gap to promote the safe use of this technology. Papers such as this serve as a first-step in that direction.
+This review strictly sourced material from published academic articles on Web of Science and Scopus. As such, our review of relevant regulations for the various industries covered is necessarily incomplete. This, in and of itself, may underscore the disconnect between software developers, industry practitioners, and regulators. We urge each party to make efforts to close this gap to promote the safe use of this technology. Papers such as this serve as a first-step in that direction.
 
-The search terms we employed in our methodology necessarily missed some critical papers. To manage our review capacity, we were forced to create and limit our terms to the most-likely relevant papers, though we recognize that some have fallen through the cracks. Because of this, the conclusions drawn in this report should represent general trends in the literature, but it is likely that counterexamples exist, especially as the state of AI research rapidly progresses.
+The search terms we employed in our methodology may have missed some critical papers. To manage our review capacity, we were forced to create and limit our terms to the most-likely relevant papers, though we recognize that some have fallen through the cracks. Because of this, the conclusions drawn in this report should represent general trends in the literature, but it is likely that counterexamples exist, especially as the state of AI research rapidly progresses.
 
 \subsection{Future Work}
 \label{sec:futurework}
-Future work should consider...
+Though we describe opportunities for future work throughout this report, a few stand out. First, we observed data limitation issues across industries in this review. Future work should seek to improve the quality, accessibility, security, and cross-organizational sharing of data for sensitive applications. More broadly, future work should evaluate the security risks of AI-based decision-making in sensitive industries to both inform regulation and help guide data limitation efforts. From a policy perspective, future work should evaluate how international technology can manage varying national regulations in a way that emphasizes user safety. Likewise, future work should extend on the findings of this report to evaluate the nuances of AI safety in industry-specific applications. Domain-specific regulatory bodies may require this detail for effective policies. Finally, future work must continue to explore validation and explanation techniques. The quality of these techniques will underpin trust in this powerful technology.  
+
 
 \section{Acknowledgment}
-The authors would like to thank Riley Fisher for his feedback and suggestions during review, Leo Tunkle for his help with early abstract screenings, and Sam Dotson for his feedback during methodology development. 
+The authors would like to thank Riley Fisher for his feedback and suggestions during review, Leo Tunkle for his help with early abstract screenings, and Dr. Sam Dotson for his feedback during methodology development. 
 
 \textcolor{blue}{@Majdi, please check this!}
 This research is funded by the U.S. Nuclear Regulatory Commission's University Nuclear Leadership Program for Research and Development, award number 31310024M0013. The first author (N. Panczyk) received sponsorship through the National Science Foundation's Graduate Research Fellowship Program. 
 
 \section{CRediT Author Statement}
-\textcolor{blue}{@Majdi, please check this! I copied from KAN.}
 \begin{itemize}
     \item \textbf{Nataly R. Panczyk}: Conceptualization, Methodology, Software, Validation, Formal Analysis, Visualization, Investigation, Data Curation, Writing - Original Draft.   
     \item \textbf{Majdi I. Radaideh}: Conceptualization, Methodology, Data Curation, Formal Analysis, Resources, Funding Acquisition, Supervision, Project Administration, Writing - Review and Edit. 
