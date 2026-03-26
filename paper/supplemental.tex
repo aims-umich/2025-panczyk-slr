@@ -1,5 +1,5 @@
-\documentclass[12pt]{article}
-
+\documentclass[12pt]{report}
+\usepackage[legalpaper, portrait, margin=1in]{geometry}
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
 %% The amsmath package provides various useful equation environments.
@@ -22,7 +22,7 @@
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=cyan,
+    urlcolor=blue,
     }
 \usepackage{graphicx}
 \usepackage{pgfplots}
@@ -51,30 +51,26 @@
 
 \title{Supplemental Material}
 \begin{document}
-\maketitle
+% \maketitle
 
-\section{Code Repository}
-\textcolor{red}{Insert code repository here!}
+\section*{Code Repository}
+\href{https://github.com/aims-umich/2025-panczyk-slr}{Code repository available here.}
 
-\section{Additional Figures}
-\begin{figure}[ht!]
-\centering
-\begin{subfigure}{\textwidth}
+\section*{Additional Figures}
+
+\begin{figure}[ht]
+    \centering
     \resizebox{\textwidth}{!}{\input{figs/large_tree_scopus.pgf}}
     % \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_scopus.png}
-    \caption{Scopus}
+    \caption{Tree diagram showing the sum of articles returned by Scopus for all query combinations that yielded $> 4$ results. Size of the box corresponds to the number of articles (also annotated) and color corresponds to outcome term.}
     \label{fig:tree_scopus}
-\end{subfigure}
-\hfill
-\begin{subfigure}{\textwidth}
+\end{figure}
+
+\begin{figure}[ht]
     \resizebox{\textwidth}{!}{\input{figs/large_tree_wos.pgf}}
     % \includegraphics[width=\textwidth, trim=0cm 0cm 0cm 0.8cm, clip=true]{figs/large_tree_wos.png}
-    \caption{Web of Science}
+    \caption{Tree diagram showing the sum of articles returned by Web of Science for all query combinations that yielded $> 4$ results. Size of the box corresponds to the number of articles (also annotated) and color corresponds to outcome term.}
     \label{fig:tree_wos}
-\end{subfigure}
-        
-\caption{Tree diagrams showing the sum of articles returned by each database for all query combinations that yielded $> 4$ results. Size of the box corresponds to the number of articles (also annotated) and color corresponds to outcome term.}
-\label{fig:tree}
 \end{figure}
 
 

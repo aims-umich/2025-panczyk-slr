@@ -54,7 +54,7 @@ def vizualize(txtfile, save_as="barplot.png"):
     )
 
     print(type(pop_df))
-    fig, ax = plt.subplots(1, 1, figsize=(14, 10))
+    fig, ax = plt.subplots(1, 1, figsize=(10, 13))
     sns.set_color_codes("pastel")
     sns.barplot(x="count", y="population", data=pop_df, label="Population", color="b")
     sns.barplot(
@@ -67,8 +67,14 @@ def vizualize(txtfile, save_as="barplot.png"):
     sns.barplot(x="count", y="outcome", data=outcome_df, label="Outcome", color="green")
     ax.set_ylabel("Search Term")
     ax.set_xlabel("Count")
+    ax.tick_params(axis='both', labelsize=18)
+    ax.legend(
+    prop={'size': 18},          # Bigger legend text
+    title_fontsize=14,
+    markerscale=1.5,            # Bigger legend color patches
+    )
     fig.tight_layout()
-    plt.savefig(save_as)
+    plt.savefig(save_as, bbox_inches='tight')
     return
 
 
@@ -97,7 +103,7 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
         for _, row in plot_df.iterrows()
     ]
 
-    plt.figure(figsize=(14, 10))
+    plt.figure(figsize=(16, 12))
     plt.axis("off")
     if large:
         squarify.plot(
@@ -105,11 +111,11 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
             label=labels,
             alpha=0.8,
             color=colors,
-            text_kwargs={"fontsize": 12, "weight": "bold"},
+            text_kwargs={"fontsize": 14, "weight": "bold"},
             pad=False,
             ec="gray",
         )
-        plt.title(f"Search Results by Term Combinations with Greater Than Four Papers", fontsize=16)
+        # plt.title(f"Search Results by Term Combinations with Greater Than Four Papers", fontsize=16)
         plt.tight_layout()
         plt.savefig(save_as, bbox_inches="tight")
     else:
@@ -127,6 +133,7 @@ def treeplot(txtfile, large=True, save_as="tree.png"):
 
 
 if __name__ == "__main__":
+    ## FOR SNAKEMAKE, UNCOMMENT BELOW:
     # loop over input and output files for first scopus, then web of science
     # for metrics_file, small_tree, large_tree, bar_plot in zip(
     #     snakemake.input.metrics,
@@ -137,6 +144,8 @@ if __name__ == "__main__":
     #     vizualize(metrics_file, save_as=bar_plot)
     #     treeplot(metrics_file, large=True, save_as=large_tree)
     #     treeplot(metrics_file, large=False, save_as=small_tree)
+
+    ## FOR MANUAL, UNCOMMENT BELOW:
     metrics_files = ['../../results/scopus_metrics.txt', '../../results/wos_metrics.txt']
     small_trees = ['../../paper/figs/small_tree_scopus.pgf', '../../paper/figs/small_tree_wos.pgf']
     large_trees = ['../../paper/figs/large_tree_scopus.pgf', '../../paper/figs/large_tree_wos.pgf']

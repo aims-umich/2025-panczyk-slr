@@ -35,6 +35,7 @@ plt.rcParams['ytick.labelsize'] = 16
 #     return 
 
 def plot_countries(df, version='map'):
+    # MUST TURN OFF PGF PLOTTING PARAMS FOR THIS TO WORK
     if version=='map':
         geo_df = gpd.read_file('World_Countries_Generalized_Shapefile/World_Countries_Generalized.shp')[['COUNTRY', 'geometry']]
         geo_df.columns = ['Country', 'geometry']
@@ -57,7 +58,7 @@ def plot_countries(df, version='map'):
         cmap = 'Purples'
         fig, ax = plt.subplots(figsize=(14,8))
         ax.axis('off')
-        ax.set_title('Article Density by Country', fontdict={'fontsize': '20', 'fontweight': '3'})
+        # ax.set_title('Article Density by Country', fontdict={'fontsize': '20', 'fontweight': '3'})
         geo_df.plot(ax=ax, edgecolor='black', facecolor='white', linewidth=0.1)
         merged.plot(column='Count', edgecolor='black', linewidth=0.1, cmap=cmap, ax=ax)
         sm = plt.cm.ScalarMappable(norm=plt.Normalize(vmin=vmin, vmax=vmax), cmap=cmap)
@@ -66,7 +67,7 @@ def plot_countries(df, version='map'):
         # Add the colorbar to the figure
         cbaxes = fig.add_axes([0.15, 0.25, 0.01, 0.4])
         cbar = fig.colorbar(sm, cax=cbaxes)
-        plt.savefig('../../paper/figs/countries_map.png', dpi=300)
+        plt.savefig('../../paper/figs/countries_map.pdf', dpi=300)
     else:
         fig, ax = plt.subplots(figsize=(12,8))
         country_series = (
@@ -79,7 +80,7 @@ def plot_countries(df, version='map'):
         sns.countplot(y=country_series, order=country_series.value_counts().index, color="lavender", ax=ax)
         ax.set_xlabel('Number of Articles with at Least One Contribution from Country Listed')
         plt.tight_layout()
-        plt.savefig('../../paper/figs/countries.pgf')
+        plt.savefig('../../paper/figs/countries.pdf')
     return 
 
 def plot_ai_type(df):

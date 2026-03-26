@@ -33,7 +33,7 @@
 \begingroup%
 \makeatletter%
 \begin{pgfpicture}%
-\pgfpathrectangle{\pgfpointorigin}{\pgfqpoint{13.794701in}{9.900000in}}%
+\pgfpathrectangle{\pgfpointorigin}{\pgfqpoint{15.779460in}{11.853725in}}%
 \pgfusepath{use as bounding box, clip}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -45,15 +45,15 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetdash{}{0pt}%
 \pgfpathmoveto{\pgfqpoint{0.000000in}{0.000000in}}%
-\pgfpathlineto{\pgfqpoint{13.794701in}{0.000000in}}%
-\pgfpathlineto{\pgfqpoint{13.794701in}{9.900000in}}%
-\pgfpathlineto{\pgfqpoint{0.000000in}{9.900000in}}%
+\pgfpathlineto{\pgfqpoint{15.779460in}{0.000000in}}%
+\pgfpathlineto{\pgfqpoint{15.779460in}{11.853725in}}%
+\pgfpathlineto{\pgfqpoint{0.000000in}{11.853725in}}%
 \pgfpathlineto{\pgfqpoint{0.000000in}{0.000000in}}%
 \pgfpathclose%
 \pgfusepath{fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -66,15 +66,15 @@
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
 \pgfpathmoveto{\pgfqpoint{0.100000in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{3.007692in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{3.007692in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{3.685761in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{3.685761in}}%
 \pgfpathlineto{\pgfqpoint{0.100000in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -86,16 +86,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{0.100000in}{3.007692in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{3.007692in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{5.084615in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{5.084615in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{3.007692in}}%
+\pgfpathmoveto{\pgfqpoint{0.100000in}{3.685761in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{3.685761in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{6.247020in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{6.247020in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{3.685761in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -107,16 +107,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{0.100000in}{5.084615in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{5.084615in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{6.746154in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{6.746154in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{5.084615in}}%
+\pgfpathmoveto{\pgfqpoint{0.100000in}{6.247020in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{6.247020in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{8.296026in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{8.296026in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{6.247020in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -128,16 +128,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{0.100000in}{6.746154in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{6.746154in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{8.200000in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{8.200000in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{6.746154in}}%
+\pgfpathmoveto{\pgfqpoint{0.100000in}{8.296026in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{8.296026in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{10.088907in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{10.088907in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{8.296026in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -149,16 +149,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{0.100000in}{8.200000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{8.200000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{0.100000in}{8.200000in}}%
+\pgfpathmoveto{\pgfqpoint{0.100000in}{10.088907in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{10.088907in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{0.100000in}{10.088907in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -170,16 +170,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{5.741042in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{5.741042in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{0.100000in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{6.548976in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{6.548976in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -191,16 +191,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.741042in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{7.894625in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{7.894625in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{5.741042in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{5.741042in}{0.100000in}}%
+\pgfpathmoveto{\pgfqpoint{6.548976in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{9.011006in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{9.011006in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{6.548976in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{6.548976in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -212,16 +212,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{7.894625in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{9.852429in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{9.852429in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{7.894625in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{7.894625in}{0.100000in}}%
+\pgfpathmoveto{\pgfqpoint{9.011006in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{11.249215in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{11.249215in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{9.011006in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{9.011006in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -233,16 +233,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{9.852429in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{11.810232in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{11.810232in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{9.852429in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{9.852429in}{0.100000in}}%
+\pgfpathmoveto{\pgfqpoint{11.249215in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{13.487423in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{13.487423in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{11.249215in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{11.249215in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -254,16 +254,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.810232in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{0.100000in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{11.810232in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{11.810232in}{0.100000in}}%
+\pgfpathmoveto{\pgfqpoint{13.487423in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{0.100000in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{13.487423in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{13.487423in}{0.100000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -275,16 +275,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{5.419402in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{5.419402in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{1.742131in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{6.181271in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{6.181271in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{2.125073in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -296,16 +296,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.419402in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{7.642908in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{7.642908in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{5.419402in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{5.419402in}{1.742131in}}%
+\pgfpathmoveto{\pgfqpoint{6.181271in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{8.723236in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{8.723236in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{6.181271in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{6.181271in}{2.125073in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -317,16 +317,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{7.642908in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{9.619357in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{9.619357in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{7.642908in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{7.642908in}{1.742131in}}%
+\pgfpathmoveto{\pgfqpoint{8.723236in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{10.982761in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{10.982761in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{8.723236in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{8.723236in}{2.125073in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -338,16 +338,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{9.619357in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{11.595806in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{11.595806in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{9.619357in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{9.619357in}{1.742131in}}%
+\pgfpathmoveto{\pgfqpoint{10.982761in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{13.242286in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{13.242286in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{10.982761in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{10.982761in}{2.125073in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -359,16 +359,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.595806in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{1.742131in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{11.595806in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{11.595806in}{1.742131in}}%
+\pgfpathmoveto{\pgfqpoint{13.242286in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{2.125073in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{13.242286in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{13.242286in}{2.125073in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -380,16 +380,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{4.378121in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{4.378121in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{5.375772in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{5.375772in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -401,16 +401,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{4.378121in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{4.378121in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{5.712799in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{5.712799in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{4.378121in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{5.375772in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{5.375772in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{7.021695in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{7.021695in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{5.375772in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -422,16 +422,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{5.712799in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{5.712799in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{7.047478in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{7.047478in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{5.712799in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{7.021695in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{7.021695in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{8.667618in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{8.667618in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{7.021695in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -443,16 +443,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{7.047478in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{7.047478in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{8.382156in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{8.382156in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{7.047478in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{8.667618in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{8.667618in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{10.313542in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{10.313542in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{8.667618in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -464,16 +464,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{3.195897in}{8.382156in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{8.382156in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{3.195897in}{8.382156in}}%
+\pgfpathmoveto{\pgfqpoint{3.639305in}{10.313542in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{10.313542in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{3.639305in}{10.313542in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -485,16 +485,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.122935in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{6.812799in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{6.812799in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{5.842342in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{7.774236in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{7.774236in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -506,16 +506,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.812799in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{8.502663in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{8.502663in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{6.812799in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{6.812799in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{7.774236in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{9.706130in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{9.706130in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{7.774236in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{7.774236in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -527,16 +527,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.502663in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{10.192527in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{10.192527in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{8.502663in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{8.502663in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{9.706130in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{11.638023in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{11.638023in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{9.706130in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{9.706130in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -548,16 +548,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{10.192527in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{11.882391in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{11.882391in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{10.192527in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{10.192527in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{11.638023in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{13.569917in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{13.569917in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{11.638023in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{11.638023in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -569,16 +569,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.882391in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{3.043443in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{11.882391in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{11.882391in}{3.043443in}}%
+\pgfpathmoveto{\pgfqpoint{13.569917in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{3.729849in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{13.569917in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{13.569917in}{3.729849in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -590,16 +590,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.122935in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{5.824140in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{5.824140in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{4.375194in}}%
+\pgfpathmoveto{\pgfqpoint{5.842342in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{7.159000in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{7.159000in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{5.372162in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -611,16 +611,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.122935in}{5.824140in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{5.824140in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{7.066093in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{7.066093in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{5.824140in}}%
+\pgfpathmoveto{\pgfqpoint{5.842342in}{7.159000in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{7.159000in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{8.690575in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{8.690575in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{7.159000in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -632,16 +632,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.122935in}{7.066093in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{7.066093in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{8.308047in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{8.308047in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{7.066093in}}%
+\pgfpathmoveto{\pgfqpoint{5.842342in}{8.690575in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{8.690575in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{10.222150in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{10.222150in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{8.690575in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -653,16 +653,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{5.122935in}{8.308047in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{8.308047in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{5.122935in}{8.308047in}}%
+\pgfpathmoveto{\pgfqpoint{5.842342in}{10.222150in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{10.222150in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{5.842342in}{10.222150in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -674,16 +674,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.676119in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{8.400153in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{8.400153in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{4.375194in}}%
+\pgfpathmoveto{\pgfqpoint{7.617980in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{9.588938in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{9.588938in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{5.372162in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -695,16 +695,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.400153in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{10.124187in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{10.124187in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{8.400153in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{8.400153in}{4.375194in}}%
+\pgfpathmoveto{\pgfqpoint{9.588938in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{11.559895in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{11.559895in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{9.588938in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{9.588938in}{5.372162in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -716,16 +716,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{10.124187in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{11.848221in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{11.848221in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{10.124187in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{10.124187in}{4.375194in}}%
+\pgfpathmoveto{\pgfqpoint{11.559895in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{13.530853in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{13.530853in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{11.559895in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{11.559895in}{5.372162in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -737,16 +737,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.848221in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{4.375194in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{11.848221in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{11.848221in}{4.375194in}}%
+\pgfpathmoveto{\pgfqpoint{13.530853in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{5.372162in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{13.530853in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{13.530853in}{5.372162in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -758,16 +758,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.676119in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{6.600234in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{6.600234in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{5.494071in}}%
+\pgfpathmoveto{\pgfqpoint{7.617980in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{8.116077in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{8.116077in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{6.751960in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -779,16 +779,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.676119in}{6.600234in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{6.600234in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{7.706396in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{7.706396in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{6.600234in}}%
+\pgfpathmoveto{\pgfqpoint{7.617980in}{8.116077in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{8.116077in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{9.480195in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{9.480195in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{8.116077in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -800,16 +800,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.676119in}{7.706396in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{7.706396in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{8.628198in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{8.628198in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{7.706396in}}%
+\pgfpathmoveto{\pgfqpoint{7.617980in}{9.480195in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{9.480195in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{10.616960in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{10.616960in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{9.480195in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -821,16 +821,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{6.676119in}{8.628198in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{8.628198in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{6.676119in}{8.628198in}}%
+\pgfpathmoveto{\pgfqpoint{7.617980in}{10.616960in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{10.616960in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{7.617980in}{10.616960in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -842,16 +842,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.419970in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{10.137398in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{10.137398in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{5.494071in}}%
+\pgfpathmoveto{\pgfqpoint{9.611592in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{11.574999in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{11.574999in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{6.751960in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -863,16 +863,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{10.137398in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{11.854827in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{11.854827in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{10.137398in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{10.137398in}{5.494071in}}%
+\pgfpathmoveto{\pgfqpoint{11.574999in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{13.538405in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{13.538405in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{11.574999in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{11.574999in}{6.751960in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -884,16 +884,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.854827in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{5.494071in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{11.854827in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{11.854827in}{5.494071in}}%
+\pgfpathmoveto{\pgfqpoint{13.538405in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{6.751960in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{13.538405in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{13.538405in}{6.751960in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -905,16 +905,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.419970in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{7.470036in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{7.470036in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{6.430055in}}%
+\pgfpathmoveto{\pgfqpoint{9.611592in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{9.188717in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{9.188717in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{7.906213in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -926,16 +926,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.419970in}{7.470036in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{7.470036in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{8.510018in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{8.510018in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{7.470036in}}%
+\pgfpathmoveto{\pgfqpoint{9.611592in}{9.188717in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{9.188717in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{10.471221in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{10.471221in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{9.188717in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -947,16 +947,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{8.419970in}{8.510018in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{8.510018in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{8.419970in}{8.510018in}}%
+\pgfpathmoveto{\pgfqpoint{9.611592in}{10.471221in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{10.471221in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{9.611592in}{10.471221in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -968,16 +968,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{9.965655in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{11.768955in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{11.768955in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{6.430055in}}%
+\pgfpathmoveto{\pgfqpoint{11.378658in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{13.440235in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{13.440235in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{7.906213in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -989,16 +989,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.768955in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{6.430055in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{11.768955in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{11.768955in}{6.430055in}}%
+\pgfpathmoveto{\pgfqpoint{13.440235in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{7.906213in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{13.440235in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{13.440235in}{7.906213in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -1010,16 +1010,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{9.965655in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{8.435734in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{8.435734in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{7.321468in}}%
+\pgfpathmoveto{\pgfqpoint{11.378658in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{10.379613in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{10.379613in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{9.005502in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -1031,16 +1031,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{9.965655in}{8.435734in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{8.435734in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{9.965655in}{8.435734in}}%
+\pgfpathmoveto{\pgfqpoint{11.378658in}{10.379613in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{10.379613in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{11.378658in}{10.379613in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -1052,16 +1052,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.408295in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{12.490275in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{12.490275in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{7.321468in}}%
+\pgfpathmoveto{\pgfqpoint{13.027919in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{14.264865in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{14.264865in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{9.005502in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -1073,16 +1073,16 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{12.490275in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{7.321468in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{12.490275in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{12.490275in}{7.321468in}}%
+\pgfpathmoveto{\pgfqpoint{14.264865in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{9.005502in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{14.264865in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{14.264865in}{9.005502in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
 \begin{pgfscope}%
-\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{13.472255in}{9.450000in}}%
+\pgfpathrectangle{\pgfqpoint{0.100000in}{0.100000in}}{\pgfqpoint{15.401811in}{11.653725in}}%
 \pgfusepath{clip}%
 \pgfsetbuttcap%
 \pgfsetmiterjoin%
@@ -1094,11 +1094,11 @@
 \pgfsetstrokecolor{currentstroke}%
 \pgfsetstrokeopacity{0.800000}%
 \pgfsetdash{}{0pt}%
-\pgfpathmoveto{\pgfqpoint{11.408295in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{8.807156in}}%
-\pgfpathlineto{\pgfqpoint{13.572255in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{9.550000in}}%
-\pgfpathlineto{\pgfqpoint{11.408295in}{8.807156in}}%
+\pgfpathmoveto{\pgfqpoint{13.027919in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{10.837650in}}%
+\pgfpathlineto{\pgfqpoint{15.501811in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{11.753725in}}%
+\pgfpathlineto{\pgfqpoint{13.027919in}{10.837650in}}%
 \pgfpathclose%
 \pgfusepath{stroke,fill}%
 \end{pgfscope}%
@@ -1106,1207 +1106,1201 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.375668in, y=1.779308in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=1.542917in, y=2.163436in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.984513in, y=1.608013in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=1.073531in, y=1.957881in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.341621in, y=1.436717in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=1.502060in, y=1.752326in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.481282in, y=1.254310in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(28)}}%
+\pgftext[x=1.669653in, y=1.533437in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(28)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.411741in, y=4.266986in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=1.586204in, y=5.231390in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.951189in, y=4.095691in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=1.033543in, y=5.025835in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.341621in, y=3.924395in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=1.502060in, y=4.820280in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.481282in, y=3.741988in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(20)}}%
+\pgftext[x=1.669653in, y=4.601391in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(20)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.375668in, y=6.140847in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=1.542917in, y=7.542078in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.951189in, y=5.969551in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=1.033543in, y=7.336523in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.341621in, y=5.798256in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=1.502060in, y=7.130968in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.481282in, y=5.615849in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(16)}}%
+\pgftext[x=1.669653in, y=6.912079in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(16)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.411741in, y=7.699465in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=1.586204in, y=9.464133in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.951189in, y=7.528170in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=1.033543in, y=9.258578in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.403928in, y=7.345762in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=1.576829in, y=9.039689in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.481282in, y=7.163355in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(14)}}%
+\pgftext[x=1.669653in, y=8.820800in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(14)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.112262in, y=9.100462in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=1.226830in, y=11.191871in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.951189in, y=8.929167in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=1.033543in, y=10.986316in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.341621in, y=8.757871in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=1.502060in, y=10.780761in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.481282in, y=8.575464in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(13)}}%
+\pgftext[x=1.669653in, y=10.561872in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(13)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.618074in, y=1.146528in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
+\pgftext[x=4.073668in, y=1.383092in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.032464in, y=0.975232in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
+\pgftext[x=4.570936in, y=1.177537in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.085850in, y=0.803937in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=4.634998in, y=0.971982in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.301803in, y=0.621530in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(13)}}%
+\pgftext[x=4.894141in, y=0.753093in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(13)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.581626in, y=1.141898in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=7.496542in, y=1.377536in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.121074in, y=0.970602in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=6.943881in, y=1.171981in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.215991in, y=0.799307in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=7.057781in, y=0.966426in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.651167in, y=0.616900in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(11)}}%
+\pgftext[x=7.579991in, y=0.747537in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(11)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.577617in, y=1.146528in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=9.775018in, y=1.383092in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.176768in, y=0.975232in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=9.294000in, y=1.177537in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.567200in, y=0.803937in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=9.762518in, y=0.971982in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.706860in, y=0.621530in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(10)}}%
+\pgftext[x=9.930111in, y=0.753093in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(10)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.479961in, y=1.146528in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
+\pgftext[x=11.946676in, y=1.383092in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.134571in, y=0.975232in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=11.532209in, y=1.177537in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.525003in, y=0.803937in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=12.000727in, y=0.971982in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.664664in, y=0.621530in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(10)}}%
+\pgftext[x=12.168319in, y=0.753093in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(10)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.155557in, y=1.152084in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=13.851794in, y=1.389758in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.585534in, y=0.980788in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=14.367765in, y=1.184203in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.447224in, y=0.798381in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=14.201794in, y=0.965315in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.571452in, y=0.615974in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
+\pgftext[x=14.350867in, y=0.746426in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.457254in, y=2.618249in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
+\pgftext[x=3.889815in, y=3.198016in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.644214in, y=2.446954in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=4.114166in, y=2.992461in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.925030in, y=2.275658in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=4.451145in, y=2.786906in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.187858in, y=2.093251in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
+\pgftext[x=4.766538in, y=2.568017in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.680760in, y=2.618249in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
+\pgftext[x=6.431780in, y=3.198016in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous vehicle*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.425445in, y=2.446954in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=7.325402in, y=2.992461in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.148536in, y=2.275658in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=6.993111in, y=2.786906in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.411363in, y=2.093251in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
+\pgftext[x=7.308504in, y=2.568017in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(9)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.394925in, y=2.613619in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=9.569550in, y=3.192460in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.485878in, y=2.442324in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
+\pgftext[x=9.678693in, y=2.986905in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.029290in, y=2.271028in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=9.130789in, y=2.781350in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.511341in, y=2.088621in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=9.709249in, y=2.562462in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.071895in, y=2.618249in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=11.469701in, y=3.198016in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.779505in, y=2.446954in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
+\pgftext[x=11.118833in, y=2.992461in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.005739in, y=2.275658in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=11.390314in, y=2.786906in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.487790in, y=2.093251in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=11.968774in, y=2.568017in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.347823in, y=2.613619in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=14.088600in, y=3.192460in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.920595in, y=2.442324in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=13.575927in, y=2.986905in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.277704in, y=2.271028in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=14.004457in, y=2.781350in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.464239in, y=2.088621in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=14.228299in, y=2.562462in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.623729in, y=3.936244in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=4.098001in, y=4.823365in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.331339in, y=3.764949in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
+\pgftext[x=3.747133in, y=4.617810in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.853089in, y=3.593653in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=4.373231in, y=4.412255in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.039624in, y=3.411246in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=4.597074in, y=4.193367in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.863506in, y=5.270923in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=4.385731in, y=6.469289in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.462657in, y=5.099627in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=3.904714in, y=6.263733in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.776797in, y=4.928331in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=4.281681in, y=6.058178in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.039624in, y=4.745924in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=4.597074in, y=5.839290in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.887136in, y=6.605601in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=4.414088in, y=8.115212in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.014161in, y=6.434305in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
+\pgftext[x=4.566518in, y=7.909657in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.853089in, y=6.263010in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=4.373231in, y=7.704102in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.039624in, y=6.080603in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=4.597074in, y=7.485213in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.343260in, y=7.940279in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous driving}}%
+\pgftext[x=3.761438in, y=9.761135in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous driving}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.495980in, y=7.768984in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=3.944702in, y=9.555580in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.776797in, y=7.597688in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=4.281681in, y=9.350025in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.039624in, y=7.415281in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
+\pgftext[x=4.597074in, y=9.131136in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(8)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.858876in, y=9.191540in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}aircraft}}%
+\pgftext[x=4.380176in, y=11.304188in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}aircraft}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.495980in, y=9.020245in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=3.944702in, y=11.098633in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.853089in, y=8.848949in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=4.373231in, y=10.893078in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=4.039624in, y=8.666542in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=4.597074in, y=10.674189in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.695587in, y=3.934781in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=6.481553in, y=4.821561in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.271108in, y=3.763485in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=5.972179in, y=4.616005in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.585248in, y=3.592189in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=6.349146in, y=4.410450in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.848075in, y=3.409782in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=6.664539in, y=4.191562in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.421524in, y=3.930151in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=8.456734in, y=4.816005in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.512476in, y=3.758855in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
+\pgftext[x=8.565877in, y=4.610450in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.351404in, y=3.587560in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=8.372591in, y=4.404895in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.537940in, y=3.405153in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=8.596433in, y=4.186006in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.811908in, y=3.934781in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=10.029254in, y=4.821561in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.241885in, y=3.763485in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=10.545225in, y=4.616005in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.041268in, y=3.592189in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=10.304484in, y=4.410450in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.227804in, y=3.409782in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=10.528327in, y=4.191562in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.668439in, y=3.934781in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}radiation}}%
+\pgftext[x=12.161147in, y=4.821561in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}radiation}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.340700in, y=3.763485in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=11.767861in, y=4.616005in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.731132in, y=3.592189in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=12.236378in, y=4.410450in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.917668in, y=3.409782in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=12.460221in, y=4.191562in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.375954in, y=3.934781in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
+\pgftext[x=14.114221in, y=4.821561in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.030564in, y=3.763485in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=13.699754in, y=4.616005in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.344704in, y=3.592189in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=14.076721in, y=4.410450in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.607532in, y=3.409782in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=14.392114in, y=4.191562in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.603617in, y=5.325129in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=6.375069in, y=6.536136in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.236091in, y=5.153834in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=5.934039in, y=6.330581in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.516908in, y=4.982538in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=6.271018in, y=6.125026in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.779735in, y=4.800131in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
+\pgftext[x=6.586411in, y=5.906137in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(7)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.663319in, y=6.665949in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=6.446712in, y=8.189787in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.793817in, y=6.494653in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=6.603309in, y=7.984232in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.297685in, y=6.323358in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=6.007951in, y=7.778677in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.779735in, y=6.140951in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=6.586411in, y=7.559788in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.363840in, y=7.912532in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=6.087338in, y=9.726917in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.202768in, y=7.741237in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=5.894051in, y=9.521362in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.516908in, y=7.569941in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=6.271018in, y=9.315807in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.779735in, y=7.387534in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=6.586411in, y=9.096918in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.627247in, y=9.154486in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=6.403425in, y=11.258492in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.463522in, y=8.983190in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
+\pgftext[x=6.206956in, y=11.052937in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.593200in, y=8.811894in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=6.362569in, y=10.847382in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=5.779735in, y=8.629487in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=6.586411in, y=10.628493in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.002449in, y=5.165651in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=7.960636in, y=6.339283in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.841377in, y=4.994355in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=7.767349in, y=6.133728in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.294116in, y=4.811948in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=8.310635in, y=5.914839in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.418344in, y=4.629541in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=8.459709in, y=5.695951in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.989890in, y=5.160095in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=10.247681in, y=6.332616in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.711437in, y=4.988799in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}deep learning}}%
+\pgftext[x=9.913538in, y=6.127061in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}deep learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.955843in, y=4.817504in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=10.206824in, y=5.921506in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.142378in, y=4.635097in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=10.430667in, y=5.702617in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.450517in, y=5.160095in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=11.902551in, y=6.332616in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.840949in, y=4.988799in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
+\pgftext[x=12.371069in, y=6.127061in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}ML}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.679877in, y=4.817504in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=12.177782in, y=5.921506in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.866413in, y=4.635097in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=12.401625in, y=5.702617in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.474031in, y=5.155465in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=14.232883in, y=6.327060in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.882162in, y=4.984169in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
+\pgftext[x=13.522642in, y=6.121505in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.108396in, y=4.812874in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=13.794122in, y=5.915950in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.590447in, y=4.630467in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=14.372582in, y=5.697062in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.252134in, y=6.278170in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=8.259694in, y=7.711240in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.442334in, y=6.106875in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=8.487934in, y=7.505685in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.304024in, y=5.924468in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=8.321962in, y=7.286797in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.428253in, y=5.742061in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=8.471036in, y=7.067908in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.275764in, y=7.378777in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=8.288050in, y=9.068691in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.442334in, y=7.207481in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=8.487934in, y=8.863136in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.241717in, y=7.036186in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=8.247194in, y=8.657581in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.428253in, y=6.853779in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
+\pgftext[x=8.471036in, y=8.438692in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(6)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.025041in, y=8.392759in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}radiotherapy}}%
+\pgftext[x=7.987183in, y=10.319132in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}radiotherapy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.851285in, y=8.221464in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=7.778676in, y=10.113577in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.241717in, y=8.050168in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=8.247194in, y=9.908022in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.428253in, y=7.867761in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=8.471036in, y=9.689134in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.311837in, y=9.309931in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=8.331337in, y=11.450342in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=6.851285in, y=9.138636in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=7.778676in, y=11.244787in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.165425in, y=8.967340in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=8.155643in, y=11.039231in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=7.428253in, y=8.784933in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=8.471036in, y=10.820343in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.978144in, y=6.187525in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}aircraft}}%
+\pgftext[x=10.232648in, y=7.599641in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}aircraft}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.581925in, y=6.016230in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=9.757186in, y=7.394086in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.896064in, y=5.844934in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=10.134153in, y=7.188531in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.158892in, y=5.662527in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=10.449546in, y=6.969643in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.759905in, y=6.182895in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=12.273253in, y=7.594086in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.890403in, y=6.011600in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=12.429850in, y=7.388531in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.782040in, y=5.840304in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}harm}}%
+\pgftext[x=12.299815in, y=7.182976in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}harm}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.876321in, y=5.657897in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=12.412952in, y=6.964087in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.477334in, y=6.188451in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=14.236659in, y=7.600753in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.050106in, y=6.017156in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=13.723986in, y=7.395197in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.469521in, y=5.834748in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=14.227284in, y=7.176309in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.593749in, y=5.652341in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=14.376358in, y=6.957420in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.956605in, y=7.176434in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=10.211676in, y=8.819131in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.087103in, y=7.005138in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=10.368273in, y=8.613576in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.948792in, y=6.822731in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=10.202301in, y=8.394688in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.073021in, y=6.640324in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=10.351375in, y=8.175799in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.956605in, y=8.210860in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=10.211676in, y=10.094968in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.756808in, y=8.039564in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
+\pgftext[x=9.971920in, y=9.889413in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}automated}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.886485in, y=7.868269in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=10.127533in, y=9.683858in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.073021in, y=7.685862in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=10.351375in, y=9.464970in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.956605in, y=9.250842in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
+\pgftext[x=10.211676in, y=11.377472in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}drug*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.364736in, y=9.079546in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
+\pgftext[x=9.501435in, y=11.171917in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}artificial intelligence}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=8.886485in, y=8.908250in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=10.127533in, y=10.966362in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.073021in, y=8.725843in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=10.351375in, y=10.747473in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.051150in, y=7.101223in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous driving}}%
+\pgftext[x=11.430061in, y=8.726413in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}autonomous driving}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.761595in, y=6.929928in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=12.282594in, y=8.520858in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.484686in, y=6.758632in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=11.950303in, y=8.315302in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.747514in, y=6.576225in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=12.265696in, y=8.096414in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.134919in, y=7.101223in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
+\pgftext[x=13.828200in, y=8.726413in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}clinical trial*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.564896in, y=6.929928in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=14.344171in, y=8.520858in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.068763in, y=6.758632in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
+\pgftext[x=13.748813in, y=8.315302in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}adverse event*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.550814in, y=6.576225in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=14.327273in, y=8.096414in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.335606in, y=8.109619in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
+\pgftext[x=11.781646in, y=9.969780in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=9.990216in, y=7.938323in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=11.367179in, y=9.764224in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.442955in, y=7.755916in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
+\pgftext[x=11.910465in, y=9.545336in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}injur*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.567184in, y=7.573509in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=12.059539in, y=9.326447in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.391065in, y=9.218329in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=11.848196in, y=11.337224in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.023540in, y=9.047034in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=11.407167in, y=11.131669in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.380648in, y=8.875738in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=11.835696in, y=10.926114in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=10.567184in, y=8.693331in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=12.059539in, y=10.707225in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.653375in, y=8.289774in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
+\pgftext[x=13.291300in, y=10.192131in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}nuclear}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.843575in, y=8.118478in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
+\pgftext[x=13.519540in, y=9.986576in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}AI}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.566666in, y=7.947183in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
+\pgftext[x=13.187249in, y=9.781021in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}accident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.829494in, y=7.764776in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=13.502642in, y=9.562133in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.679896in, y=8.289774in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
+\pgftext[x=14.461695in, y=10.192131in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}chemical}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.367830in, y=8.118478in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
+\pgftext[x=14.087217in, y=9.986576in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}neural network*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.724938in, y=7.947183in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
+\pgftext[x=14.515746in, y=9.781021in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}failure*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.911474in, y=7.764776in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
+\pgftext[x=14.739588in, y=9.562133in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.217995in, y=9.404040in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
+\pgftext[x=13.938129in, y=11.566243in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}energy}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=11.793516in, y=9.232745in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
+\pgftext[x=13.428755in, y=11.360687in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}machine learning}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.116770in, y=9.061449in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}incident*}}%
+\pgftext[x=13.816660in, y=11.155132in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}incident*}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=12.370484in, y=8.879042in, left, base]{\color{textcolor}{\rmfamily\fontsize{12.000000}{14.400000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
-\end{pgfscope}%
-\begin{pgfscope}%
-\definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
-\pgfsetstrokecolor{textcolor}%
-\pgfsetfillcolor{textcolor}%
-\pgftext[x=6.836128in,y=9.633333in,,base]{\color{textcolor}{\rmfamily\fontsize{16.000000}{19.200000}\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}Search Results by Term Combinations with Greater Than Four Papers}}%
+\pgftext[x=14.121115in, y=10.936244in, left, base]{\color{textcolor}{\rmfamily\fontsize{14.000000}{16.800000}\bfseries\selectfont\catcode`\^=\active\def^{\ifmmode\sp\else\^{}\fi}\catcode`\%=\active\def%{\%}(5)}}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
