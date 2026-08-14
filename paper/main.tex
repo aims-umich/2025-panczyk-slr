@@ -296,7 +296,29 @@ Finally, we extracted the data from the final subset of 72 articles, which inclu
 
 \subsection{Quality Assessment}
 \label{sec:QA}
-During data extraction, we also conducted a brief quality assessment. Due to the heterogeneous nature of the papers included in this analysis, a single, pre-made quality assessment template would not provide sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we devised a set of ``flags'' to mark areas of concern for each article based on a pre-existing framework, APPRAISE-AI \cite{kwongAPPRAISEAIToolQuantitative2023}. Because this review considers a large portion of medical papers, we evaluated each study for its consideration of bias, a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment to all other papers. Given that all papers concern human health, the way AI views differences between humans can substantially impact its judgment. Other than assessing for bias, we only flagged other categories if we had a concern while reviewing the articles. Commonly, this included flagging for a limited dataset size. Most articles scored above 80 out of 100, indicating no major concerns about the quality of the retrieved articles. Figure \ref{fig:qa_scores} shows the distribution of articles in the final subset. 
+During data extraction, we also conducted a brief quality assessment. Due to the heterogeneous nature of the papers included in this analysis, a single, pre-made quality assessment template would not provide sufficient flexibility for our set of articles. Accordingly, instead of confirming if each article meets a certain set of criteria, we pre-defined a simplified set of ``flags'' to mark areas of concern for each article based on an existing framework, APPRAISE-AI \cite{kwongAPPRAISEAIToolQuantitative2023}. These flags and the criteria we considered for each are shown in Table \ref{tab:qa-flags}.
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+    \small
+    \input{tables/qa_flags.tex}
+    \caption{Flag categories used for quality assessment based on APPRAISE-AI framework \cite{kwongAPPRAISEAIToolQuantitative2023}.}
+    \label{tab:qa-flags}
+\end{table}
+
+Because this review considers a large portion of medical papers, we critically evaluated each study for its consideration of bias, a known concern for AI applications in that field. To keep our assessment fair, we applied the same judgment to all other papers. Given that all papers concern human health, the way AI views differences between humans can substantially impact its judgment. After assessing for bias, we flagged other categories if we had a concern considering the criteria in Table \ref{tab:qa-flags} while reviewing the articles. Commonly, this included flagging for a limited dataset size. When applying a flag for any category, we rated the flag with a level of concern corresponding to either low, medium, or high, which equated to a severity score of 1, 2, or 3, respectively. Then, we applied Equation \ref{eq:qa-score} to determine the quality score for that article.
+
+\begin{equation}
+    \text{QA Score} = 100 - \frac{\sum_{\text{categories}} \text{severity score}}{21} \times 100
+    \label{eq:qa-score}
+\end{equation}
+
+ \hl{We set a ``high quality'' threshold at 80 out of 100 based on the ``very high quality'' cutoff band established in the APPRAISE-AI framework} \cite{kwongAPPRAISEAIToolQuantitative2023}. Most articles in our review scored above this threshold, indicating no major concerns about the quality of the retrieved articles. Figure \ref{fig:qa_scores} shows the distribution of quality assessment scores for articles in the final subset. Additionally, we provide the database containing full details of our quality assessment on a per-article basis in Supplementary Materials. 
+ 
+ % consider cutting this and pointing to limitations section
+ \hl{Because the quality assessment was completed solely by the first author, we acknowledge reviewer subjectivity to be a limitation of our assessment. To mitigate this, we randomly selected 10\% of the articles in our final subset for the second author to score as a spot check... }
 
 \begin{figure}[ht!]
     \centering
@@ -305,6 +327,28 @@ During data extraction, we also conducted a brief quality assessment. Due to the
     \caption{Quality assessment score distribution for articles in the final subset.}
     \label{fig:qa_scores}
 \end{figure}
+
+\subsection{Limitations}
+% Single reviewer subjectivity
+A major limitation of our method is that a single reviewer screened the articles for inclusion, extracted data, and performed quality assessment. This precludes our study from inter-rater reliability metrics across the full dataset for all stages. \hl{To mitigate this, a second reviewer independently reviewed a randomly selected 10\% subset of the articles at three stages: title and abstract screening, full text screening, and quality assessment. Using the subset, we calculated Cohen's kappa for each phase and show these results in Table} \ref{tab:inter-rater-agreement}. \hl{Based on these results, we can ... but we cannot extend this confidence to the data extraction method. Since we only performed the secondary review on a subset of the articles, disagreements between the two reviewers are purely informative; we maintain the first reviewer's decisions as final in this analysis, so no disagreement resolution was necessary.}
+
+\begin{table}
+    \begin{tabular}{l|r}
+        \toprule
+        Phase & $\kappa$ \\
+        \midrule
+        Title and Abstract Screening & x \\
+        Full Text Screening & x \\
+        Quality Assessment & x \\
+    \end{tabular}
+    \caption{Cohen's $\kappa$ scores for subset of dual-reviewed articles.}
+    \label{tab:inter-rater-agreement}
+\end{table}
+% Database selection bias
+
+% Publication language restrictions
+
+% Rapid evolution of AI technologies
 
 \section{Quantitative Results}
 \subsection{Querying Results}

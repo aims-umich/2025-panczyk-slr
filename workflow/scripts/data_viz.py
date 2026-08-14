@@ -176,13 +176,13 @@ def get_stats(df):
 
 
 if __name__=="__main__":
-    df = pd.read_csv('../../results/data_extraction.csv',
-                 usecols=['AI Type - Intervention', 'Comparison', 'Country', 'Data Type', 'Date','Decision Making - (Intervention)', 'Deployed?', 'Feature Study?', 'Industry', 'Output Feature','Place', 'Published Year', 'QA Score', 'Regulatory Oversight Body (if any)', 'Safety Outcome', 'Study','Subcategory', 'Was explainability/interpretability considered?', 'XAI Type', 'Was regulation considered?']
+    df = pd.read_csv('../../results/data_extraction_rev11.csv',
+                 usecols=['AI Type - Intervention', 'Comparison', 'Country', 'Data Type', 'Decision Making - (Intervention)', 'Deployed?', 'Feature Study?', 'Industry', 'Output Feature', 'Published Year', 'QA Score', 'Regulatory Oversight Body (if any)', 'Safety Outcome', 'Study','Subcategory', 'Was explainability/interpretability considered?', 'XAI Type', 'Was regulation considered?']
                 )
 
-    plot_countries(df)
+    # plot_countries(df)
     # plot_ai_type(df)
     # plot_explainability(df)
     # plot_DM_type(df)
-    # plot_QA(df)
+    plot_QA(df)
     # get_stats(df)
