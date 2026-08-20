@@ -11,6 +11,9 @@ dependencies:
   - graphviz
   - seaborn
   - squarify
+  - openpyxl
+  - kaleido
+  - plotly
   - pip:
     - python-dotenv
     - wos

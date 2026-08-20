@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import geopandas as gpd
-
+import plotly.graph_objects as go
 import matplotlib as mpl
 
 mpl.use("pgf")
@@ -176,13 +176,16 @@ def get_stats(df):
 
 
 if __name__=="__main__":
-    df = pd.read_csv('../../results/data_extraction_rev11.csv',
-                 usecols=['AI Type - Intervention', 'Comparison', 'Country', 'Data Type', 'Decision Making - (Intervention)', 'Deployed?', 'Feature Study?', 'Industry', 'Output Feature', 'Published Year', 'QA Score', 'Regulatory Oversight Body (if any)', 'Safety Outcome', 'Study','Subcategory', 'Was explainability/interpretability considered?', 'XAI Type', 'Was regulation considered?']
+    from matplotlib.font_manager import FontProperties, findfont
+    print(findfont(FontProperties(family='serif')))
+
+    df = pd.read_csv('../../supplemental_materials/data_extraction.csv',
+                 usecols=['AI Type - Intervention', 'Comparison', 'Country', 'Data Type', 'Decision Making - (Intervention)', 'Deployed?', 'Feature Study?', 'Industry', 'Output Feature', 'Published Year', 'QA Score', 'Regulatory Oversight Body (if any)', 'Safety Outcome', 'Study','Subcategory', 'Was explainability/interpretability considered?', 'XAI Type', 'Was regulation considered?', 'Decision-Making Time', 'Expertise Level of User']
                 )
 
     # plot_countries(df)
     # plot_ai_type(df)
     # plot_explainability(df)
     # plot_DM_type(df)
-    plot_QA(df)
+    # plot_QA(df)
     # get_stats(df)

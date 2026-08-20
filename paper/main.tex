@@ -194,9 +194,9 @@ There is no more critical time to evaluate the safety risks that artificial inte
 Other authors have attempted to characterize this landscape in the past, but have missed key features. For example, Wang and Chung \cite{wangArtificialIntelligenceSafetycritical2021} conduct a systematic literature review of AI in safety-critical industries, but fail to target specific industries, do not distinguish between validation and explanation, and neglect the impact of regulation. Additionally, Bach et al. \cite{bachUnpackingHumanAIInteraction2024} conduct a systematic literature review of human-AI interaction in safety-critical industries, but again, make broad calls for explainability without considering the application, fail to discuss validation methods, do not target specific industries, and miss the mark in establishing trust frameworks.
 
 \subsection{Novelty}
-To fill this gap, we conduct a systematic literature review on AI-based decision-making in sensitive industries. As seen in \cite{wangArtificialIntelligenceSafetycritical2021} and \cite{bachUnpackingHumanAIInteraction2024}, the ``black box'' nature of AI tends to take the brunt of the blame for model mistakes and induced accidents. While calls for transparency are all in good faith, we argue that a broad ``explainability-based'' solution may not suit all applications. This review establishes the differences between those applications through a generalizable framework by considering a wide variety of industries. 
+To fill this gap, we conduct a systematic literature review on AI-based decision-making in sensitive industries. As seen in \cite{wangArtificialIntelligenceSafetycritical2021} and \cite{bachUnpackingHumanAIInteraction2024}, the ``black box'' nature of AI tends to take the brunt of the blame for model mistakes and induced accidents. While calls for transparency are all in good faith, we argue that a broad ``explainability-based'' solution may not suit all applications. This review establishes the differences between those applications through a generalizable framework by considering a variety of industries. 
 
-While the safety outcomes we consider all include some threat to human health or safety, the diversity of these industries means that use of AI may risk the health of one to many individuals with low to high probability. This variety supports our conclusions as generalizable. Aside from the size of the affected population and the likelihood of an incident, the applications include variety in \textit{who} interacts directly with the AI system in question and the time they have to decide (or intervene). Our study brings novelty to the field by extracting key qualities of sensitive industries, understanding how AI affects outcomes based on those qualities, and identifying how those interactions impact safety, trust, and liability. Further, we make recommendations for regulators, users, and developers based on these findings.  
+While the safety outcomes we consider all include some threat to human health or safety, the diversity of these industries means that use of AI may risk the health of one to many individuals with low to high probability. \hl{This variety supports the generalizability of our conclusions, with some caveats stemming from the heterogeneity of our final corpus}. Aside from the size of the affected population and the likelihood of an incident, the applications include variety in \textit{who} interacts directly with the AI system in question and the time they have to decide (or intervene). Our study brings novelty to the field by extracting key qualities of sensitive industries, understanding how AI affects outcomes based on those qualities, and identifying how those interactions impact safety, trust, and liability. Further, we make recommendations for regulators, users, and developers based on these findings.  
 
 \section{Method}
 \label{sec:method}
@@ -204,9 +204,8 @@ This review prioritizes reproducibility and, therefore, collects documents in a 
 \begin{enumerate}
 \item \textit{What is the impact of AI on high-stakes decision-making?}
 \item \textit{What are the safety risks of using AI to make decisions in sensitive industries?}
-\item \textit{What happens when accidents occur as a result of an AI-based decision?}
 \end{enumerate} 
-These questions highlight the unique features and outcomes that distinguish AI-based decision-making mechanisms from traditional methods. Likewise, answers would provide insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
+These questions highlight distinguishing features of AI-based decision-making from traditional methods. Likewise, answers would provide insight for both governmental agencies and engineers to mitigate evident shortcomings of this high-impact technology. 
 
 \subsection{Query Term Compilation}
 After determining our research questions, we define a set of key terms using the Population, Intervention, Comparison, Outcome (PICO) methodology \cite{schardtUtilizationPICOFramework2007} and use the Cartesian product of these terms (one from each category) to generate relevant search queries. We use APIs for the two databases, Scopus and Web of Science, to run these queries via a Python workflow, storing all resulting papers. Then, we remove duplicates based on digital object identifier (DOI), and merge the results of both database searches into a combined bibliography. Figure \ref{fig:workflow} shows a visual representation of this workflow. 
@@ -344,11 +343,18 @@ A major limitation of our method is that a single reviewer screened the articles
     \caption{Cohen's $\kappa$ scores for subset of dual-reviewed articles.}
     \label{tab:inter-rater-agreement}
 \end{table}
+
 % Database selection bias
+Another limitation of this work is database selection bias. In our method, we only query articles from Web of Science and Scopus. We chose these databases for their broad scopes, but still note that we necessarily missed some critical pieces not contained on these platforms. 
+
 
 % Publication language restrictions
+Further, in our exclusion criteria, we chose not to consider papers published in languages other than English. We made this decision to avoid misinterpreting texts that we could not read in their original form, but recognize that this restricts the reach of our search and may have excluded otherwise appropriate papers for our review.
 
 % Rapid evolution of AI technologies
+Finally, the rapid evolution of the topic of this work, artificial intelligence, inherently limits the efficacy of this review. We acknowledge that the field of machine learning and therefore its applications to sensitive industries, progresses by the day. For this reason, we chose to expand our search from strictly journal articles to also include papers from five major AI conferences. The goal of this decision was to help cover a field that moves faster than most journal publication timelines, while prioritizing rigorously peer-reviewed publications. This adaptation ultimately did not yield any publications from conference papers in our final corpus. We hypothesize that our other search terms likely required work with more domain specificity than these conferences would attract. Still, we recognize that both the decision to not search conference papers from other domains and the unsuccessful retrieval of papers from the queried AI conferences contribute an additional selection bias to our work.
+
+Despite these limitations, we believe that the findings of this review, based on the state of the field at a snapshot in time, can still provide meaningful insight to users and developers alike. We encourage near-term future work to repeat and expand our analysis to stay up-to-date with this technology as it evolves.
 
 \section{Quantitative Results}
 \subsection{Querying Results}
@@ -423,7 +429,7 @@ Figure \ref{fig:country_map} shows the number of articles that have at least one
 \end{figure}
 \FloatBarrier
 
-Finally, Table \ref{tab:industry_distribution} shows the distribution of articles by industry for the final subset.
+Table \ref{tab:industry_distribution} shows the distribution of articles by industry for the final subset. \hl{The heterogeneous distribution of industries for the articles in our final subset means that our overall findings cannot be broadly generalized, but rather represent emerging trends.}
 
 \begin{table}[ht!]
     \centering
@@ -442,9 +448,41 @@ Finally, Table \ref{tab:industry_distribution} shows the distribution of article
     \caption{Final article subset distribution by industry.}
     \label{tab:industry_distribution}
 \end{table}
+
+
+% Expertise and Time to Decide
+Table \ref{tab:crosstab} shows the cross tabulation results for two of the extracted variables: expertise level of the intended AI-user and the time for that user to make a decision using that AI system. The fourth category for each of these variables, ``Non-Specific,'' categorizes to articles that discuss AI at large but do not specify a type of model, target user, and/or application. While these articles do not provide extractable metrics, they contain qualitative insights which we discuss in Section \ref{sec:qualitative_results}.
+
+\begin{table}
+    \centering
+    \begin{tabular}{lrrrr}
+        \toprule
+        Expertise & Expert & Trained User & General Public & Non-Specific \\
+        Time &  &  &  &  \\
+        \midrule
+        Days or More & 16 & 1 & 0 & 0 \\
+        Minutes-Hours & 17 & 3 & 1 & 0 \\
+        Seconds or Less & 6 & 2 & 14 & 0 \\
+        Non-Specific & 2 & 0 & 0 & 10 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Cross tabulation analysis for expertise level of the intended AI-user and time to decide in each study.}
+    \label{tab:crosstab}
+\end{table}
+
+As a visual extension of Table \ref{tab:crosstab}, Figure \ref{fig:sankey} shows the flow of articles as they consider four key extracted variables. Again, because of the heterogeneous nature of our final corpus, the center of this Sankey diagram shows lots of thin flows, indicating the many diverging patterns and edge cases of our dataset. However, the top and bottom of Figure \ref{fig:sankey} show a clear trend towards applications with high levels of expertise and longer decision times and, conversely, applications with low levels of expertise and shorter decision times. Likewise, we see a greater proportion of articles in the former category (high expertise and long decision times) corresponding to the inclusion of explainability methods. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth, trim={5cm 5cm 5cm 5cm}, clip]{figs/sankey_withsubcats.pdf}
+    \caption{Sankey diagram showing flow of articles across four major extracted variables: expertise of the user, time to decide, decision-making type, and whether explainability was considered.}
+    \label{fig:sankey}
+\end{figure}
+
 \FloatBarrier
 
 \section{Qualitative Results and Discussion}
+\label{sec:qualitative_results}
 We will now discuss each of the major industries identified in our study, highlighting key takeaways from the individual industries and some papers that brought especially unique points to our attention. Then, we will examine the similarities and differences across industries to determine which AI features and findings were universally beneficial, and which industries have specific challenges and demands.
 
 \subsection{Medical}
@@ -579,7 +617,9 @@ Finally, the search terms we employed in our methodology may have missed some cr
 
 \subsection{Future Work}
 \label{sec:futurework}
-Though we describe opportunities for future work throughout this report, a few stand out. First, we observed data limitation issues across industries in this review. Future work should seek to improve the quality, accessibility, security, and cross-organizational sharing of data for sensitive applications. More broadly, future work should evaluate the security risks of AI-based decision-making in sensitive industries to both inform regulation and help guide data limitation efforts. From a policy perspective, future work should evaluate how international technology can manage varying national regulations in a way that emphasizes user safety. Likewise, future work should extend on the findings of this report to evaluate the nuances of AI safety in industry-specific applications. Domain-specific regulatory bodies may require this detail for effective policies. Finally, future work must continue to explore validation and explanation techniques. The quality of these techniques will underpin trust in this powerful technology.  
+Though we describe opportunities for future work throughout this report, a few stand out. First, we observed references to data limitation issues across industries in this review. Future work should seek to improve the quality, accessibility, security, and cross-organizational sharing of data for sensitive applications. More broadly, future work should evaluate the security risks of AI-based decision-making in sensitive industries to both inform regulation and help guide data limitation efforts. From a policy perspective, future work should evaluate how international technology can manage varying national regulations in a way that emphasizes user safety. Likewise, future work should extend on the findings of this report to evaluate the nuances of AI safety in industry-specific applications. Domain-specific regulatory bodies may require this detail for effective policies. 
+
+\hl{One of the originally intended research questions in this study focused on the safety accidents that occurred as a result of AI in various industries. At the time of study, however, the query methodology we employed did not retrieve any accident analyses that could help address this question. Future work should consider adapting (likely relaxing) our search strategy to specifically target post-accident or near-miss papers.} Finally, future work must continue to explore validation and explanation techniques. The quality of these techniques will underpin trust in this powerful technology.  
 
 
 \section{Acknowledgment}
