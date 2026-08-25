@@ -168,12 +168,24 @@ def get_stats(df):
     avs = total_papers.get('Autonomous Vehicles', 0)
     nuclear = total_papers.get('Nuclear', 0)
 
-    print(f'XAI Considered: {xai_considered}, Total: {xai_considered + xai_not_considered}, Ratio: {xai_considered/(xai_considered + xai_not_considered)}')
+    
     print(f'Reg Considered: {reg_considered}, Total: {reg_considered + reg_not_considered}, Ratio: {reg_considered/(reg_considered + reg_not_considered)}')
 
     print(f'Medical: {medical}, {medical/72}, Manufacturing: {manufac/72}, Ethics: {ethics/72}, Aviation: {aviation/72}, AVs: {avs/72}, Nuclear: {nuclear/72}')
     return
 
+def more_xai_stats(df):
+    xai_counts = df['Was explainability/interpretability considered?'].value_counts()
+    xai_considered = xai_counts.get('Yes', 0)
+    xai_not_considered = xai_counts.get('No', 0)
+    df = df[df['XAI Type'] != 'Non-Specific']
+    df = df[df['XAI Type'] != 'Non-Applicable']
+    interpretability_counts = df['XAI Type'].value_counts()
+    interp = interpretability_counts.get('Rationale for Certain Models',0)
+    xai_applied_counts = df['Was explainability/interpretability considered?'].count()
+    
+    print(f'XAI Considered: {xai_considered}, Total: {xai_considered + xai_not_considered}, Applied: {xai_applied_counts}, Ratio only considered: {(xai_considered - xai_applied_counts)/(xai_considered + xai_not_considered)}, Ratio only applied: {xai_applied_counts/(xai_considered + xai_not_considered)}, Interpretability Counts: {interp/xai_applied_counts}')
+    return
 
 if __name__=="__main__":
     from matplotlib.font_manager import FontProperties, findfont
@@ -189,3 +201,4 @@ if __name__=="__main__":
     # plot_DM_type(df)
     # plot_QA(df)
     # get_stats(df)
+    more_xai_stats(df)

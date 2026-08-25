@@ -55,14 +55,14 @@ def vizualize(txtfile, save_as="barplot.png"):
 
     print(type(pop_df))
     fig, ax = plt.subplots(1, 1, figsize=(10, 13))
-    sns.set_color_codes("pastel")
+    sns.set_color_codes("dark")
     sns.barplot(x="count", y="population", data=pop_df, label="Population", color="b")
     sns.barplot(
         x="count",
         y="intervention",
         data=intervention_df,
         label="Intervention",
-        color="pink",
+        color="magenta",
     )
     sns.barplot(x="count", y="outcome", data=outcome_df, label="Outcome", color="green")
     ax.set_ylabel("Search Term")
