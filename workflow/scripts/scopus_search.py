@@ -15,7 +15,7 @@ if __name__ == "__main__":
     searches = []
     conf_query = "CONFNAME('NEURIPS*' OR 'ICLR*' OR 'ICML*' OR 'AAAI*' OR 'IJCAI*')"
     for pop, intervention_ai, intervention_dm, outcome in tqdm(combinations):
-        query1 = f"TITLE-ABS-KEY ( {pop} ) AND TITLE-ABS-KEY ( {intervention_ai} W/5 {intervention_dm}) AND TITLE-ABS-KEY ( {outcome} ) AND PUBYEAR AFT 2014 AND (DOCTYPE(ar) OR (DOCTYPE(cp) AND {conf_query}))"
+        query1 = f"TITLE-ABS-KEY ( {pop} ) AND TITLE-ABS-KEY ( {intervention_ai} W/5 {intervention_dm}) AND TITLE-ABS-KEY ( {outcome} ) AND PUBYEAR AFT 2014 AND PUBYEAR BEF 2026 AND (DOCTYPE(ar) OR (DOCTYPE(cp) AND {conf_query}))"
 
         try:
             s = ScopusSearch(query1, download=True)
