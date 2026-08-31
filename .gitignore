@@ -214,12 +214,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-*.bib
-*.csv
 *.txt
 /.snakemake
 *.pkl
-/results
 /results-w-health
 *.log
 *.aux
@@ -234,4 +231,3 @@ __marimo__/
 *.bst
 *.spl
 *.DS_Store
-supplemental_materials/
