@@ -19,9 +19,11 @@ net in our search of two databases, Web of Science and Scopus, then filter with 
 sensitivity, decision-making framework, and risk. After distilling our initial
 pool of 1,135 papers retrieved on December 15, 2025 into a final subset of 72 reports, we identify critical
 features of AI systems and industry implementation practices that demonstrate:
-1) the safety risks of using AI in high-stakes decision-making, 2) how we can
-mitigate these risks, and 3) how we can assign responsibility for AI-based
-decisions. We perform a quality assessment, including risk of bias, on each study in our final corpus to ensure adequate rigor of retrieved material. We extract categorical and binary data from the articles reviewed to provide quantitative trends towards the types of AI used across the industries considered and the expertise of the end-user of these applications, as well as the decision-making time those users are allotted. We also perform a qualitative analysis of the trends described in these studies, on a per-industry basis. 
+1) the safety risks of using AI in high-stakes decision-making, 
+2) how we can mitigate these risks, and 
+3) how we can assign responsibility for AI-based decisions. 
+
+We perform a quality assessment, including risk of bias, on each study in our final corpus to ensure adequate rigor of retrieved material. We extract categorical and binary data from the articles reviewed to provide quantitative trends towards the types of AI used across the industries considered and the expertise of the end-user of these applications, as well as the decision-making time those users are allotted. We also perform a qualitative analysis of the trends described in these studies, on a per-industry basis. 
 
 A key finding of our review is that, contrary to popular broad calls for
 increasing model interpretability and explainability, we find these features
